@@ -1,5 +1,5 @@
-<x-guest-layout>
+<x-map-layout>
 
-    Map
+    <div id="map"></div>
 
-</x-guest-layout>
+</x-map-layout>
