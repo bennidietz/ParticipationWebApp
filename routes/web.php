@@ -21,8 +21,8 @@ Route::get('/map', function() {
     return view('map');
 });
 
-Route::get('/project-overview', function() {
-    return view('project-overview');
+Route::get('/timeline', function() {
+    return view('timeline');
 });
 
 Route::get('/about', function() {

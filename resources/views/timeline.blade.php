@@ -1,5 +1,5 @@
 <x-guest-layout>
 
-    Project overview
+    Timeline
 
 </x-guest-layout>
