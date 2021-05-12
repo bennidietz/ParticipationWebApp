@@ -1,5 +1,5 @@
 <x-guest-layout>
 
-    <div id="map"></div>
+    Index
 
 </x-guest-layout>
