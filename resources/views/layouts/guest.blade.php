@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ __('Reallabor: Corrensstraße') }}</title>
-        
+
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="font-sans text-gray-900 antialiased">
+        <div class="mt-24 font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
     </body>
