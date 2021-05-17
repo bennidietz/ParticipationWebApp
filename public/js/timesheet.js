@@ -1,6 +1,3 @@
-require('./bootstrap');
-require('alpinejs');
-
 (function() {
   'use strict';
 
@@ -182,35 +179,3 @@ require('alpinejs');
 
   window.Timesheet = Timesheet;
 })();
-
-document.addEventListener("DOMContentLoaded", function() {
-    if (document.getElementById('map') !== null) {
-        initMap();
-    }
-
-    if (document.getElementById('timesheet') !== null) {
-        initTimesheet();
-    }
-});
-
-function initMap()
-{
-    var mymap = L.map('map').setView([51.967149, 7.596715], 17);
-
-    L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        maxZoom: 18,
-        //id: 'mapbox/streets-v11',
-        //tileSize: 512,
-        //zoomOffset: -1
-        //accessToken: 'your.mapbox.access.token'
-    }).addTo(mymap);
-}
-
-function initTimesheet()
-{
-    new Timesheet('timesheet', 2021, 2023, [
-        ['04/2021', 'Some content', 'lorem'],
-        ['05/2021', '07/2021', 'Some more content', 'ipsum'],
-    ]);
-}
