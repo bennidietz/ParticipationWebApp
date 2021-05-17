@@ -210,7 +210,7 @@ function initMap()
 function initTimesheet()
 {
     new Timesheet('timesheet', 2021, 2023, [
-        ['04/2021', 'Some content', 'lorem'],
-        ['05/2021', '07/2021', 'Some more content', 'ipsum'],
+        ['04/2021', 'Kick-Off Event', 'lorem'],
+        ['05/2021', '07/2021', 'Software Development Phase', 'ipsum'],
     ]);
 }

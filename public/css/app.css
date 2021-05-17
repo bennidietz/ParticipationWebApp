@@ -33399,7 +33399,6 @@ body {
 
 .timesheet{
   border-top:1px solid rgba(250,250,250,0.5);
-  background-color:#333;
   position:relative
 }
 
@@ -33455,7 +33454,6 @@ body {
   float:left;
   width:59px;
   text-align:center;
-  color:rgba(250,250,250,0.8);
   font-size:13px;
   line-height:24px;
   font-weight:lighter;
