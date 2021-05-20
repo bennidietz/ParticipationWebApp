@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="pt-24 font-sans bg-gray-100 text-gray-900 antialiased">
+        <div class="min-h-screen pt-24 font-sans bg-gray-100 text-gray-900 antialiased">
             {{ $slot }}
         </div>
     </body>
