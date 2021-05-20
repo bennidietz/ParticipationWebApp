@@ -18,7 +18,7 @@
                     @livewire('profile.update-password-form')
                 </div>
 
-                <x-jet-section-border />
+                {{--<x-jet-section-border />--}}
             @endif
 
             @if (Laravel\Fortify\Features::canManageTwoFactorAuthentication())
@@ -29,9 +29,11 @@
                 <x-jet-section-border />
             @endif
 
+            {{--
             <div class="mt-10 sm:mt-0">
                 @livewire('profile.logout-other-browser-sessions-form')
             </div>
+            --}}
 
             @if (Laravel\Jetstream\Jetstream::hasAccountDeletionFeatures())
                 <x-jet-section-border />
