@@ -193,6 +193,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+class Polygon {
+  constructor(points, name, id) {
+    this.points = points;
+    this.name = name;
+    this.id = id;
+  }
+}
+
 function initMap()
 {
     var mymap = L.map('map').setView([51.967149, 7.596715], 17);
@@ -205,6 +213,88 @@ function initMap()
         //zoomOffset: -1
         //accessToken: 'your.mapbox.access.token'
     }).addTo(mymap);
+
+    var points = [[
+      51.96722951733728,
+      7.596622109413146
+      
+    ],
+    [
+      51.967204729209804,
+      7.596631497144699
+      
+    ],
+    [
+      51.967178288525375,
+      7.596652954816817
+    ],
+    [
+      51.96715515291374,
+      7.596665024757384
+    ],
+    [
+      51.96712458083717,
+      7.5966838002204895
+    ],
+    [
+      51.967100618924725,
+      7.596705257892608
+    ],
+    [
+      51.96706591544261,
+      7.5967347621917725
+    ],
+    [
+      51.96710970792752,
+      7.596886307001114
+    ],
+    [
+      51.96714110628655,
+      7.59686753153801
+    ],
+    [
+      51.967174983438746,
+      7.596851438283919
+    ],
+    [
+      51.96719977158266,
+      7.596835345029831
+    ],
+    [
+      51.96723530123172,
+      7.596823275089264
+    ],
+    [
+      51.96726008934227,
+      7.5967951118946075
+    ],
+    [
+      51.96724604274795,
+      7.596697211265564
+    ],
+    [
+      51.96722951733728,
+      7.596622109413146
+    ]];
+
+    var p1  = new Polygon(points, "Gebiet 1", 2);
+
+    var polygon = L.polygon([
+    
+    ]).addTo(mymap);
+
+    polygon.bindPopup("<h1>Gebiet eins</h1>An der Umfrage teilnehmen", 1);
+
+    var polygons = [p1];
+
+    polygons.forEach(p => {
+      var polygon = L.polygon(
+        p.points
+      ).addTo(mymap);
+      polygon.on('click', function () {
+        preview("Umfrage für Polygon " + p.name + ":")
+      });
+    });
 }
 
 function initTimesheet()
