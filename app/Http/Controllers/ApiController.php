@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\UserResource;
+use App\Models\Models\Comment;
 use Auth;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -24,7 +26,7 @@ class ApiController
         }
 
         if (Auth::attempt($validator->valid())) {
-            return User::where('email', '=', $validator->valid()['email'])->first();
+            return new UserResource(User::where('email', '=', $validator->valid()['email'])->first());
         }
 
         abort(401);
@@ -45,6 +47,6 @@ class ApiController
            return response()->json($validator->errors(), 422);
         }
 
-        return User::create($validator->valid());
+        return new UserResource(User::create($validator->valid()));
     }
 }
