@@ -24,4 +24,18 @@ class ApiController
 
         abort(401);
     }
+
+    /*
+    * @param $request
+    */
+    public function register(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'email' => 'required|email:rfc,dns|unique:users',
+            'password' => 'required|min:8|confirmed',
+        ]);
+
+        return User::create($validatedData);
+    }
 }
