@@ -18,6 +18,8 @@ body {
     left: 0;
 }
 
+.leaflet-control-zoom {margin-top: 50px;}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
