@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ApiController;
+use App\Http\Controllers\PolygonController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -25,3 +26,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Projects
 Route::resource('project', ProjectController::class);
+
+// Polygons
+Route::resource('polygon', PolygonController::class);
