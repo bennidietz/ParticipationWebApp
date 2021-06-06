@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PolygonController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
@@ -36,4 +37,5 @@ Route::group(['prefix' => 'dashboard'], function() use ($router) {
     })->name('dashboard');
 
     Route::resource('projects', ProjectController::class);
+    Route::resource('polygons', PolygonController::class);
 });

@@ -5,8 +5,11 @@ namespace App\Http\Controllers;
 use App\Http\Requests\PolygonStore;
 use App\Http\Resources\PolygonResource;
 use App\Models\Polygon;
+use App\Models\Project;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Validator;
@@ -16,11 +19,15 @@ class PolygonController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return PolygonResource
+     * @return Application|Factory|View
      */
     public function index()
     {
-        return new PolygonResource(Polygon::all());
+        $polygons = Polygon::orderBy('name')->paginate(10);
+
+        return view('polygons.index', [
+            'polygons' => $polygons,
+        ]);
     }
 
     /**
