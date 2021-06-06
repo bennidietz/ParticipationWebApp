@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,6 +30,10 @@ Route::get('/about', function() {
     return view('about');
 })->name('about');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::group(['prefix' => 'dashboard'], function() use ($router) {
+    Route::get('', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
+    Route::resource('projects', ProjectController::class);
+});

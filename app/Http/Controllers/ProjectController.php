@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ProjectStore;
 use App\Http\Resources\ProjectResource;
+use App\Models\Contact;
 use App\Models\Project;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Validator;
@@ -16,11 +19,15 @@ class ProjectController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return ProjectResource
+     * @return Application|Factory|View
      */
     public function index()
     {
-        return new ProjectResource(Project::all());
+        $projects = Project::orderBy('start_time')->paginate(10);
+
+        return view('projects.index', [
+            'projects' => $projects,
+        ]);
     }
 
     /**
