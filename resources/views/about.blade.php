@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-    <section class="w-full min-h-screen bg-cover text-white flex items-stretch" style="background-image: url('{{ asset('img/about/road2.jpg') }}');">
+    <section class="w-full min-h-screen bg-cover text-white flex items-stretch" style="background-image: url('{{ asset('img/about/Corrensstrasse_1.png') }}');">
 
         <div class="w-full p-8 bg-gray-500 bg-opacity-50 flex justify-center items-center">
             <div class="w-5/6 lg:w-4/5 max-w-full">
@@ -17,7 +17,7 @@
 
     </section>
 
-    <section class="w-full min-h-screen bg-cover text-white flex items-stretch" style="background-image: url('{{ asset('img/about/road.jpg') }}');">
+    <section class="w-full min-h-screen bg-cover text-white flex items-stretch" style="background-image: url('{{ asset('img/about/Corrensstrasse_2.png') }}');">
 
         <div class="w-full p-8 bg-gray-500 bg-opacity-50 flex justify-center items-center">
             <div class="w-5/6 lg:w-4/5 max-w-full flex justify-end text-right">
@@ -32,7 +32,7 @@
 
     </section>
 
-    <section class="w-full min-h-screen bg-cover text-white flex items-stretch" style="background-image: url('{{ asset('img/about/road2.jpg') }}');">
+    <section class="w-full min-h-screen bg-cover text-white flex items-stretch" style="background-image: url('{{ asset('img/about/Corrensstrasse_3.png') }}');">
 
         <div class="w-full p-8 bg-gray-500 bg-opacity-50 flex justify-center items-center">
             <div class="w-5/6 lg:w-4/5 max-w-full">
