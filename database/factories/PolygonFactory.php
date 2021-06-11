@@ -23,10 +23,10 @@ class PolygonFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->text,
-            'geojson' => $this->faker->text,
+            'name' => $this->faker->text( 10),
+            'geojson' => Str::random(50),
             'state' => $this->faker->randomElement(['free','planned','unknown']),
-            'description' => Str::random(50),
+            'description' => $this->faker->text(30),
         ];
     }
 }

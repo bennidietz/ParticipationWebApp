@@ -6,20 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/AssetFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AssetFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/CommentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CommentFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/PolygonFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PolygonFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/ProjectFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProjectFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/VoteFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/VoteFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_06_082310_create_polygons_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_06_082310_create_polygons_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/AssetSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/AssetSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/CommentSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CommentSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PolygonSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PolygonSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ProjectSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProjectSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/SuggestionSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/SuggestionSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/VoteSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/VoteSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/polygons/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/polygons/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +201,7 @@
       <workItem from="1622883239145" duration="48000" />
       <workItem from="1622883292856" duration="10819000" />
       <workItem from="1623312948770" duration="1264000" />
-      <workItem from="1623420838473" duration="12587000" />
+      <workItem from="1623420838473" duration="13182000" />
     </task>
     <task id="LOCAL-00001" summary="Add migration for Votes, Suggestions, Assets and Comments">
       <created>1623424041893</created>
@@ -246,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623449282639</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add database seeder">
+      <created>1623451002038</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1623451002038</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +269,7 @@
     <MESSAGE value="Create API for Votes, Suggestions and Comments" />
     <MESSAGE value="Readme instructions" />
     <MESSAGE value="User database seeder" />
-    <option name="LAST_COMMIT_MESSAGE" value="User database seeder" />
+    <MESSAGE value="Add database seeder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add database seeder" />
   </component>
 </project>

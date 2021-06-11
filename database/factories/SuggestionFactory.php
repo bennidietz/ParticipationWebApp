@@ -28,10 +28,10 @@ class SuggestionFactory extends Factory
             'user_id' => User::all()->random()->id,
             'asset_id' => Asset::all()->random()->id,
             'geojson' => Str::random(50),
-            'latitude' => $this->faker->randomFloat($nbMaxDecimals = 5, $min = 51, $max= 52),
-            'longitude' => $this->faker->randomFloat($nbMaxDecimals = 5, $min = 7, $max= 8),
-            'title' => $this->faker->text,
-            'description' => Str::random(20),
+            'latitude' => $this->faker->randomFloat(5, 51, 52),
+            'longitude' => $this->faker->randomFloat(5, 7, 8),
+            'title' => $this->faker->text(10),
+            'description' => $this->faker->text(25),
         ];
     }
 }

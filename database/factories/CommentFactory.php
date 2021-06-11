@@ -26,7 +26,7 @@ class CommentFactory extends Factory
         return [
             'suggestion_id' => Suggestion::all()->random()->id,
             'user_id' => User::all()->random()->id,
-            'message' => $this->faker->text,
+            'message' => $this->faker->text(40),
         ];
     }
 }
