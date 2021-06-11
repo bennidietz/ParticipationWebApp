@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="Add migration for Votes, Suggestions, Assets and Comments">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CommentStore.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/SuggestionStore.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/VoteStore.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/CommentCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/CommentResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/SuggestionCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/SuggestionResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/VoteCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/VoteResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AssetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AssetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SuggestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SuggestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VoteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Suggestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Suggestion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_11_143253_create_suggestions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_11_143253_create_suggestions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +198,7 @@
       <workItem from="1622883239145" duration="48000" />
       <workItem from="1622883292856" duration="10819000" />
       <workItem from="1623312948770" duration="1264000" />
-      <workItem from="1623420838473" duration="9644000" />
+      <workItem from="1623420838473" duration="10952000" />
     </task>
     <task id="LOCAL-00001" summary="Add migration for Votes, Suggestions, Assets and Comments">
       <created>1623424041893</created>
@@ -228,7 +214,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623439672964</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create API for Votes, Suggestions and Comments">
+      <created>1623442553836</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623442553836</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Readme instructions">
+      <created>1623449080128</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623449080128</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +249,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add migration for Votes, Suggestions, Assets and Comments" />
     <MESSAGE value="API for assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="API for assets" />
+    <MESSAGE value="Create API for Votes, Suggestions and Comments" />
+    <MESSAGE value="Readme instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme instructions" />
   </component>
 </project>
