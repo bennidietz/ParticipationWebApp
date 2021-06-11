@@ -17,10 +17,11 @@ class CreateSuggestionsTable extends Migration
             $table->id();
             $table->foreignId("user_id")->constrained();
             $table->foreignId("asset_id")->nullable()->onDelete("cascade");
-            $table->text("geojson");
-            $table->string("latitude");
-            $table->string("longitude");
-            $table->string("description");
+            $table->text("geojson")->nullable();
+            $table->string("latitude")->nullable();
+            $table->string("longitude")->nullable();
+            $table->string("title")->nullable();
+            $table->string("description")->nullable();
             $table->timestamps();
         });
     }

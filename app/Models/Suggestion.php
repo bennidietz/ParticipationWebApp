@@ -15,9 +15,12 @@ class Suggestion extends Model
      * @var array
      */
     protected $fillable = [
+        'user_id',
+        'asset_id',
         'geojson',
         'latitude',
         'longtiude',
+        'title',
         'description',
     ];
 
