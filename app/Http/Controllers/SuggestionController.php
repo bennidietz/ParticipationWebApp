@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\SuggestionStore;
-use App\Http\Resources\SuggestionCollection;
 use App\Http\Resources\SuggestionResource;
 use App\Models\Suggestion;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Validator;
@@ -17,11 +18,15 @@ class SuggestionController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return SuggestionCollection
+     * @return Application|Factory|View
      */
     public function index()
     {
-        return new SuggestionCollection(Suggestion::all());
+        $suggestions = Suggestion::orderBy('title')->paginate(10);
+
+        return view('suggestions.index', [
+            'suggestions' => $suggestions,
+        ]);
     }
 
 

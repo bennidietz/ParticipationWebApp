@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AssetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AssetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/dataset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assets/dataset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assets/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SuggestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SuggestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/suggestions/dataset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/suggestions/dataset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/suggestions/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/suggestions/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +199,7 @@
       <workItem from="1622883239145" duration="48000" />
       <workItem from="1622883292856" duration="10819000" />
       <workItem from="1623312948770" duration="1264000" />
-      <workItem from="1623420838473" duration="14157000" />
+      <workItem from="1623420838473" duration="14831000" />
     </task>
     <task id="LOCAL-00001" summary="Add migration for Votes, Suggestions, Assets and Comments">
       <created>1623424041893</created>
@@ -257,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623451957436</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Make Admin Panel view for Assets">
+      <created>1623452557053</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1623452557053</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +291,7 @@
     <MESSAGE value="Add database seeder" />
     <MESSAGE value="Adjust seeders" />
     <MESSAGE value="Add routes in Admin  panel for Assets and suggestions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add routes in Admin  panel for Assets and suggestions" />
+    <MESSAGE value="Make Admin Panel view for Assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make Admin Panel view for Assets" />
   </component>
 </project>

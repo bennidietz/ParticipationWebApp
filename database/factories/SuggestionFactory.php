@@ -31,7 +31,7 @@ class SuggestionFactory extends Factory
             'latitude' => $this->faker->randomFloat(5, 51, 52),
             'longitude' => $this->faker->randomFloat(5, 7, 8),
             'title' => $this->faker->text(10),
-            'description' => $this->faker->text(25),
+            'description' => $this->faker->text(15),
         ];
     }
 }
