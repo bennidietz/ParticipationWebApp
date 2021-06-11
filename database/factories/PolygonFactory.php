@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Polygon;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 class PolygonFactory extends Factory
 {
@@ -22,7 +23,10 @@ class PolygonFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->text,
+            'geojson' => $this->faker->text,
+            'state' => $this->faker->randomElement(['free','planned','unknown']),
+            'description' => Str::random(50),
         ];
     }
 }

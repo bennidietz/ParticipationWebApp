@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Asset;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 class AssetFactory extends Factory
 {
@@ -21,8 +22,19 @@ class AssetFactory extends Factory
      */
     public function definition()
     {
-        return [
-            //
-        ];
+        if (rand(0,1) == 1)
+        {
+            return [
+                'name' => $this->faker->text,
+                'file_path' => $this->faker->filePath(),
+                'type' => $this->faker->randomElement(['image','asset','3D_asset']),
+            ];
+        } else {
+            return [
+                'name' => $this->faker->text,
+                'object' => Str::random(150),
+                'type' => $this->faker->randomElement(['image','asset','3D_asset']),
+            ];
+        }
     }
 }

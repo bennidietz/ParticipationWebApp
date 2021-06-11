@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Polygon;
 use Illuminate\Database\Seeder;
 
 class PolygonSeeder extends Seeder
@@ -13,6 +14,8 @@ class PolygonSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Polygon::factory()
+            ->count(4)
+            ->create();
     }
 }

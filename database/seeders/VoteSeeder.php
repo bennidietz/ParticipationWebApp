@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Comment;
 use Illuminate\Database\Seeder;
 
 class VoteSeeder extends Seeder
@@ -13,6 +14,8 @@ class VoteSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Comment::factory()
+            ->count(300)
+            ->create();
     }
 }

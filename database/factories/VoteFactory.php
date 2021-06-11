@@ -2,6 +2,9 @@
 
 namespace Database\Factories;
 
+use App\Models\Comment;
+use App\Models\Suggestion;
+use App\Models\User;
 use App\Models\Vote;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -22,7 +25,10 @@ class VoteFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'suggestion_id' => Suggestion::all()->random()->id,
+            'comment_id' => Comment::all()->random()->id,
+            'user_id' => User::all()->random()->id,
+            'is_positive' => rand(0,1) == 1,
         ];
     }
 }
