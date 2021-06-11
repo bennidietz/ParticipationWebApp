@@ -2,25 +2,32 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AssetStore;
+use App\Http\Resources\AssetCollection;
+use App\Http\Resources\AssetResource;
 use App\Models\Asset;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Validator;
 
 class AssetController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return AssetCollection
      */
     public function index()
     {
-        //
+        return new AssetCollection(Asset::all());
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function create()
     {
@@ -30,53 +37,55 @@ class AssetController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return Response
      */
-    public function store(Request $request)
+    public function store(AssetStore $request)
     {
-        //
+        return Asset::create($request->all());
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Asset  $asset
-     * @return \Illuminate\Http\Response
+     * @param Asset $asset
+     * @return AssetResource
      */
     public function show(Asset $asset)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Asset  $asset
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Asset $asset)
-    {
-        //
+        return new AssetResource($asset);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Asset  $asset
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Asset $asset
+     * @return Asset|Application|ResponseFactory|Response
      */
     public function update(Request $request, Asset $asset)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'name' => 'string',
+            'file_path' => 'string',
+            'object' => 'string',
+            'type' => 'string',
+        ]);
+
+        if ($validator->fails()) {
+            return response(['errors' => $validator->errors()], 422);
+        }
+
+        $asset->update($request->all());
+
+        return $asset;
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Asset  $asset
-     * @return \Illuminate\Http\Response
+     * @param Asset $asset
+     * @return Response
      */
     public function destroy(Asset $asset)
     {

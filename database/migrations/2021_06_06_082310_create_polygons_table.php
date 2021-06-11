@@ -17,7 +17,7 @@ class CreatePolygonsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string("name");
-            $table->string("geojson");
+            $table->polygon("geojson");
             $table->string("state");
             $table->string("description");
         });
