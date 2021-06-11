@@ -38,4 +38,6 @@ Route::group(['prefix' => 'dashboard'], function() use ($router) {
 
     Route::resource('projects', ProjectController::class);
     Route::resource('polygons', PolygonController::class);
+    Route::resource('assets', PolygonController::class);
+    Route::resource('suggestions', PolygonController::class);
 });

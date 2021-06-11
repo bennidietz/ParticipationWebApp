@@ -21,6 +21,12 @@
                     <x-jet-nav-link href="{{ route('polygons.index') }}" :active="request()->routeIs('polygons.index')">
                         {{ __('Polygone') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('assets.index') }}" :active="request()->routeIs('assets.index')">
+                        {{ __('Assets') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('suggestions.index') }}" :active="request()->routeIs('suggestions.index')">
+                        {{ __('Vorschläge') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 
