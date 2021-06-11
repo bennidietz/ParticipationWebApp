@@ -5,6 +5,10 @@
         </h2>
     </x-slot>
 
+    <x-jet-button wire:click="createShowModal" style="margin-left: auto; margin-right: auto">
+        {{ __('Create') }}
+    </x-jet-button>
+
     <table cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto; margin-top: 50px">
         <thead>
         <tr class="rounded-lg text-sm font-medium text-gray-700 text-left">
