@@ -8,6 +8,8 @@ use App\Http\Resources\AssetResource;
 use App\Models\Asset;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Validator;
@@ -17,11 +19,15 @@ class AssetController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return AssetCollection
+     * @return Application|Factory|View
      */
     public function index()
     {
-        return new AssetCollection(Asset::all());
+        $assets = Asset::orderBy('name')->paginate(10);
+
+        return view('assets.index', [
+            'assets' => $assets,
+        ]);
     }
 
     /**

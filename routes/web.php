@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\AssetController;
 use App\Http\Controllers\PolygonController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\SuggestionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,6 +40,6 @@ Route::group(['prefix' => 'dashboard'], function() use ($router) {
 
     Route::resource('projects', ProjectController::class);
     Route::resource('polygons', PolygonController::class);
-    Route::resource('assets', PolygonController::class);
-    Route::resource('suggestions', PolygonController::class);
+    Route::resource('assets', AssetController::class);
+    Route::resource('suggestions', SuggestionController::class);
 });
