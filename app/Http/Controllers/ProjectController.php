@@ -33,11 +33,15 @@ class ProjectController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return Response
+     * @return Application|Factory|View
      */
     public function create()
     {
-        //
+        $project = Project::make();
+
+        return view('projects.edit', [
+            'project' => $project,
+        ]);
     }
 
     /**
