@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="Make Admin Panel view for Suggestions">
-      <change afterPath="$PROJECT_DIR$/resources/views/projects/edit.blade.php" afterDir="false" />
+    <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/projects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +19,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/api-documentation" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -148,6 +152,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/te7a-houdini/laravel-trix" />
     </include_path>
   </component>
   <component name="ProjectId" id="1tWSE3a3JdGQiQY2C9DrFsNKDRi" />
@@ -169,7 +174,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -199,6 +204,7 @@
       <workItem from="1622883292856" duration="10819000" />
       <workItem from="1623312948770" duration="1264000" />
       <workItem from="1623420838473" duration="14831000" />
+      <workItem from="1623770800815" duration="2880000" />
     </task>
     <task id="LOCAL-00001" summary="Add migration for Votes, Suggestions, Assets and Comments">
       <created>1623424041893</created>
@@ -263,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623452557053</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="First adjustment for creating project in CMS">
+      <created>1623487748341</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1623487748341</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +292,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -291,6 +305,7 @@
     <MESSAGE value="Adjust seeders" />
     <MESSAGE value="Add routes in Admin  panel for Assets and suggestions" />
     <MESSAGE value="Make Admin Panel view for Assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make Admin Panel view for Assets" />
+    <MESSAGE value="First adjustment for creating project in CMS" />
+    <option name="LAST_COMMIT_MESSAGE" value="First adjustment for creating project in CMS" />
   </component>
 </project>

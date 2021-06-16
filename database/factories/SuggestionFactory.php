@@ -27,7 +27,7 @@ class SuggestionFactory extends Factory
         return [
             'user_id' => User::all()->random()->id,
             'asset_id' => Asset::all()->random()->id,
-            'geojson' => Str::random(50),
+            'geojson' => Str::random(5500),
             'latitude' => $this->faker->randomFloat(5, 51, 52),
             'longitude' => $this->faker->randomFloat(5, 7, 8),
             'title' => $this->faker->text(10),

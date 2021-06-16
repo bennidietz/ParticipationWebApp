@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Resources\UserResource;
 use App\Models\Models\Comment;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -21,15 +22,17 @@ class ApiController
             'password' => 'required',
         ]);
 
+        $credentials = \request(['email', 'password']);
+
         if ($validator->fails()) {
-           return response()->json($validator->errors(), 422);
+            return response(['errors' => $validator->errors()], 422);
         }
 
-        if (Auth::attempt($validator->valid())) {
+        if (Auth::attempt($credentials)) {
             return new UserResource(User::where('email', '=', $validator->valid()['email'])->first());
+        } else {
+            return response("Invalid Credentials", 401);
         }
-
-        abort(401);
     }
 
     /*
@@ -48,6 +51,13 @@ class ApiController
            return response()->json($validator->errors(), 422);
         }
 
-        return new UserResource(User::create($validator->valid()));
+        $user = new User();
+        $user->first_name = $request->first_name;
+        $user->last_name = $request->last_name;
+        $user->email = $request->email;
+        $user->password = bcrypt($request->password);
+        $user->save();
+
+        return new UserResource($user);
     }
 }
