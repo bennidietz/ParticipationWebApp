@@ -50,7 +50,7 @@ window.onclick = function(event) {
 }
 
 var json = {
-    title: "Product Feedback Survey Example", showProgressBar: "top", pages: [
+    title: "Umfrage zur Gestaltung des Quartiers", showProgressBar: "top", pages: [
       {
         questions: [
           {
@@ -66,42 +66,81 @@ var json = {
             { value: "easy to use", text: "Product is easy to use" }]
           },
           {
-            type: "rating", name: "satisfaction", title: "How satisfied are you with the Product?",
-            mininumRateDescription: "Not Satisfied", maximumRateDescription: "Completely satisfied"
+            type: "comment", name: "suggestions", title: "Welche Elemente fallen Ihnen ein, wenn Sie an die Corrensstraße und ihre Umgebung denken?"
+           
           },
+          
           {
-            type: "rating", name: "recommend friends", visibleIf: "{satisfaction} > 3",
-            title: "How likely are you to recommend the Product to a friend or co-worker?",
-            mininumRateDescription: "Will not recommend", maximumRateDescription: "I will recommend"
+            type: "comment", name: "suggestions", title: "Was gefällt Ihnen an der Corrensstraße?",
+           
           },
-          { type: "comment", name: "suggestions", title: "What would make you more satisfied with the Product?", }
+          { type: "comment", name: "suggestions", title: "Wie oft im Monat halten Sie sich an der Corrensstraße auf?",}
         ]
       },
       {
         questions: [
           {
-            type: "radiogroup", name: "price to competitors",
-            title: "Compared to our competitors, do you feel the Product is",
-            choices: ["Less expensive", "Priced about the same", "More expensive", "Not sure"]
+            type: "matrix", name: "Entwicklung", title: "Welche verkehrsmittel nutzen sie wenn Sie auf der Corrensstraße unterwegs sind?",
+            columns: [{ value: 1, text: "Nie" },
+            { value: 2, text: "Selten" },
+            { value: 3, text: "Neutral" },
+            { value: 4, text: "Oft" },
+            { value: 5, text: "Immer" }],
+            rows: [{ value: "Bus", text: "Bus" },
+            { value: "Auto", text: "Auto" },
+            { value: "Fahrrad", text: "Fahrrad" }, { value: "Zu Fuß", text: "Zu Fuß" },]
           },
           {
-            type: "radiogroup", name: "price", title: "Do you feel our current price is merited by our product?",
-            choices: ["correct|Yes, the price is about right",
-              "low|No, the price is too low for your product",
-              "high|No, the price is too high for your product"]
+            type: "matrix", name: "Entwicklung", title: "Bitte kreuzen Sie an welchen Elementen im Raum Sie sich orientieren",
+            columns: [{ value: 1, text: "Nie" },
+            { value: 2, text: "Selten" },
+            { value: 3, text: "Neutral" },
+            { value: 4, text: "Oft" },
+            { value: 5, text: "Immer" }],
+            rows: [{ value: "Straßenname", text: "Straßennamen" },
+            { value: "Art der Straße ", text: "Art oder Begebenheit der Straße" },
+            { value: "Orientierungspunkte", text: "Orientierungspunkte wie z.B. hohen gebäuden, Kreuzungen...." },
+            { value: "Gefühl", text: "Nach Gefühl" }, { value: "Lärm", text: "Nach zu erwartendem Verkehrslärm" }, { value: "Anzahl", text: "Nach Anzahl von Menschen" }]
           },
           {
-            type: "multipletext", name: "pricelimit", title: "What is the... ",
-            items: [{ name: "mostamount", title: "Most amount you would every pay for a product like ours" },
-            { name: "leastamount", title: "The least amount you would feel comfortable paying" }]
+            type: "matrix", name: "Elemente", title: "Welche Elemente wünschen Sie sich auf der Corrensstraße?",
+            columns: [{ value: 1, text: "Stimme gar nicht zu" },
+            { value: 2, text: "Stimme eher nicht zu" },
+            { value: 3, text: "Egal" },
+            { value: 4, text: "Stimme eher zu" },
+            { value: 5, text: "Stimme voll zu" }],
+            rows: [{ value: "Verkehr", text: "Elemente zur Verkehrsberuhigung" },
+            { value: "Rad ", text: "Breite Rad und Fußwege" },
+            { value: "Raum", text: "Raum zur Begegnug" },
+            { value: "Fläche", text: "Fläche zur Entspannung" }, { value: "Sport", text: "Fläen um sport zu betreiben" }, { value: "Spielplätze", text: "Spielplätze" },]
           }
         ]
       },
       {
         questions: [
+
+           {
+            type: "matrix", name: "Gebiet", title: "In welche Richtung sollte sich das Gebiet entwickeln?",
+            columns: [{ value: 1, text: "Stimme gar nicht zu" },
+            { value: 2, text: "Stimme eher nicht zu" },
+            { value: 3, text: "Egal" },
+            { value: 4, text: "Stimme eher zu" },
+            { value: 5, text: "Stimme voll zu" }],
+            rows: [{ value: "Wohngebiet", text: "Wohngebiet" },
+            { value: "Grünfläche ", text: "Grünfläche" },
+            { value: "Bürofläche", text: "Büro oder Arbeitsviertel" },
+            { value: "Einkauf", text: "Einkaufs und Unterhaltungsviertel" }, ]
+          },
+
+          { type: "comment", name: "suggestions", title: "Wie alt sind Sie?", },
+          { type: "comment", name: "suggestions", title: "Welchem Geschlecht ordnen Sie sich zu?", },
+          { type: "comment", name: "suggestions", title: "Wie lange leben Sie in Münster? Wenn Sie nicht in Münster leben geben Sie bite an, wie lange Sie schon nach Münster kommen.", },
+          { type: "comment", name: "suggestions", title: "In welchem Viertel von Münster leben Sie?Wenn Sie nicht in Münster leben geben Sie bite Ihren Wohnort an.", },
+          { type: "comment", name: "suggestions", title: "welcher Tätigkeit gehen sie in Münster nach?", },
+          { type: "comment", name: "suggestions", title: "Welcher Einkommensgruppe würden Sie sich zuordnen?", },
           {
             type: "text", name: "email",
-            title: "Thank you for taking our survey. Your survey is almost complete, please enter your email address in the box below if you wish to participate in our drawing, then press the 'Submit' button."
+            title: "Danke, dass Sie an der Umfrage teigenommen haben. wenn Sie über weitere Ergebnisse der Umfrage informiert werden wollen, geben Sie bitte im unetren Feld Ihre Mailaddresse an. Clicken Sie auf submit, wenn Sie die Umfrage abgeben wollen."
           }
         ]
       }
