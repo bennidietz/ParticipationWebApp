@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/projects/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +204,8 @@
       <workItem from="1622883292856" duration="10819000" />
       <workItem from="1623312948770" duration="1264000" />
       <workItem from="1623420838473" duration="14831000" />
-      <workItem from="1623770800815" duration="2880000" />
+      <workItem from="1623770800815" duration="5368000" />
+      <workItem from="1624041829099" duration="1525000" />
     </task>
     <task id="LOCAL-00001" summary="Add migration for Votes, Suggestions, Assets and Comments">
       <created>1623424041893</created>
@@ -276,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623487748341</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adjust login and register API requests">
+      <created>1623862152938</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1623862152938</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +314,7 @@
     <MESSAGE value="Add routes in Admin  panel for Assets and suggestions" />
     <MESSAGE value="Make Admin Panel view for Assets" />
     <MESSAGE value="First adjustment for creating project in CMS" />
-    <option name="LAST_COMMIT_MESSAGE" value="First adjustment for creating project in CMS" />
+    <MESSAGE value="Adjust login and register API requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjust login and register API requests" />
   </component>
 </project>
