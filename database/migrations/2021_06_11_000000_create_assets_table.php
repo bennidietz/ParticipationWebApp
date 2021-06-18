@@ -19,6 +19,7 @@ class CreateAssetsTable extends Migration
             $table->text("file_path")->nullable();
             $table->text("object")->nullable();
             $table->string("type")->nullable();
+            $table->boolean("visible");
             $table->timestamps();
         });
     }

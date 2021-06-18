@@ -5,9 +5,11 @@
         </h2>
     </x-slot>
 
-    <x-jet-button wire:click="createShowModal" style="margin-left: auto; margin-right: auto">
-        {{ __('Create') }}
-    </x-jet-button>
+    <div id="topbar" STYLE="margin-top: 30px;">
+        <a href="{{ route('assets.create') }}">
+            <x-jet-button style="margin: 0 auto; display: block">{{ __('Neues Asset') }}</x-jet-button>
+        </a>
+    </div>
 
     <table cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto; margin-top: 50px">
         <thead>

@@ -5,6 +5,13 @@
         </h2>
     </x-slot>
 
+
+    <div id="topbar" STYLE="margin-top: 30px;">
+        <a href="{{ route('polygons.create') }}">
+            <x-jet-button style="margin: 0 auto; display: block">{{ __('Neues Polygon') }}</x-jet-button>
+        </a>
+    </div>
+
     <table cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto; margin-top: 50px">
         <thead>
         <tr class="rounded-lg text-sm font-medium text-gray-700 text-left">

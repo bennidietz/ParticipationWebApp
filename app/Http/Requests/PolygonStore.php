@@ -30,6 +30,7 @@ class PolygonStore extends FormRequest
             'geojson' => 'required|string',
             'state' => 'required|string|max:50',
             'description' => 'required|string',
+            'visible' => 'required|boolean',
         ];
     }
 

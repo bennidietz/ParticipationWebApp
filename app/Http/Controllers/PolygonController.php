@@ -31,6 +31,20 @@ class PolygonController extends Controller
     }
 
     /**
+     * Show the form for creating a new resource.
+     *
+     * @return Application|Factory|View
+     */
+    public function create()
+    {
+        $polygon = Polygon::make();
+
+        return view('polygons.edit', [
+            'polygon' => $polygon,
+        ]);
+    }
+
+    /**
      * Store a newly created resource in storage.
      *
      * @param Request $request
@@ -77,6 +91,7 @@ class PolygonController extends Controller
             'geojson' => 'string',
             'state' => 'string|max:50',
             'description' => 'string',
+            'visible' => 'boolean',
         ]);
 
         if ($validator->fails()) {

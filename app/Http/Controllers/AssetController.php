@@ -6,6 +6,7 @@ use App\Http\Requests\AssetStore;
 use App\Http\Resources\AssetCollection;
 use App\Http\Resources\AssetResource;
 use App\Models\Asset;
+use App\Models\Project;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Contracts\View\Factory;
@@ -27,6 +28,20 @@ class AssetController extends Controller
 
         return view('assets.index', [
             'assets' => $assets,
+        ]);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return Application|Factory|View
+     */
+    public function create()
+    {
+        $asset = Asset::make();
+
+        return view('assets.edit', [
+            'asset' => $asset,
         ]);
     }
 
@@ -66,6 +81,7 @@ class AssetController extends Controller
             'file_path' => 'string',
             'object' => 'string',
             'type' => 'string',
+            'visible' => 'boolean',
         ]);
 
         if ($validator->fails()) {

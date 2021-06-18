@@ -27,6 +27,7 @@ class AssetStore extends FormRequest
     {
         return [
             'name' => 'required|string',
+            'visible' => 'required|boolean',
             'file_path' => 'string',
             'object' => 'string',
             'type' => 'string',

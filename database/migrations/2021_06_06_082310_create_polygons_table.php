@@ -19,6 +19,7 @@ class CreatePolygonsTable extends Migration
             $table->string("name");
             $table->string("geojson");
             $table->string("state");
+            $table->boolean("visible");
             $table->string("description");
         });
     }

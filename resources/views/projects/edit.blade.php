@@ -45,7 +45,7 @@
                 </select>
             </div>
             <div>
-                <label for="visible">{{ __('Typ') }}</label>
+                <label for="is_event">{{ __('Typ') }}</label>
                 <select id="is_event" name="is_event" size="1" required>
                     @if (!old('is_event', $project->is_event))
                         <option value="" disabled selected>{{ __('Please select') }}</option>
@@ -65,13 +65,13 @@
                 </select>
             </div>
             <div>
-                <label for="visible">{{ __('Datum Beginn') }}</label>
+                <label for="start">{{ __('Datum Beginn') }}</label>
                 <input type="date" id="start" name="start_time"
                        value="<?php echo date('Y-m-d'); ?>"
                        value="<?php echo date('Y-m-d'); ?>" max="2022-12-31">
             </div>
             <div>
-                <label for="visible">{{ __('Datum Ende') }}</label>
+                <label for="end">{{ __('Datum Ende') }}</label>
                 <input type="date" id="end" name="end_time"
                        value="<?php echo date('Y-m-d'); ?>"
                        value="<?php echo date('Y-m-d'); ?>" max="2022-12-31">
