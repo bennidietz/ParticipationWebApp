@@ -15,11 +15,11 @@ class CreateAssetsTable extends Migration
     {
         Schema::create('assets', function (Blueprint $table) {
             $table->id();
-            $table->string("name");
-            $table->text("file_path")->nullable();
-            $table->text("object")->nullable();
-            $table->string("type")->nullable();
-            $table->boolean("visible");
+            $table->string('name');
+            $table->text('file_path')->nullable();
+            $table->text('object')->nullable();
+            $table->string('type')->nullable();
+            $table->boolean('visible');
             $table->timestamps();
         });
     }
