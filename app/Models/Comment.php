@@ -41,6 +41,11 @@ class Comment extends Model
         return $this->belongsTo(Suggestion::class);
     }
 
+    public function comment()
+    {
+        return $this->belongsTo(Comment::class);
+    }
+
     public function asset()
     {
         return $this->belongsTo(Asset::class);
