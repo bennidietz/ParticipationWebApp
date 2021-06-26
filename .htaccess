@@ -1,0 +1,6 @@
+# Redirect root directory to public (for server deployment)
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ /public/$1 [L=301]
