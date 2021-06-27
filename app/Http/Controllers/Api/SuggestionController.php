@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SuggestionStore;
 use App\Http\Resources\CommentCollection;
+use App\Http\Resources\SuggestionCollection;
 use App\Http\Resources\SuggestionResource;
 use App\Models\Suggestion;
 use Illuminate\Contracts\Foundation\Application;

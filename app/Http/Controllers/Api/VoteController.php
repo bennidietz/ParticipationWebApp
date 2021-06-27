@@ -32,7 +32,7 @@ class VoteController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function store(Vote $request)
+    public function store(VoteStore $request)
     {
         return Vote::create($request->all());
     }
