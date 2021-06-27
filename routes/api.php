@@ -1,12 +1,12 @@
 <?php
 
-use App\Http\Controllers\ApiController;
-use App\Http\Controllers\AssetController;
-use App\Http\Controllers\CommentController;
-use App\Http\Controllers\PolygonController;
-use App\Http\Controllers\ProjectController;
-use App\Http\Controllers\SuggestionController;
-use App\Http\Controllers\VoteController;
+use App\Http\Controllers\Api\AssetController;
+use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\CommentController;
+use App\Http\Controllers\Api\PolygonController;
+use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\SuggestionController;
+use App\Http\Controllers\Api\VoteController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,27 +21,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/login', [ApiController::class, 'login']);
-Route::post('/register', [ApiController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/register', [AuthController::class, 'register']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// Projects
 Route::resource('project', ProjectController::class);
-
-// Polygons
 Route::resource('polygon', PolygonController::class);
-
-// Assets
 Route::resource('asset', AssetController::class);
-
-// Suggestions
+Route::get('/suggestion/{id}/comment', [SuggestionController::class, 'getCommentsOfSuggestion']);
 Route::resource('suggestion', SuggestionController::class);
-
-// Comments
+Route::get('/comment/{id}/comment', [CommentController::class, 'getCommentsOfComment']);
 Route::resource('comment', CommentController::class);
-
-// Votes
 Route::resource('vote', VoteController::class);
