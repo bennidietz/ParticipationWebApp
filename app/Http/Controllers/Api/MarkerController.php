@@ -25,11 +25,7 @@ class MarkerController extends Controller
      */
     public function index()
     {
-        $markers = Marker::orderBy('name')->paginate(10);
-
-        return view('markers.index', [
-            'markers' => $markers,
-        ]);
+        return new MarkerCollection(Marker::all());
     }
 
     /**

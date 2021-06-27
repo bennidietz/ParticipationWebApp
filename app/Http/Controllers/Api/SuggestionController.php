@@ -24,11 +24,7 @@ class SuggestionController extends Controller
      */
     public function index()
     {
-        $suggestions = Suggestion::orderBy('title')->paginate(10);
-
-        return view('suggestions.index', [
-            'suggestions' => $suggestions,
-        ]);
+        return new SuggestionCollection(Suggestion::all());
     }
 
 

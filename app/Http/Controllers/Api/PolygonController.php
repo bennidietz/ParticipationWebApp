@@ -24,11 +24,7 @@ class PolygonController extends Controller
      */
     public function index()
     {
-        $polygons = Polygon::orderBy('name')->paginate(10);
-
-        return view('polygons.index', [
-            'polygons' => $polygons,
-        ]);
+        return new PolygonCollection(Polygon::all());
     }
 
     /**

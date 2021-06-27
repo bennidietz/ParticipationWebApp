@@ -25,11 +25,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $projects = Project::orderBy('start_time')->paginate(10);
-
-        return view('projects.index', [
-            'projects' => $projects,
-        ]);
+        return new ProjectCollection(Project::all());
     }
 
     /**

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\VoteStore;
-use App\Http\Resources\CommentCollection;
+use App\Http\Resources\VoteCollection;
 use App\Http\Resources\VoteResource;
 use App\Models\Comment;
 use App\Models\Vote;
@@ -19,11 +19,11 @@ class VoteController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return CommentCollection
+     * @return VoteCollection
      */
     public function index()
     {
-        return new CommentCollection(Comment::all());
+        return new VoteCollection(Vote::all());
     }
 
     /**
@@ -32,9 +32,9 @@ class VoteController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function store(VoteStore $request)
+    public function store(Vote $request)
     {
-        return Comment::create($request->all());
+        return Vote::create($request->all());
     }
 
     /**
