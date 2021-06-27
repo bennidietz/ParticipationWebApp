@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SuggestionStore;
+use App\Http\Resources\CommentCollection;
 use App\Http\Resources\SuggestionResource;
 use App\Models\Suggestion;
 use Illuminate\Contracts\Foundation\Application;
@@ -90,5 +91,10 @@ class SuggestionController extends Controller
     public function destroy(Suggestion $suggestion)
     {
         //
+    }
+
+    public function getCommentsOfSuggestion(Suggestion $suggestion)
+    {
+        return new CommentCollection($suggestion->comments);
     }
 }

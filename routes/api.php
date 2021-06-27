@@ -31,8 +31,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::resource('project', ProjectController::class);
 Route::resource('polygon', PolygonController::class);
 Route::resource('asset', AssetController::class);
-Route::get('/suggestion/{id}/comment', [SuggestionController::class, 'getCommentsOfSuggestion']);
+Route::get('/suggestion/{suggestion}/comment', [SuggestionController::class, 'getCommentsOfSuggestion']);
 Route::resource('suggestion', SuggestionController::class);
-Route::get('/comment/{id}/comment', [CommentController::class, 'getCommentsOfComment']);
+Route::get('/comment/{comment}/comment', [CommentController::class, 'getCommentsOfComment']);
 Route::resource('comment', CommentController::class);
 Route::resource('vote', VoteController::class);

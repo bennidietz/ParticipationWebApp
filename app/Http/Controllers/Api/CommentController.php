@@ -81,4 +81,9 @@ class CommentController extends Controller
     {
         //
     }
+
+    public function getCommentsOfComment(Comment $comment)
+    {
+        return new CommentCollection($comment->comments);
+    }
 }
