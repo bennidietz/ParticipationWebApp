@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\PolygonStore;
+use App\Http\Resources\PolygonCollection;
 use App\Http\Resources\PolygonResource;
 use App\Models\Polygon;
 use App\Models\Project;
