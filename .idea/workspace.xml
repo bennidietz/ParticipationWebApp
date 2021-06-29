@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/assets/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/polygons/edit.blade.php" afterDir="false" />
+    <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="Basic input form for polygon and asset and visible attribute">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AssetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AssetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PolygonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PolygonController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/AssetStore.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/AssetStore.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/PolygonStore.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/PolygonStore.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_06_082310_create_polygons_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_06_082310_create_polygons_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_11_000000_create_assets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_11_000000_create_assets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/assets/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assets/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/polygons/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/polygons/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/projects/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_11_100000_create_markers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_11_100000_create_markers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_11_143253_create_suggestions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_11_143253_create_suggestions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_11_143800_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_11_143800_create_comments_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,6 +211,7 @@
       <workItem from="1623420838473" duration="14831000" />
       <workItem from="1623770800815" duration="5368000" />
       <workItem from="1624041829099" duration="2856000" />
+      <workItem from="1624691117765" duration="4035000" />
     </task>
     <task id="LOCAL-00001" summary="Add migration for Votes, Suggestions, Assets and Comments">
       <created>1623424041893</created>

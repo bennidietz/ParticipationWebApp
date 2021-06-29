@@ -22,11 +22,11 @@ class ProjectController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return Application|Factory|View
+     * @return ProjectCollection
      */
     public function index()
     {
-        return new ProjectCollection(Project::all());
+        return new ProjectCollection(Project::where('visible', '=', '1')->get());
     }
 
     /**

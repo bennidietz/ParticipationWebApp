@@ -15,14 +15,15 @@ class CreateCommentsTable extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('suggestion_id')->constrained()->onDelete('cascade');
+            $table->foreignId('suggestion_id')->nullable()->constrained()->onDelete('cascade');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->text('message');
+            $table->boolean('visible')->default(1);
             $table->timestamps();
         });
 
         Schema::table('comments',function (Blueprint $table){
-            $table->foreignId('comment_id')->references('id')->on('comments')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('comment_id')->nullable()->references('id')->on('comments')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

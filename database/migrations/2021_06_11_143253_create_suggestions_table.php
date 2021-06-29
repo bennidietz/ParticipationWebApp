@@ -22,6 +22,7 @@ class CreateSuggestionsTable extends Migration
             $table->string('longitude')->nullable();
             $table->string('title')->nullable();
             $table->string('description')->nullable();
+            $table->boolean('visible')->default(1);
             $table->timestamps();
         });
     }
