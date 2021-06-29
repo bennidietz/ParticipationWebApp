@@ -99,6 +99,6 @@ class SuggestionController extends Controller
 
     public function getVotesOfSuggestion(Suggestion $suggestion)
     {
-        return new VoteCollection($suggestion->votes->where('visible', '=', '1'));
+        return new VoteCollection($suggestion->votes);
     }
 }

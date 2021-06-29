@@ -92,6 +92,6 @@ class CommentController extends Controller
 
     public function getVotesOfComment(Comment $comment)
     {
-        return new VoteCollection($comment->votes->where('visible', '=', '1'));
+        return new VoteCollection($comment->votes);
     }
 }

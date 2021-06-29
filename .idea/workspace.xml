@@ -4,27 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="Seeder adjustments and migration changes">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/MarkerStore.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/MarkerCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/MarkerFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/MarkerSeeder.php" afterDir="false" />
+    <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AssetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AssetController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/SuggestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/SuggestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Marker.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Marker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Polygon.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Polygon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/AssetFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AssetFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/CommentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CommentFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PolygonFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PolygonFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/VoteFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/VoteFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_11_100000_create_markers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_11_100000_create_markers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ProjectSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProjectSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/VoteSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/VoteSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +209,7 @@
       <workItem from="1623420838473" duration="14831000" />
       <workItem from="1623770800815" duration="5368000" />
       <workItem from="1624041829099" duration="2856000" />
-      <workItem from="1624691117765" duration="6564000" />
+      <workItem from="1624691117765" duration="7294000" />
     </task>
     <task id="LOCAL-00001" summary="Add migration for Votes, Suggestions, Assets and Comments">
       <created>1623424041893</created>
@@ -318,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624978786598</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Seeder and API adjustments">
+      <created>1624981421767</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1624981421767</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,6 +342,7 @@
     <MESSAGE value="Adjust login and register API requests" />
     <MESSAGE value="Basic input form for project" />
     <MESSAGE value="Seeder adjustments and migration changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seeder adjustments and migration changes" />
+    <MESSAGE value="Seeder and API adjustments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seeder and API adjustments" />
   </component>
 </project>
