@@ -12,7 +12,6 @@ use App\Models\Suggestion;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Contracts\View\Factory;
-use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 use Illuminate\Http\Response;
@@ -66,10 +65,11 @@ class SuggestionController extends Controller
             'user_id' => 'numeric',
             'asset_id' => 'numeric',
             'geojson' => 'string',
-            'latitude' => 'string',
-            'longitude' => 'string',
+            'latitude' => 'numeric',
+            'longitude' => 'numeric',
             'title' => 'string',
             'description' => 'string',
+            'visible' => 'boolean',
         ]);
 
         if ($validator->fails()) {

@@ -29,10 +29,11 @@ class SuggestionStore extends FormRequest
             'user_id' => 'required|numeric',
             'asset_id' => 'numeric',
             'geojson' => 'string',
-            'latitude' => 'string',
-            'longitude' => 'string',
+            'latitude' => 'numeric',
+            'longitude' => 'numeric',
             'title' => 'string',
             'description' => 'string',
+            'visible' => 'boolean',
         ];
     }
 

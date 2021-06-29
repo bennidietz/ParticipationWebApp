@@ -9,6 +9,12 @@ class Asset extends Model
 {
     use HasFactory;
 
+    const enum = [
+        'image',
+        'asset',
+        '3D_asset'
+    ];
+
     /**
      * The attributes that are mass assignable.
      *

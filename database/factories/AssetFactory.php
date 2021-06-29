@@ -28,14 +28,14 @@ class AssetFactory extends Factory
                 'name' => $this->faker->text,
                 'file_path' => $this->faker->filePath(),
                 'visible' => rand(0,1) == 1,
-                'type' => $this->faker->randomElement(['image','asset','3D_asset']),
+                'type' => $this->faker->randomElement(Asset::enum),
             ];
         } else {
             return [
                 'name' => $this->faker->text,
                 'object' => Str::random(150),
                 'visible' => rand(0,1) == 1,
-                'type' => $this->faker->randomElement(['image','asset','3D_asset']),
+                'type' => $this->faker->randomElement(Asset::enum),
             ];
         }
     }

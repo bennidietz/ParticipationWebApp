@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="">
+    <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="Marker fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/MarkerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/MarkerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/SuggestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/SuggestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SuggestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SuggestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/AssetStore.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/AssetStore.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CommentStore.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CommentStore.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/MarkerStore.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/MarkerStore.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/SuggestionStore.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/SuggestionStore.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Asset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Suggestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Suggestion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/AssetFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AssetFactory.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +217,7 @@
       <workItem from="1623420838473" duration="14831000" />
       <workItem from="1623770800815" duration="5368000" />
       <workItem from="1624041829099" duration="2856000" />
-      <workItem from="1624691117765" duration="7964000" />
+      <workItem from="1624691117765" duration="9477000" />
     </task>
     <task id="LOCAL-00001" summary="Add migration for Votes, Suggestions, Assets and Comments">
       <created>1623424041893</created>
@@ -315,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624996505258</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Marker fix">
+      <created>1624997174242</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1624997174242</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +366,7 @@
     <MESSAGE value="Seeder adjustments and migration changes" />
     <MESSAGE value="Seeder and API adjustments" />
     <MESSAGE value="Votes API and seeder fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Votes API and seeder fix" />
+    <MESSAGE value="Marker fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Marker fix" />
   </component>
 </project>

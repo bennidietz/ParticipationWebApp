@@ -2,9 +2,11 @@
 
 namespace App\Http\Requests;
 
+use App\Models\Asset;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
+use Illuminate\Validation\Rule;
 
 class AssetStore extends FormRequest
 {
@@ -28,9 +30,9 @@ class AssetStore extends FormRequest
         return [
             'name' => 'required|string',
             'visible' => 'required|boolean',
-            'file_path' => 'string',
-            'object' => 'string',
-            'type' => 'string',
+            'file_path' => 'required_without:object|string',
+            'object' => 'required_without:file_path|string',
+            'type' => Rule::in(Asset::enum)
         ];
     }
 

@@ -22,6 +22,7 @@ class Suggestion extends Model
         'longtiude',
         'title',
         'description',
+        'visible',
     ];
 
     /**

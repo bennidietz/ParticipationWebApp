@@ -28,7 +28,8 @@ class CommentStore extends FormRequest
         return [
             'suggestion_id' => 'required|numeric',
             'user_id' => 'required|numeric',
-            'message' => 'string',
+            'message' => 'required|string',
+            'visible' => 'boolean',
         ];
     }
 

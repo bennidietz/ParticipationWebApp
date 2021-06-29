@@ -28,8 +28,8 @@ class MarkerStore extends FormRequest
         return [
             'name' => 'string|required',
             'visible' => 'boolean',
-            'latitude' => 'required|string',
-            'longitude' => 'required|string',
+            'latitude' => 'required|numeric',
+            'longitude' => 'required|numeric',
         ];
     }
 
