@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Project;
+use App\Models\Marker;
 use Illuminate\Database\Seeder;
 
-class ProjectSeeder extends Seeder
+class MarkerSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,7 +14,7 @@ class ProjectSeeder extends Seeder
      */
     public function run()
     {
-        Project::factory()
+        Marker::factory()
             ->count(20)
             ->create();
     }

@@ -24,11 +24,18 @@ class VoteFactory extends Factory
      */
     public function definition()
     {
-        return [
-            'suggestion_id' => Suggestion::all()->random()->id,
-            'comment_id' => Comment::all()->random()->id,
-            'user_id' => User::all()->random()->id,
-            'is_positive' => rand(0,1) == 1,
-        ];
+        if (rand(0,1) == 1) {
+            return [
+                'comment_id' => Comment::all()->random()->id,
+                'user_id' => User::all()->random()->id,
+                'is_positive' => rand(0,1) == 1,
+            ];
+        } else {
+            return [
+                'suggestion_id' => Suggestion::all()->random()->id,
+                'user_id' => User::all()->random()->id,
+                'is_positive' => rand(0,1) == 1,
+            ];
+        }
     }
 }

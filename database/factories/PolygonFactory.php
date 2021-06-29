@@ -25,6 +25,7 @@ class PolygonFactory extends Factory
         return [
             'name' => $this->faker->text( 10),
             'geojson' => Str::random(50),
+            'visible' => rand(0,1) == 1,
             'state' => $this->faker->randomElement(['free','planned','unknown']),
             'description' => $this->faker->text(30),
         ];

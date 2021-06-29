@@ -17,6 +17,8 @@ class CreateMarkersTable extends Migration
             $table->id();
             $table->string('name');
             $table->boolean('visible')->default(1);
+            $table->float('latitude');
+            $table->float('longitude');
             $table->timestamps();
         });
     }

@@ -14,5 +14,6 @@ class Polygon extends Model
         'geojson',
         'state',
         'description',
+        'visible',
     ];
 }

@@ -7,12 +7,14 @@ use App\Http\Requests\SuggestionStore;
 use App\Http\Resources\CommentCollection;
 use App\Http\Resources\SuggestionCollection;
 use App\Http\Resources\SuggestionResource;
+use App\Http\Resources\VoteCollection;
 use App\Models\Suggestion;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\ResourceCollection;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Validator;
 
@@ -21,11 +23,11 @@ class SuggestionController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return Application|Factory|View
+     * @return SuggestionCollection
      */
     public function index()
     {
-        return new SuggestionCollection(Suggestion::all());
+        return new SuggestionCollection(Suggestion::where('visible', '=', '1')->get());
     }
 
 
@@ -92,6 +94,11 @@ class SuggestionController extends Controller
 
     public function getCommentsOfSuggestion(Suggestion $suggestion)
     {
-        return new CommentCollection($suggestion->comments);
+        return new CommentCollection($suggestion->comments->where('visible', '=', '1'));
+    }
+
+    public function getVotesOfSuggestion(Suggestion $suggestion)
+    {
+        return new VoteCollection($suggestion->votes->where('visible', '=', '1'));
     }
 }

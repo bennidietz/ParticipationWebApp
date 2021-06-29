@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AssetController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\CommentController;
+use App\Http\Controllers\Api\MarkerController;
 use App\Http\Controllers\Api\PolygonController;
 use App\Http\Controllers\Api\ProjectController;
 use App\Http\Controllers\Api\SuggestionController;
@@ -31,6 +32,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::resource('project', ProjectController::class);
 Route::resource('polygon', PolygonController::class);
 Route::resource('asset', AssetController::class);
+Route::resource('marker', MarkerController::class);
 
 Route::get('/suggestion/{suggestion}/comment', [SuggestionController::class, 'getCommentsOfSuggestion']);
 Route::resource('suggestion', SuggestionController::class);

@@ -85,7 +85,7 @@ class ProjectController extends Controller
      */
     public function update(Request $request, Project $project)
     {
-        $validator = Validator::make($request->all(), [
+        $validatedData = $request->validate([
             'name' => 'string|max:255',
             'description' => 'string',
             'content' => 'string',
@@ -95,11 +95,11 @@ class ProjectController extends Controller
             'end_time' => 'date',
         ]);
 
-        if ($validator->fails()) {
-            return response(['errors' => $validator->errors()], 422);
-        }
+//        if ($validatedData->fails()) {
+//            return response(['errors' => $validator->errors()], 422);
+//        }
 
-        $project->update($request->all());
+        $project->update($validatedData);
 
         return $project;
     }

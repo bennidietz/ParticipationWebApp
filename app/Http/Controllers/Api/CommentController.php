@@ -6,10 +6,13 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\CommentStore;
 use App\Http\Resources\CommentCollection;
 use App\Http\Resources\CommentResource;
+use App\Http\Resources\VoteCollection;
 use App\Models\Comment;
+use App\Models\Suggestion;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\ResourceCollection;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Validator;
 
@@ -85,5 +88,10 @@ class CommentController extends Controller
     public function getCommentsOfComment(Comment $comment)
     {
         return new CommentCollection($comment->comments);
+    }
+
+    public function getVotesOfComment(Comment $comment)
+    {
+        return new VoteCollection($comment->votes->where('visible', '=', '1'));
     }
 }

@@ -21,11 +21,11 @@ class AssetController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return Application|Factory|View
+     * @return AssetCollection
      */
     public function index()
     {
-        return new AssetCollection(Asset::all());
+        return new AssetCollection(Asset::where('visible', '=', '1')->get());
     }
 
     /**
