@@ -88,20 +88,20 @@ var json = {
             { value: 5, text: "Immer" }],
             rows: [{ value: "Straßenname", text: "Straßennamen" },
             { value: "Art der Straße ", text: "Art oder Begebenheit der Straße" },
-            { value: "Orientierungspunkte", text: "Orientierungspunkte wie z.B. hohen gebäuden, Kreuzungen...." },
+            { value: "Orientierungspunkte", text: "Orientierungspunkte (Gebäuden, Kreuzungen...)" },
             { value: "Gefühl", text: "Nach Gefühl" }, { value: "Lärm", text: "Nach zu erwartendem Verkehrslärm" }, { value: "Anzahl", text: "Nach Anzahl von Menschen" }]
           },
           {
-            type: "matrix", name: "Elemente", title: "Welche Elemente wünschen Sie sich auf der Corrensstraße?",
-            columns: [{ value: 1, text: "Stimme gar nicht zu" },
-            { value: 2, text: "Stimme eher nicht zu" },
+            type: "matrix", name: "Elemente", title: "Welche Elemente wünschen Sie sich auf der Corrensstraße? ",
+            columns: [{ value: 1, text: "gar nicht " },
+            { value: 2, text: " eher nicht" },
             { value: 3, text: "Egal" },
-            { value: 4, text: "Stimme eher zu" },
-            { value: 5, text: "Stimme voll zu" }],
+            { value: 4, text: " eher " },
+            { value: 5, text: " voll " }],
             rows: [{ value: "Verkehr", text: "Elemente zur Verkehrsberuhigung" },
             { value: "Rad ", text: "Breite Rad und Fußwege" },
             { value: "Raum", text: "Raum zur Begegnug" },
-            { value: "Fläche", text: "Fläche zur Entspannung" }, { value: "Sport", text: "Fläen um sport zu betreiben" }, { value: "Spielplätze", text: "Spielplätze" },]
+            { value: "Fläche", text: "Fläche zur Entspannung" }, { value: "Sport", text: "Flächen um Sport zu betreiben" }, { value: "Spielplätze", text: "Spielplätze" },]
           }
         ]
       },
@@ -110,11 +110,11 @@ var json = {
 
            {
             type: "matrix", name: "Gebiet", title: "In welche Richtung sollte sich das Gebiet entwickeln?",
-            columns: [{ value: 1, text: "Stimme gar nicht zu" },
-            { value: 2, text: "Stimme eher nicht zu" },
+            columns: [{ value: 1, text: "gar nicht" },
+            { value: 2, text: " eher nicht" },
             { value: 3, text: "Egal" },
-            { value: 4, text: "Stimme eher zu" },
-            { value: 5, text: "Stimme voll zu" }],
+            { value: 4, text: " eher " },
+            { value: 5, text: " voll " }],
             rows: [{ value: "Wohngebiet", text: "Wohngebiet" },
             { value: "Grünfläche ", text: "Grünfläche" },
             { value: "Bürofläche", text: "Büro oder Arbeitsviertel" },
