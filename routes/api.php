@@ -35,9 +35,11 @@ Route::resource('asset', AssetController::class);
 Route::resource('marker', MarkerController::class);
 
 Route::get('/suggestion/{suggestion}/comment', [SuggestionController::class, 'getCommentsOfSuggestion']);
+Route::get('/suggestion/{suggestion}/vote', [SuggestionController::class, 'getVotesOfSuggestion']);
 Route::resource('suggestion', SuggestionController::class);
 
 Route::get('/comment/{comment}/comment', [CommentController::class, 'getCommentsOfComment']);
+Route::get('/comment/{comment}/vote', [CommentController::class, 'getVotesOfComment']);
 Route::resource('comment', CommentController::class);
 
 Route::resource('vote', VoteController::class);
