@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class MarkerStore extends FormRequest
 {
@@ -24,7 +26,18 @@ class MarkerStore extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'string|required',
+            'visible' => 'boolean',
+            'latitude' => 'required|string',
+            'longitude' => 'required|string',
         ];
+    }
+
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException(
+            response()->json([
+                'errors' => $validator->errors()
+            ],422));
     }
 }

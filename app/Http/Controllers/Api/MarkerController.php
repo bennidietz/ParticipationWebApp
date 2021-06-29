@@ -21,11 +21,11 @@ class MarkerController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return Application|Factory|View
+     * @return MarkerCollection
      */
     public function index()
     {
-        return new MarkerCollection(Marker::all());
+        return new MarkerCollection(Marker::where('visible', '=', '1')->get());
     }
 
     /**
