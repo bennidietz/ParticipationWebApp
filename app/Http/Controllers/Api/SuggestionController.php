@@ -3,11 +3,13 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ReportStore;
 use App\Http\Requests\SuggestionStore;
 use App\Http\Resources\CommentCollection;
 use App\Http\Resources\SuggestionCollection;
 use App\Http\Resources\SuggestionResource;
 use App\Http\Resources\VoteCollection;
+use App\Models\Report;
 use App\Models\Suggestion;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
@@ -100,5 +102,12 @@ class SuggestionController extends Controller
     public function getVotesOfSuggestion(Suggestion $suggestion)
     {
         return new VoteCollection($suggestion->votes);
+    }
+
+    public function resportSuggestion(ReportStore $request, Suggestion $suggestion)
+    {
+        return Report::create(
+            array_merge($request->all(), ['suggestion_id' => $suggestion->id])
+        );
     }
 }

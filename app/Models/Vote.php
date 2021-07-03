@@ -16,6 +16,9 @@ class Vote extends Model
      */
     protected $fillable = [
         'is_positive',
+        'suggestion_id',
+        'comment_id',
+        'user_id',
     ];
 
     /**

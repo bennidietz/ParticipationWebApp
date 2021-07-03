@@ -36,6 +36,8 @@ Route::resource('marker', MarkerController::class);
 
 Route::get('/suggestion/{suggestion}/comment', [SuggestionController::class, 'getCommentsOfSuggestion']);
 Route::get('/suggestion/{suggestion}/vote', [SuggestionController::class, 'getVotesOfSuggestion']);
+Route::post('/suggestion/{suggestion}/report', [SuggestionController::class, 'resportSuggestion']);
+Route::post('/asset/{asset}/report', [AssetController::class, 'resportAsset']);
 Route::resource('suggestion', SuggestionController::class);
 
 Route::get('/comment/{comment}/comment', [CommentController::class, 'getCommentsOfComment']);

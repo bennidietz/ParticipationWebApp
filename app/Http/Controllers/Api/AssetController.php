@@ -4,10 +4,13 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\AssetStore;
+use App\Http\Requests\ReportStore;
 use App\Http\Resources\AssetCollection;
 use App\Http\Resources\AssetResource;
 use App\Models\Asset;
 use App\Models\Project;
+use App\Models\Report;
+use App\Models\Suggestion;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Contracts\View\Factory;
@@ -99,5 +102,12 @@ class AssetController extends Controller
     public function destroy(Asset $asset)
     {
         //
+    }
+
+    public function resportAsset(ReportStore $request, Asset $asset)
+    {
+        return Report::create(
+            array_merge($request->all(), ['asset_id' => $asset->id])
+        );
     }
 }
