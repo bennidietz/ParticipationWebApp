@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/UserGridView.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/laravel-views.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/laravel-views.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/tailwind.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/users.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +210,7 @@
       <workItem from="1624041829099" duration="2856000" />
       <workItem from="1624691117765" duration="12500000" />
       <workItem from="1625345956683" duration="61000" />
-      <workItem from="1625346050893" duration="7260000" />
+      <workItem from="1625346050893" duration="7498000" />
     </task>
     <task id="LOCAL-00001" summary="Add migration for Votes, Suggestions, Assets and Comments">
       <created>1623424041893</created>
@@ -363,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625349356319</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Design Dashboard view with cards">
+      <created>1625353455356</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1625353455356</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,6 +399,7 @@
     <MESSAGE value="Resport functionality for API" />
     <MESSAGE value="Test user" />
     <MESSAGE value="Show reports in Admin Panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Show reports in Admin Panel" />
+    <MESSAGE value="Design Dashboard view with cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="Design Dashboard view with cards" />
   </component>
 </project>
