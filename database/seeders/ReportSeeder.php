@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Vote;
+use App\Models\Report;
 use Illuminate\Database\Seeder;
 
 class ReportSeeder extends Seeder
@@ -14,7 +14,7 @@ class ReportSeeder extends Seeder
      */
     public function run()
     {
-        Vote::factory()
+        Report::factory()
             ->count(5)
             ->create();
     }

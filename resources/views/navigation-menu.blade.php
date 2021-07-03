@@ -27,6 +27,9 @@
                     <x-jet-nav-link href="{{ route('suggestions.index') }}" :active="request()->routeIs('suggestions.index')">
                         {{ __('Vorschläge') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('reports.index') }}" :active="request()->routeIs('reports.index')">
+                        {{ __('⚠️ Meldungen') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 

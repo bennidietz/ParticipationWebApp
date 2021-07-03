@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="Resport functionality for API">
+    <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Report.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/ReportResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/reports/dataset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/reports/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/reports/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/reports/no-dataset.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ReportSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ReportSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +177,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/polygons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -179,10 +188,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
       <recent name="$PROJECT_DIR$/resources/views/polygons" />
       <recent name="$PROJECT_DIR$/resources/views/assets" />
       <recent name="$PROJECT_DIR$/resources/views/projects" />
-      <recent name="$PROJECT_DIR$/resources/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/projects" />
@@ -210,7 +220,7 @@
       <workItem from="1624041829099" duration="2856000" />
       <workItem from="1624691117765" duration="12500000" />
       <workItem from="1625345956683" duration="61000" />
-      <workItem from="1625346050893" duration="1973000" />
+      <workItem from="1625346050893" duration="3137000" />
     </task>
     <task id="LOCAL-00001" summary="Add migration for Votes, Suggestions, Assets and Comments">
       <created>1623424041893</created>
@@ -338,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625347466752</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Test user">
+      <created>1625348055925</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1625348055925</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,6 +393,7 @@
     <MESSAGE value="Marker fix" />
     <MESSAGE value="API changes" />
     <MESSAGE value="Resport functionality for API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resport functionality for API" />
+    <MESSAGE value="Test user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test user" />
   </component>
 </project>
