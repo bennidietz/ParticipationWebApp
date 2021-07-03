@@ -44,4 +44,8 @@ Route::group(['prefix' => 'dashboard'], function() use ($router) {
     Route::resource('assets', AssetController::class);
     Route::resource('suggestions', SuggestionController::class);
     Route::resource('reports', ReportController::class);
+
+    Route::get('users', function () {
+        return view('users');
+    })->name('users');
 });
