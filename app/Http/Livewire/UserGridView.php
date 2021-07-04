@@ -24,8 +24,8 @@ class UserGridView extends GridView
     {
         return [
             'image' => $model->profile_photo_path,
-            'title' => $model->first_name,
-            'subtitle' => $model->last_name,
+            'title' => $model->fullName(),
+            //'subtitle' => $model->last_name,
             //'description' => ''
         ];
     }

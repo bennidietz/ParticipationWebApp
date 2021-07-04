@@ -34,7 +34,10 @@ class VoteController extends Controller
      */
     public function store(VoteStore $request)
     {
-        return Vote::create($request->all());
+        return Vote::updateOrCreate(
+            $request->only('suggestion_id', 'comment_id', 'user_id'),
+            ['is_positive' => (int) $request->is_positive]
+        );
     }
 
     /**

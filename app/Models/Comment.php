@@ -58,4 +58,12 @@ class Comment extends Model
     {
         return $this->hasMany(Vote::class);
     }
+
+    public function rating()
+    {
+        return [
+            'positive' => count($this->votes()->where('is_positive', '=', '1')->get()),
+            'negative' => count($this->votes()->where('is_positive', '=', '0')->get()),
+        ];
+    }
 }

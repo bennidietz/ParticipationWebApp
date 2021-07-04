@@ -62,4 +62,12 @@ class Suggestion extends Model
     {
         return $this->hasMany(Comment::class);
     }
+
+    public function rating()
+    {
+        return [
+            'positive' => count($this->votes()->where('is_positive', '=', '1')->get()),
+            'negative' => count($this->votes()->where('is_positive', '=', '0')->get()),
+        ];
+    }
 }
