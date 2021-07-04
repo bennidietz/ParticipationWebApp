@@ -20,6 +20,7 @@ class UserSeeder extends Seeder
             'last_name' => 'User',
             'email' => 'test@test.de',
             'password' => Hash::make('1234'),
+            'profile_photo_path' => 'https://www.processmaker.com/wp-content/uploads/2020/10/citizen-developer-768x512.jpg',
         ]);
         User::factory()
             ->count(50)
