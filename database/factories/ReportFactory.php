@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Asset;
 use App\Models\Comment;
 use App\Models\Report;
 use App\Models\Suggestion;
@@ -24,15 +25,22 @@ class ReportFactory extends Factory
      */
     public function definition()
     {
-        if (rand(0,1) == 1) {
+        $rand = rand(0,2);
+        if ($rand == 1) {
             return [
-                'asset_id' => Comment::all()->random()->id,
+                'asset_id' => Asset::all()->random()->id,
+                'user_id' => User::all()->random()->id,
+                'description' => $this->faker->text(40),
+            ];
+        } else if ($rand == 2) {
+            return [
+                'suggestion_id' => Suggestion::all()->random()->id,
                 'user_id' => User::all()->random()->id,
                 'description' => $this->faker->text(40),
             ];
         } else {
             return [
-                'suggestion_id' => Suggestion::all()->random()->id,
+                'comment_id' => Comment::all()->random()->id,
                 'user_id' => User::all()->random()->id,
                 'description' => $this->faker->text(40),
             ];

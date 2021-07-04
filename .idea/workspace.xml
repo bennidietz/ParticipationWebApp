@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Report.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Report.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_30_205705_create_reports_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_30_205705_create_reports_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reports/dataset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/dataset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reports/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ReportFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ReportFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ReportSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ReportSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +212,7 @@
       <workItem from="1624041829099" duration="2856000" />
       <workItem from="1624691117765" duration="12500000" />
       <workItem from="1625345956683" duration="61000" />
-      <workItem from="1625346050893" duration="11542000" />
+      <workItem from="1625346050893" duration="11807000" />
     </task>
     <task id="LOCAL-00001" summary="Add migration for Votes, Suggestions, Assets and Comments">
       <created>1623424041893</created>
@@ -379,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625389421426</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Report function for comment">
+      <created>1625401929920</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1625401929920</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,6 +425,7 @@
     <MESSAGE value="Design Dashboard view with cards" />
     <MESSAGE value="Update readme for server configuration" />
     <MESSAGE value="Enhance votes API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhance votes API" />
+    <MESSAGE value="Report function for comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Report function for comment" />
   </component>
 </project>
