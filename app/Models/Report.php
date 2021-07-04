@@ -13,6 +13,7 @@ class Report extends Model
         'user_id',
         'description',
         'suggestion_id',
+        'comment_id',
         'asset_id'
     ];
 

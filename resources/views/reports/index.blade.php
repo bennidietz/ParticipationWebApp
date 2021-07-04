@@ -13,6 +13,7 @@
             <th class="px-4 py-2 bg-gray-200">{{ __('Erstellt von') }}</th>
             <th class="px-4 py-2 bg-gray-200">{{ __('Bezogen auf Vorschlag') }}</th>
             <th class="px-4 py-2 bg-gray-200">{{ __('Bezogen auf Asset') }}</th>
+            <th class="px-4 py-2 bg-gray-200">{{ __('Bezogen auf Kommentar') }}</th>
             <th class="px-4 py-2 bg-gray-200"></th>
         </tr>
         </thead>

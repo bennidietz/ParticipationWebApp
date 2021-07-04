@@ -4,6 +4,7 @@
     <td class="px-4 py-4">{{ $report->user_id ?? "-"}}</td>
     <td class="px-4 py-4">{{ $report->suggestion_id ?? "-"}}</td>
     <td class="px-4 py-4">{{ $report->asset_id ?? "-"}}</td>
+    <td class="px-4 py-4">{{ $report->comment_id ?? "-"}}</td>
     <td class="px-4 py-4">
         <a href="{{ route('reports.show', $report) }}">
             <button>{{ __('View') }}</button>

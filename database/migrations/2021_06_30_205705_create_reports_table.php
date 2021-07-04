@@ -18,12 +18,13 @@ class CreateReportsTable extends Migration
             $table->foreignId('user_id')->nullable()->constrained();
             $table->foreignId('asset_id')->nullable()->constrained();
             $table->foreignId('suggestion_id')->nullable()->constrained();
+            $table->foreignId('comment_id')->nullable()->constrained();
             $table->string('description')->nullable();
             $table->timestamps();
         });
     }
 
-    /**
+    /**q p-'_   asd  bnzu
      * Reverse the migrations.
      *
      * @return void

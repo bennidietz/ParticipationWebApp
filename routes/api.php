@@ -42,6 +42,7 @@ Route::resource('suggestion', SuggestionController::class);
 
 Route::get('/comment/{comment}/comment', [CommentController::class, 'getCommentsOfComment']);
 Route::get('/comment/{comment}/vote', [CommentController::class, 'getVotesOfComment']);
+Route::post('/comment/{comment}/report', [CommentController::class, 'resportComment']);
 Route::resource('comment', CommentController::class);
 
 Route::resource('vote', VoteController::class);

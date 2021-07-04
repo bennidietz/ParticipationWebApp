@@ -4,10 +4,13 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CommentStore;
+use App\Http\Requests\ReportStore;
 use App\Http\Resources\CommentCollection;
 use App\Http\Resources\CommentResource;
 use App\Http\Resources\VoteCollection;
 use App\Models\Comment;
+use App\Models\Report;
+use App\Models\Suggestion;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Http\Request;
@@ -91,5 +94,12 @@ class CommentController extends Controller
     public function getVotesOfComment(Comment $comment)
     {
         return new VoteCollection($comment->votes);
+    }
+
+    public function resportComment(ReportStore $request, Comment $comment)
+    {
+        return Report::create(
+            array_merge($request->all(), ['comment_id' => $comment->id])
+        );
     }
 }

@@ -7,13 +7,11 @@
     <list default="true" id="d16dff10-be04-4730-b705-90b641455bd3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/VoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/VoteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/UserGridView.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/UserGridView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/CommentResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/CommentResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/SuggestionResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/SuggestionResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Suggestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Suggestion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Report.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_30_205705_create_reports_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_30_205705_create_reports_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reports/dataset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/dataset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reports/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +216,7 @@
       <workItem from="1624041829099" duration="2856000" />
       <workItem from="1624691117765" duration="12500000" />
       <workItem from="1625345956683" duration="61000" />
-      <workItem from="1625346050893" duration="10322000" />
+      <workItem from="1625346050893" duration="11542000" />
     </task>
     <task id="LOCAL-00001" summary="Add migration for Votes, Suggestions, Assets and Comments">
       <created>1623424041893</created>
@@ -374,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625353674055</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Enhance votes API">
+      <created>1625389421426</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1625389421426</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,6 +421,7 @@
     <MESSAGE value="Show reports in Admin Panel" />
     <MESSAGE value="Design Dashboard view with cards" />
     <MESSAGE value="Update readme for server configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update readme for server configuration" />
+    <MESSAGE value="Enhance votes API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhance votes API" />
   </component>
 </project>
