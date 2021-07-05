@@ -15,6 +15,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Validator;
 
 class ProjectController extends Controller
@@ -108,10 +109,11 @@ class ProjectController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Project $project
-     * @return Response
+     * @return Application|Redirector|RedirectResponse
      */
     public function destroy(Project $project)
     {
-        //
+        Project::destroy($project->id);
+        return redirect('/');
     }
 }

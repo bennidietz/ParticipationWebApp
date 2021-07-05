@@ -9,12 +9,15 @@ use App\Http\Resources\CommentCollection;
 use App\Http\Resources\CommentResource;
 use App\Http\Resources\VoteCollection;
 use App\Models\Comment;
+use App\Models\Marker;
 use App\Models\Report;
 use App\Models\Suggestion;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Validator;
 
 class CommentController extends Controller
@@ -79,11 +82,12 @@ class CommentController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Comment $comment
-     * @return Response
+     * @return Application|RedirectResponse|Redirector
      */
     public function destroy(Comment $comment)
     {
-        //
+        Comment::destroy($comment->id);
+        return redirect('/');
     }
 
     public function getCommentsOfComment(Comment $comment)

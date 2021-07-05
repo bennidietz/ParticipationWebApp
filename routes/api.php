@@ -29,6 +29,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('/asset/template', [AssetController::class, 'getTemplates']);
+
 Route::resource('project', ProjectController::class);
 Route::resource('polygon', PolygonController::class);
 Route::resource('asset', AssetController::class);
@@ -41,7 +43,6 @@ Route::get('/suggestion/{suggestion}/comment', [SuggestionController::class, 'ge
 Route::get('/suggestion/{suggestion}/vote', [SuggestionController::class, 'getVotesOfSuggestion']);
 Route::post('/suggestion/{suggestion}/report', [SuggestionController::class, 'resportSuggestion']);
 Route::post('/asset/{asset}/report', [AssetController::class, 'resportAsset']);
-Route::get('/template', [AssetController::class, 'getTemplates']);
 
 Route::get('/comment/{comment}/comment', [CommentController::class, 'getCommentsOfComment']);
 Route::get('/comment/{comment}/vote', [CommentController::class, 'getVotesOfComment']);

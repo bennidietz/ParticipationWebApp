@@ -6,12 +6,13 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\VoteStore;
 use App\Http\Resources\VoteCollection;
 use App\Http\Resources\VoteResource;
-use App\Models\Comment;
 use App\Models\Vote;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Validator;
 
 class VoteController extends Controller
@@ -80,10 +81,11 @@ class VoteController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Vote $vote
-     * @return Response
+     * @return Application|Redirector|RedirectResponse
      */
     public function destroy(Vote $vote)
     {
-        //
+        Vote::destroy($vote->id);
+        return redirect('/');
     }
 }

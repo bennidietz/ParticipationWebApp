@@ -16,9 +16,9 @@ class CreateReportsTable extends Migration
         Schema::create('reports', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->nullable()->constrained();
-            $table->foreignId('asset_id')->nullable()->constrained();
-            $table->foreignId('suggestion_id')->nullable()->constrained();
-            $table->foreignId('comment_id')->nullable()->constrained();
+            $table->foreignId('asset_id')->nullable()->onDelete('cascade');
+            $table->foreignId('suggestion_id')->nullable()->onDelete('cascade');
+            $table->foreignId('comment_id')->nullable()->onDelete('cascade');
             $table->string('description')->nullable();
             $table->timestamps();
         });

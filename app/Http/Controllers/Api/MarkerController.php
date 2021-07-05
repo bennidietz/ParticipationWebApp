@@ -6,14 +6,17 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\MarkerStore;
 use App\Http\Resources\MarkerCollection;
 use App\Http\Resources\MarkerResource;
+use App\Models\Asset;
 use App\Models\Marker;
 use App\Models\Project;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Validator;
 
 class MarkerController extends Controller
@@ -94,10 +97,11 @@ class MarkerController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Marker $marker
-     * @return Response
+     * @return Application|Redirector|RedirectResponse
      */
     public function destroy(Marker $marker)
     {
-        //
+        Marker::destroy($marker->id);
+        return redirect('/');
     }
 }

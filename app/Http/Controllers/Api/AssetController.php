@@ -15,9 +15,11 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Http\Response;
+use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Validator;
 
 class AssetController extends Controller
@@ -103,11 +105,12 @@ class AssetController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Asset $asset
-     * @return Response
+     * @return Application|Redirector|RedirectResponse
      */
     public function destroy(Asset $asset)
     {
-        //
+        Asset::destroy($asset->id);
+        return redirect('/');
     }
 
     public function resportAsset(ReportStore $request, Asset $asset)

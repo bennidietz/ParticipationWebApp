@@ -9,14 +9,17 @@ use App\Http\Resources\CommentCollection;
 use App\Http\Resources\SuggestionCollection;
 use App\Http\Resources\SuggestionResource;
 use App\Http\Resources\VoteCollection;
+use App\Models\Marker;
 use App\Models\Report;
 use App\Models\Suggestion;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Contracts\View\Factory;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 use Illuminate\Http\Response;
+use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Validator;
 
 class SuggestionController extends Controller
@@ -87,11 +90,12 @@ class SuggestionController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Suggestion $suggestion
-     * @return Response
+     * @return Application|Redirector|RedirectResponse
      */
     public function destroy(Suggestion $suggestion)
     {
-        //
+        Suggestion::destroy($suggestion->id);
+        return redirect('/');
     }
 
     public function getCommentsOfSuggestion(Suggestion $suggestion)
