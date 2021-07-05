@@ -16,6 +16,7 @@ use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Validator;
 
@@ -29,6 +30,11 @@ class AssetController extends Controller
     public function index()
     {
         return new AssetCollection(Asset::where('visible', '=', '1')->get());
+    }
+
+    public function getTemplates()
+    {
+        return new AssetCollection(Asset::where('visible', '=', '1')->where('is_template', '=', '1')->get());
     }
 
     /**

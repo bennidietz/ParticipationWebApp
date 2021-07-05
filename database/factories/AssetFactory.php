@@ -29,6 +29,7 @@ class AssetFactory extends Factory
                 'file_path' => $this->faker->filePath(),
                 'visible' => rand(0,1) == 1,
                 'type' => $this->faker->randomElement(Asset::enum),
+                'is_template' => rand(0,1) == 1,
             ];
         } else {
             return [
@@ -36,6 +37,7 @@ class AssetFactory extends Factory
                 'object' => Str::random(150),
                 'visible' => rand(0,1) == 1,
                 'type' => $this->faker->randomElement(Asset::enum),
+                'is_template' => rand(0,1) == 1,
             ];
         }
     }

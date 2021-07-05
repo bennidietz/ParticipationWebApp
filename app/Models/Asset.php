@@ -12,7 +12,8 @@ class Asset extends Model
     const enum = [
         'image',
         'asset',
-        '3D_asset'
+        '3D_asset',
+        'is_template',
     ];
 
     /**

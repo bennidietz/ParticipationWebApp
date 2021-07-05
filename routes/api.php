@@ -33,16 +33,16 @@ Route::resource('project', ProjectController::class);
 Route::resource('polygon', PolygonController::class);
 Route::resource('asset', AssetController::class);
 Route::resource('marker', MarkerController::class);
+Route::resource('comment', CommentController::class);
+Route::resource('vote', VoteController::class);
+Route::resource('suggestion', SuggestionController::class);
 
 Route::get('/suggestion/{suggestion}/comment', [SuggestionController::class, 'getCommentsOfSuggestion']);
 Route::get('/suggestion/{suggestion}/vote', [SuggestionController::class, 'getVotesOfSuggestion']);
 Route::post('/suggestion/{suggestion}/report', [SuggestionController::class, 'resportSuggestion']);
 Route::post('/asset/{asset}/report', [AssetController::class, 'resportAsset']);
-Route::resource('suggestion', SuggestionController::class);
+Route::get('/template', [AssetController::class, 'getTemplates']);
 
 Route::get('/comment/{comment}/comment', [CommentController::class, 'getCommentsOfComment']);
 Route::get('/comment/{comment}/vote', [CommentController::class, 'getVotesOfComment']);
 Route::post('/comment/{comment}/report', [CommentController::class, 'resportComment']);
-Route::resource('comment', CommentController::class);
-
-Route::resource('vote', VoteController::class);

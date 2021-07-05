@@ -20,6 +20,7 @@ class CreateAssetsTable extends Migration
             $table->text('object')->nullable();
             $table->string('type')->nullable();
             $table->boolean('visible')->default(1);
+            $table->boolean('is_template')->default(1);
             $table->timestamps();
         });
     }
