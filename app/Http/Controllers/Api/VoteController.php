@@ -81,11 +81,11 @@ class VoteController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Vote $vote
-     * @return Application|Redirector|RedirectResponse
+     * @return string[]
      */
     public function destroy(Vote $vote)
     {
         Vote::destroy($vote->id);
-        return redirect('/');
+        return ['status' => '200'];
     }
 }

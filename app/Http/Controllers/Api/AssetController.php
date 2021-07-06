@@ -105,12 +105,12 @@ class AssetController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Asset $asset
-     * @return Application|Redirector|RedirectResponse
+     * @return string[]
      */
     public function destroy(Asset $asset)
     {
         Asset::destroy($asset->id);
-        return redirect('/');
+        return ['status' => '200'];
     }
 
     public function resportAsset(ReportStore $request, Asset $asset)

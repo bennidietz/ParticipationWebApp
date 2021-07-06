@@ -90,12 +90,12 @@ class SuggestionController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Suggestion $suggestion
-     * @return Application|Redirector|RedirectResponse
+     * @return string[]
      */
     public function destroy(Suggestion $suggestion)
     {
         Suggestion::destroy($suggestion->id);
-        return redirect('/');
+        return ['status' => '200'];
     }
 
     public function getCommentsOfSuggestion(Suggestion $suggestion)

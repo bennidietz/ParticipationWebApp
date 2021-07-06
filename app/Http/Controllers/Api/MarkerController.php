@@ -97,11 +97,11 @@ class MarkerController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Marker $marker
-     * @return Application|Redirector|RedirectResponse
+     * @return string[]
      */
     public function destroy(Marker $marker)
     {
         Marker::destroy($marker->id);
-        return redirect('/');
+        return ['status' => '200'];
     }
 }

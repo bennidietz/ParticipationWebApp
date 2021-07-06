@@ -109,11 +109,11 @@ class ProjectController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Project $project
-     * @return Application|Redirector|RedirectResponse
+     * @return string[]
      */
     public function destroy(Project $project)
     {
         Project::destroy($project->id);
-        return redirect('/');
+        return ['status' => '200'];
     }
 }

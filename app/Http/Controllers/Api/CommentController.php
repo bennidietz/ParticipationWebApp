@@ -82,12 +82,12 @@ class CommentController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Comment $comment
-     * @return Application|RedirectResponse|Redirector
+     * @return string[]
      */
     public function destroy(Comment $comment)
     {
         Comment::destroy($comment->id);
-        return redirect('/');
+        return ['status' => '200'];
     }
 
     public function getCommentsOfComment(Comment $comment)
