@@ -106,16 +106,20 @@ class AssetController extends Controller
     public function update(Request $request, Asset $asset)
     {
         $validator = Validator::make($request->all(), [
-            'name' => 'string',
+            'name' => 'nullable|string',
             'file' => 'nullable|image|mimes:jpeg,jpg,png,gif|max:2048',
             'file_path' => 'nullable|string',
             'object' => 'nullable|string',
-            'type' => 'string',
-            'visible' => 'boolean',
+            'type' => 'nullable|string',
+            'visible' => 'nullable|boolean',
         ]);
 
         if ($validator->fails()) {
             return response(['errors' => $validator->errors()], 422);
+        }
+
+        if (isset($request->file_path) && strlen($request->file_path) > 0 && $asset->file_path && Storage::disk('local')->exists($asset->file_path)) {
+            Storage::delete($asset->file_path);
         }
 
         $asset->update($request->all());
