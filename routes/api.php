@@ -33,7 +33,10 @@ Route::get('/asset/template', [AssetController::class, 'getTemplates']);
 
 Route::resource('project', ProjectController::class);
 Route::resource('polygon', PolygonController::class);
+
+Route::post('/asset/{asset}', [AssetController::class, 'update'])
 Route::resource('asset', AssetController::class);
+
 Route::resource('marker', MarkerController::class);
 Route::resource('comment', CommentController::class);
 Route::resource('vote', VoteController::class);
