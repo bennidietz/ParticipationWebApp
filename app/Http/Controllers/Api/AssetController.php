@@ -20,6 +20,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
 class AssetController extends Controller
@@ -59,9 +60,29 @@ class AssetController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function store(AssetStore $request)
+    public function store(Request $request)
     {
-        return Asset::create($request->all());
+        $validator = Validator::make($request->all(), [
+            'name' => 'string',
+            'file' => 'nullable|image|mimes:jpeg,jpg,png,gif|max:2048',
+            'file_path' => 'nullable|string',
+            'object' => 'nullable|string',
+            'type' => 'string',
+            'visible' => 'boolean',
+        ]);
+
+        if ($validator->fails()) {
+            return response(['errors' => $validator->errors()], 422);
+        }
+
+        $asset = Asset::create($request->all());
+
+        if ($file = $request->file('file')) {
+            $filePath = Storage::putFile('public/assets', $file);
+            $asset->update(['file_path' => $filePath]);
+        }
+
+        return $asset;
     }
 
     /**
@@ -86,8 +107,9 @@ class AssetController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => 'string',
-            'file_path' => 'string',
-            'object' => 'string',
+            'file' => 'nullable|image|mimes:jpeg,jpg,png,gif|max:2048',
+            'file_path' => 'nullable|string',
+            'object' => 'nullable|string',
             'type' => 'string',
             'visible' => 'boolean',
         ]);
@@ -97,6 +119,15 @@ class AssetController extends Controller
         }
 
         $asset->update($request->all());
+
+        if ($file = $request->file('file')) {
+            if ($asset->file_path && Storage::disk('local')->exists($asset->file_path)) {
+                Storage::delete($asset->file_path);
+            }
+
+            $filePath = Storage::putFile('public/assets', $file);
+            $asset->update(['file_path' => $filePath]);
+        }
 
         return $asset;
     }
