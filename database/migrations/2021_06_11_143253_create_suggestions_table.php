@@ -20,6 +20,9 @@ class CreateSuggestionsTable extends Migration
             $table->text('geojson')->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
+            $table->string('altitude')->nullable();
+            $table->string('tilt')->nullable();
+            $table->string('rotation')->nullable();
             $table->string('title')->nullable();
             $table->string('description')->nullable();
             $table->boolean('visible')->default(1);

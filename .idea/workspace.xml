@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="">
+    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Delete routes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AssetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AssetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/MarkerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/MarkerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/SuggestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/SuggestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/VoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/VoteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_30_205705_create_reports_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_30_205705_create_reports_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Suggestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Suggestion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_11_143253_create_suggestions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_11_143253_create_suggestions_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +214,7 @@
       <workItem from="1624691117765" duration="12500000" />
       <workItem from="1625345956683" duration="61000" />
       <workItem from="1625346050893" duration="12036000" />
-      <workItem from="1625499654202" duration="3130000" />
+      <workItem from="1625499654202" duration="4440000" />
     </task>
     <task id="LOCAL-00001" summary="Add migration for Votes, Suggestions, Assets and Comments">
       <created>1623424041893</created>
@@ -403,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625501425785</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Delete routes">
+      <created>1625502953362</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1625502953362</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +425,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="API for assets" />
     <MESSAGE value="Create API for Votes, Suggestions and Comments" />
     <MESSAGE value="Readme instructions" />
     <MESSAGE value="User database seeder" />
@@ -448,6 +449,7 @@
     <MESSAGE value="Report function for comment" />
     <MESSAGE value="Adjust report seeder for db" />
     <MESSAGE value="Add Template API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Template API" />
+    <MESSAGE value="Delete routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete routes" />
   </component>
 </project>
