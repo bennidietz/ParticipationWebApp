@@ -103,7 +103,7 @@ class AssetController extends Controller
      * @param Asset $asset
      * @return Asset|Application|ResponseFactory|Response
      */
-    public function update(Request $request, Asset $asset)
+    public function updateAsset(Request $request, Asset $asset)
     {
         $validator = Validator::make($request->all(), [
             'name' => 'nullable|string',

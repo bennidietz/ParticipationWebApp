@@ -34,7 +34,7 @@ Route::get('/asset/template', [AssetController::class, 'getTemplates']);
 Route::resource('project', ProjectController::class);
 Route::resource('polygon', PolygonController::class);
 
-Route::post('/asset/{asset}', [AssetController::class, 'update']);
+Route::post('/asset/{asset}', [AssetController::class, 'updateAsset']);
 Route::resource('asset', AssetController::class);
 
 Route::resource('marker', MarkerController::class);
