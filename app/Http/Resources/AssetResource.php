@@ -14,6 +14,11 @@ class AssetResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        $baseData = parent::toArray($request);
+        $baseUrl = 'http://giv-project10.uni-muenster.de/';
+
+        return array_merge($baseData, [
+            'file' => substr_count($baseData['file_path'], 'public/assets/') > 0 ? $baseUrl . str_replace('public/', 'storage/', $baseData['file_path']) : $baseData['file_path']
+        ]);
     }
 }
