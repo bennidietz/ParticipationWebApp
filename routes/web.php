@@ -30,6 +30,10 @@ Route::get('/timeline', function() {
     return view('timeline');
 })->name('timeline');
 
+Route::get('/projects', function() {
+    return view('projects');
+})->name('projects');
+
 Route::get('/about', function() {
     return view('about');
 })->name('about');

@@ -24,7 +24,8 @@
                 <a href="{{ route('index') }}" class="text-sm text-gray-700 underline">{{ __('Start') }}</a>
                 <a href="{{ route('map') }}" class="ml-4 text-sm text-gray-700 underline">{{ __('Karte') }}</a>
                 <a href="{{ route('timeline') }}" class="ml-4 text-sm text-gray-700 underline">{{ __('Agenda') }}</a>
-                <a href="{{ route('about') }}" class="ml-4 text-sm text-gray-700 underline">{{ __('Über das Projekt') }}</a>
+                <a href="{{ route('projects') }}" class="ml-4 text-sm text-gray-700 underline">{{ __('Die Teilprojekte') }}</a>
+                <a href="{{ route('about') }}" class="ml-4 text-sm text-gray-700 underline">{{ __('Über das Gesamt-Projekt') }}</a>
                 @if (Route::has('login'))
                         @auth
                             <a href="{{ route('dashboard') }}" class="text-sm text-gray-700 underline">{{ __('Dashboard') }}</a>
@@ -39,7 +40,7 @@
             </div>
         </div>
 
-        <div class="min-h-screen pt-24 font-sans bg-gray-100 text-gray-900 antialiased">
+        <div class="min-h-screen pt-24 pb-8 font-sans bg-gray-100 text-gray-900 antialiased">
             {{ $slot }}
         </div>
     </body>
