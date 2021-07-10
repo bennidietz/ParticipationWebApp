@@ -16,24 +16,22 @@
         <script src="{{ asset('js/app.js') }}"></script>
     </head>
     <body>
-        <div class="w-full hidden fixed top-0 right-0 px-6 py-4 sm:flex z-50 align-center justify-between bg-green-500 shadow">
-            <div>
+        <div class="w-full hidden fixed top-0 right-0 px-6 sm:flex z-50 align-center justify-between bg-green-500 shadow">
+            <div class="py-4">
                 {{ __('Reallabor') }}: <strong>{{ __('Corrensstraße') }}</strong>
             </div>
-            <div>
-                <a href="{{ route('index') }}" class="text-sm text-gray-700 underline">{{ __('Start') }}</a>
-                <a href="{{ route('map') }}" class="ml-4 text-sm text-gray-700 underline">{{ __('Karte') }}</a>
-                <a href="{{ route('timeline') }}" class="ml-4 text-sm text-gray-700 underline">{{ __('Agenda') }}</a>
-                <a href="{{ route('projects') }}" class="ml-4 text-sm text-gray-700 underline">{{ __('Die Teilprojekte') }}</a>
-                <a href="{{ route('about') }}" class="ml-4 text-sm text-gray-700 underline">{{ __('Über das Gesamt-Projekt') }}</a>
+            <div class="flex justify-end items-center">
+                <x-nav-link route="index" :label="__('Home')" />
+                <x-nav-link route="map" :label="__('Karte')" />
+                <x-nav-link route="projects" :label="__('Projekte')" />
+                <x-nav-link route="about" :label="__('Über das Gesamtprojekt')" />
                 @if (Route::has('login'))
                         @auth
-                            <a href="{{ route('dashboard') }}" class="text-sm text-gray-700 underline">{{ __('Dashboard') }}</a>
+                            <x-nav-link route="dashboard" :label="__('Dashboard')" />
                         @else
-                            <a href="{{ route('login') }}" class="ml-4 text-sm text-gray-700 underline">{{ __('Anmelden') }}</a>
-
+                            <x-nav-link route="login" :label="__('Anmelden')" />
                             @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">{{ __('Konto erstellen') }}</a>
+                                <x-nav-link route="register" :label="__('Registrieren')" />
                             @endif
                         @endauth
                 @endif
