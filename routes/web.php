@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\AssetController;
+use App\Http\Controllers\PolygonController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ReportController;
+use App\Http\Controllers\SuggestionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,10 +30,26 @@ Route::get('/timeline', function() {
     return view('timeline');
 })->name('timeline');
 
+Route::get('/projects', function() {
+    return view('projects');
+})->name('projects');
+
 Route::get('/about', function() {
     return view('about');
 })->name('about');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::group(['prefix' => 'dashboard'], function() use ($router) {
+    Route::get('', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
+    Route::resource('projects', ProjectController::class);
+    Route::resource('polygons', PolygonController::class);
+    Route::resource('assets', AssetController::class);
+    Route::resource('suggestions', SuggestionController::class);
+    Route::resource('reports', ReportController::class);
+
+    Route::get('users', function () {
+        return view('users');
+    })->name('users');
+});
