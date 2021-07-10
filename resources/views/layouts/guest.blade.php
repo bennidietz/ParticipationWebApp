@@ -39,7 +39,6 @@
                 @endif
             </div>
         </div>
-
         <div class="min-h-screen pt-24 pb-8 font-sans bg-gray-100 text-gray-900 antialiased">
             {{ $slot }}
         </div>

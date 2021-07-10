@@ -1,5 +1,7 @@
 <x-guest-layout>
 
-    <div id="timesheet"></div>
+    <section class="pt-24">
+        <div id="timesheet"></div>
+    </section>
 
 </x-guest-layout>
