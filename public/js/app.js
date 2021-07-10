@@ -4056,11 +4056,6 @@ function initMap() {
       }
   }
 
-  function openPolygon(id) {
-      alert(1)
-      console.log(POLYGONS)
-  }
-
   function preview(string) {
     modal.style.display = "block";
     document.getElementById("paragraph").innerHTML = string;

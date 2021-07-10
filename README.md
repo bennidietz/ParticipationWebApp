@@ -13,5 +13,7 @@ In order to make the project run on your machine, some steps need to be taken:
 
 ## Update the server configuration
 ````cd /var/www/html````
+
 ````git pull````
-````php artisan migrate:fresh --seed````
+
+````php artisan migrate --seed````
