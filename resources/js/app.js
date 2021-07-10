@@ -202,7 +202,11 @@ class Polygon {
 }
 
 function initMap() {
-  var mymap = L.map('map').setView([51.967149, 7.596715], 17);
+  var mymap = L.map('map', {attributionControl: false}).setView([51.967149, 7.596715], 17);
+
+  // L.control.zoom({
+  //     position: 'botttomright'
+  // }).addTo(mymap);
 
   L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -300,32 +304,32 @@ function initMap() {
 
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
-    
+
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks the button, open the modal 
+
+    // When the user clicks the button, open the modal
     btn.onclick = function() {
-        modal.style.display = "block"; 
+        modal.style.display = "block";
     }
-    
+
     function preview(string) {
-        modal.style.display = "block"; 
+        modal.style.display = "block";
         document.getElementById("paragraph").innerHTML = string
     }
-    
+
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
       modal.style.display = "none";
     }
-    
+
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
       if (event.target == modal) {
         modal.style.display = "none";
       }
     }
-    
+
     var json = {
         title: "Product Feedback Survey Example", showProgressBar: "top", pages: [
           {
@@ -384,17 +388,17 @@ function initMap() {
           }
         ]
       };
-    
+
       Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
       Survey.defaultBootstrapCss.progressBar = "bar-green";
       Survey.Survey.cssType = "bootstrap";
-    
+
       var survey = new Survey.Model(json);
-    
+
       survey.onComplete.add(function (result) {
         document.querySelector('#result').innerHTML = "result: " + JSON.stringify(result.data);
       });
-    
+
       survey.render("surveyElement");
 }
 

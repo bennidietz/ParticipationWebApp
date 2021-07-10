@@ -1,4 +1,11 @@
 <x-guest-layout>
+<div id="sidebar">
+    @foreach (\App\Models\Polygon::all() as $polygon)
+    <div>
+        {{ $polygon->name }}
+    </div>
+    @endforeach
+</div>
 <div id="map"></div>
 <!-- Trigger/Open The Modal -->
 <button id="myBtn">Open Modal</button>
