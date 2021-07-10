@@ -16,7 +16,7 @@
         <script src="{{ asset('js/app.js') }}"></script>
     </head>
     <body>
-        <div class="w-full hidden fixed top-0 right-0 px-6 py-4 sm:flex z-50 align-center justify-between bg-green-500 bg-opacity-75 shadow">
+        <div class="w-full hidden fixed top-0 right-0 px-6 py-4 sm:flex z-50 align-center justify-between bg-green-500 shadow">
             <div>
                 {{ __('Reallabor') }}: <strong>{{ __('Corrensstraße') }}</strong>
             </div>
@@ -39,8 +39,11 @@
                 @endif
             </div>
         </div>
-        <div class="min-h-screen pt-24 pb-8 font-sans bg-gray-100 text-gray-900 antialiased">
+        <div class="min-h-screen font-sans bg-gray-100 text-gray-900 antialiased">
             {{ $slot }}
         </div>
+        <footer class="w-full p-6 bg-gray-600 text-white text-center text-xs text-gray-200">
+            <a href="{{ route('impressum') }}" class="hover:underline">Impressum</a> | <a href="{{ route('privacy') }}" class="hover:underline">Datenschutz</a>
+        </footer>
     </body>
 </html>

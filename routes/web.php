@@ -38,6 +38,14 @@ Route::get('/about', function() {
     return view('about');
 })->name('about');
 
+Route::get('/impressum', function() {
+    return view('impressum');
+})->name('impressum');
+
+Route::get('/privacy', function() {
+    return view('privacy');
+})->name('privacy');
+
 Route::group(['prefix' => 'dashboard'], function() use ($router) {
     Route::get('', function () {
         return view('dashboard');
