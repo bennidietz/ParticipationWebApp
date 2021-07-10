@@ -15,7 +15,7 @@ class PolygonSeeder extends Seeder
     public function run()
     {
         Polygon::factory()
-            ->count(4)
+            ->count(10)
             ->create();
     }
 }

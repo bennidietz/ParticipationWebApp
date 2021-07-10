@@ -1,10 +1,23 @@
 <x-guest-layout>
 <div id="sidebar">
     @foreach (\App\Models\Polygon::all() as $polygon)
-    <div>
-        {{ $polygon->name }}
-    </div>
+        <div id="card_polygon-{{ $polygon->id }}" class="flex items-center p-4 bg-blue-400 hover:bg-blue-600 rounded-lg shadow-xs m-2">
+            <div>
+                <p class="mb-2 text-sm font-medium text-white">
+                    {{ $polygon->name }}
+                </p>
+                <p class="text-lg font-semibold text-white">
+                    {{ $polygon->description }}
+                </p>
+            </div>
+{{--            <div class="p-3 text-blue-500 bg-blue-100 rounded-full">--}}
+{{--                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">--}}
+{{--                    <path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>--}}
+{{--                </svg>--}}
+{{--            </div>--}}
+        </div>
     @endforeach
+
 </div>
 <div id="map"></div>
 <!-- Trigger/Open The Modal -->
@@ -35,13 +48,13 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn.onclick = function() {
-    modal.style.display = "block"; 
+    modal.style.display = "block";
 }
 
 function preview(string) {
-    modal.style.display = "block"; 
+    modal.style.display = "block";
     document.getElementById("paragraph").innerHTML = string
 }
 
@@ -61,15 +74,15 @@ var json = {
     title: "Umfrage zur Gestaltung des Quartiers", showProgressBar: "top", pages: [
       {
         questions: [
- 
+
           {
             type: "comment", name: "suggestions", title: "Welche Elemente fallen Ihnen ein, wenn Sie an die Corrensstraße und ihre Umgebung denken?"
-           
+
           },
-          
+
           {
             type: "comment", name: "suggestions", title: "Was gefällt Ihnen an der Corrensstraße?",
-           
+
           },
           { type: "comment", name: "suggestions", title: "Wie oft im Monat halten Sie sich an der Corrensstraße auf?",}
         ]

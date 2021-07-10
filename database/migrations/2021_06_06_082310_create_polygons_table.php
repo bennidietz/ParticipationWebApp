@@ -16,7 +16,7 @@ class CreatePolygonsTable extends Migration
         Schema::create('polygons', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('geojson');
+            $table->longText('geojson');
             $table->string('state');
             $table->boolean('visible')->default(1);
             $table->string('description')->nullable();
