@@ -1,229 +1,29 @@
 <x-guest-layout>
 
-    <section class="pt-24"></section>
-    <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<style>
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-</style>
-</head>
-<body>
-
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="img/about/Corrensstrasse_2.png" style="width:100%">
-  <div class="text">Bild 1</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="img/about/Corrensstrasse_2.png" style="width:100%">
-  <div class="text">Bild 2</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="img/about/Corrensstrasse_2.png" style="width:100%">
-  <div class="text">Bild 3 </div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-
-
-
-</script>
-
-<div class="container">
-  <h2></h2>
-  <p></p>
-  <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/about/Corrensstrasse_2.png" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title">Projekt P</h4>
-      <p class="card-text">Beispieltext Projekt</p>
-      <a href="#" class="btn btn-primary">Zeig das Projekt</a>
+    <section class="min-h-screen w-full relative overflow-hidden shadow">
+        <div class="h-full w-full absolute top-0 left-0">
+            <video autoplay muted loop>
+                <source src="{{ asset('img/video.mp4') }}" type="video/mp4">
+            </video>
+        </div>
+        <div class="w-full h-full absolute top-0 left-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
+            <div class="w-full p-8 flex justify-center items-left text-white" data-aos="zoom-in">
+                <div class="w-full md:w-3/5 text-lg">
+                    <h1 class="mb-4 text-2xl">{{ __('Lebensraum Corrensstraße') }}</h1>
+                    <p class="mb-4">{{ __('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quod hic excepturi adipisci aut eveniet aperiam, perspiciatis id consequatur unde delectus? Nesciunt eligendi id necessitatibus, voluptates sit cumque, fuga labore quis, voluptas neque assumenda libero magnam. Assumenda similique quaerat modi officia tenetur delectus tempore vitae dignissimos cupiditate nulla molestiae, quasi sint dolor, optio voluptate architecto ducimus id. Architecto, quam corporis! Eaque, corrupti. Sapiente, ea tenetur suscipit. Officiis consequatur enim incidunt voluptas in, blanditiis quaerat sint ea? Laboriosam beatae, incidunt saepe voluptates, quod mollitia, odit id reprehenderit ipsam blanditiis cum corrupti atque aut veritatis. Rerum vero quae commodi minima aliquid magnam?') }}</p>
+                    <button class="py-3 px-2 text-sm uppercase border rounded transition hover:bg-white hover:text-black">{{ __('Lorem ipsum') }}</button>
+               </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <br>
-  
-  <p></p>
-  <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/about/Corrensstrasse_2.png" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title">Projekt P</h4>
-      <p class="card-text">Beispieltext Projekt</p>
-      <a href="#" class="btn btn-primary">Zeig das Projekt</a>
-    </div>
-  </div>
 
-    <p></p>
-    <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/about/Corrensstrasse_2.png" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title">Projekt P</h4>
-      <p class="card-text">Beispieltext Projekt</p>
-      <a href="#" class="btn btn-primary">Zeig das Projekt</a>
-    </div>
-  </div>
-  <br>
-  
-  <p></p>
-  <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/about/Corrensstrasse_2.png" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title">Projekt P</h4>
-      <p class="card-text">Beispieltext Projekt</p>
-      <a href="#" class="btn btn-primary">Zeig das Projekt</a>
-    </div>
-  </div>
-</div>
-
-</body>
-</html> 
-
+    <section class="py-24 max-w-7xl mx-auto">
+        <h2 class="mb-4 text-2xl font-bold uppercase tracking-wider text-green-600">{{ __('Roadmap') }}</h2>
+        <x-info-panel title="Some titile" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consectetur libero voluptatum quisquam nam totam, at nemo accusamus nobis accusantium similique incidunt quos deserunt maxime quod ex reiciendis aperiam autem suscipit minus, ratione! Quo, qui cum molestias amet fuga repellat quis, distinctio minus nesciunt, officia expedita. Nesciunt quibusdam eveniet placeat?" />
+        <x-info-panel title="Some titile" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consectetur libero voluptatum quisquam nam totam, at nemo accusamus nobis accusantium similique incidunt quos deserunt maxime quod ex reiciendis aperiam autem suscipit minus, ratione! Quo, qui cum molestias amet fuga repellat quis, distinctio minus nesciunt, officia expedita. Nesciunt quibusdam eveniet placeat?" />
+        <x-info-panel title="Some titile" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consectetur libero voluptatum quisquam nam totam, at nemo accusamus nobis accusantium similique incidunt quos deserunt maxime quod ex reiciendis aperiam autem suscipit minus, ratione! Quo, qui cum molestias amet fuga repellat quis, distinctio minus nesciunt, officia expedita. Nesciunt quibusdam eveniet placeat?" />
+        <x-info-panel title="Some titile" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consectetur libero voluptatum quisquam nam totam, at nemo accusamus nobis accusantium similique incidunt quos deserunt maxime quod ex reiciendis aperiam autem suscipit minus, ratione! Quo, qui cum molestias amet fuga repellat quis, distinctio minus nesciunt, officia expedita. Nesciunt quibusdam eveniet placeat?" />
+        <x-info-panel title="Some titile" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consectetur libero voluptatum quisquam nam totam, at nemo accusamus nobis accusantium similique incidunt quos deserunt maxime quod ex reiciendis aperiam autem suscipit minus, ratione! Quo, qui cum molestias amet fuga repellat quis, distinctio minus nesciunt, officia expedita. Nesciunt quibusdam eveniet placeat?" />
+    </section>
 
 </x-guest-layout>

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ __('Reallabor: Corrensstraße') }}</title>
+        <title>{{ __('Lebensraum: Corrensstraße') }}</title>
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -13,18 +13,18 @@
 
         <!-- Scripts -->
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body>
-        <div class="w-full hidden fixed top-0 right-0 px-6 sm:flex z-50 align-center justify-between bg-green-500 shadow">
+        <div class="w-full fixed top-0 right-0 px-6 flex z-50 align-center justify-between bg-green-500 shadow">
             <div class="py-4">
-                {{ __('Reallabor') }}: <strong>{{ __('Corrensstraße') }}</strong>
+                {{ __('Lebensraum') }}: <strong>{{ __('Corrensstraße') }}</strong>
             </div>
             <div class="flex justify-end items-center">
                 <x-nav-link route="index" :label="__('Home')" />
                 <x-nav-link route="map" :label="__('Karte')" />
-                <x-nav-link route="projects" :label="__('Projekte')" />
-                <x-nav-link route="about" :label="__('Über das Gesamtprojekt')" />
+                <x-nav-link route="corrensweek" :label="__('Correnswoche')" />
+                <x-nav-link route="about" :label="__('Mehr')" />
                 @if (Route::has('login'))
                         @auth
                             <x-nav-link route="dashboard" :label="__('Dashboard')" />

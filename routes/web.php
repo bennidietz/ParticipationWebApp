@@ -26,13 +26,9 @@ Route::get('/map', function() {
     return view('map');
 })->name('map');
 
-Route::get('/timeline', function() {
-    return view('timeline');
-})->name('timeline');
-
-Route::get('/projects', function() {
-    return view('projects');
-})->name('projects');
+Route::get('/corrensweek', function() {
+    return view('corrensweek');
+})->name('corrensweek');
 
 Route::get('/about', function() {
     return view('about');
