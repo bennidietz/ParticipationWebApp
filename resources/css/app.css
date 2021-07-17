@@ -20,7 +20,8 @@ body {
     left: 0;
 }
 
-.leaflet-control-container { position: absolute; right: 60px; top: 60px; }
+.leaflet-control-container { position: absolute; right: 60px; top: 60px;
+}
 
 #sidebar {
     height: 100%;
@@ -37,9 +38,12 @@ body {
     z-index: 40;
 }
 
-.leaflet-control-zoom {margin-top: 50px;}
+.leaflet-control-zoom {
+    margin-top: 50px;
+}
 
 /* The Modal (background) */
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -52,18 +56,19 @@ body {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+}
 
-  /* Modal Content */
-  .modal-content {
+/* Modal Content */
+
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 70%;
-      position: fixed;
-      right: 100px;
-  }
+    position: fixed;
+    right: 100px;
+}
 
   /* The Close Button */
   .close {
