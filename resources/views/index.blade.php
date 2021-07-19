@@ -1,11 +1,9 @@
 <x-guest-layout>
 
     <section class="min-h-screen w-full relative overflow-hidden shadow">
-        <div class="h-full w-full absolute top-0 left-0">
-            <video autoplay muted loop>
-                <source src="{{ asset('img/video.mp4') }}" type="video/mp4">
-            </video>
-        </div>
+        <video class="absolute" style="position: absolute; top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: 0; overflow: hidden; max-width: none;" autoplay muted loop>
+            <source src="{{ asset('img/video.mp4') }}" type="video/mp4">
+        </video>
         <div class="w-full h-full absolute top-0 left-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
             <div class="w-full p-8 flex justify-center items-left text-white" data-aos="zoom-in">
                 <div class="w-full md:w-3/5 text-lg">
@@ -18,7 +16,7 @@
                     <p class="mb-4">{{ __('Wie wollen Sie, dass die Corrensstraße in Zukunft aussieht?') }}</p>
                     <p class="mb-4">{{ __('Ihre Meinung zählt. Schauen Sie rein und gestalten Sie die Corrensstraße von Morgen!') }}</p>
                     <button class="py-3 px-2 text-sm uppercase border rounded transition hover:bg-white hover:text-black">{{ __('Los gehts!') }}</button>
-               </div>
+                </div>
             </div>
         </div>
     </div>
