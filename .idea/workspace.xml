@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Polygon changes">
+    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Enhance info panel for image">
+      <change afterPath="$PROJECT_DIR$/app/View/Components/InfoImagePanel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/info-image-panel.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/impressum.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/privacy.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/View/Components/InfoPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/InfoPanel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/info-panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/info-panel.blade.php" afterDir="false" />
@@ -160,12 +164,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/resources/views/components" />
+      <recent name="$PROJECT_DIR$/app/View/Components" />
+      <recent name="$PROJECT_DIR$/public/img/content" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -176,7 +188,7 @@
       <option name="presentableId" value="Default" />
       <updated>1626529671363</updated>
       <workItem from="1626529674476" duration="1643000" />
-      <workItem from="1626704364695" duration="996000" />
+      <workItem from="1626704364695" duration="2899000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon changes">
       <created>1626530090055</created>
@@ -192,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626531451247</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Enhance info panel for image">
+      <created>1626707366094</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626707366094</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +231,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Polygon changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Polygon changes" />
+    <MESSAGE value="Enhance info panel for image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhance info panel for image" />
   </component>
 </project>

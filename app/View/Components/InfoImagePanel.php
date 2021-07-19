@@ -4,20 +4,22 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class InfoPanel extends Component
+class InfoImagePanel extends Component
 {
     public $title;
     public $text;
+    public $image;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($title, $text)
+    public function __construct($title, $text, $image)
     {
         $this->title = $title;
         $this->text = $text;
+        $this->image = $image;
     }
 
     /**
@@ -27,6 +29,6 @@ class InfoPanel extends Component
      */
     public function render()
     {
-        return view('components.info-panel');
+        return view('components.info-image-panel');
     }
 }
