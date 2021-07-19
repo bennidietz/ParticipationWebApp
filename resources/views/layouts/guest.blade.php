@@ -18,7 +18,7 @@
     <body>
         <div class="w-full fixed top-0 right-0 px-6 flex z-50 align-center justify-between bg-green-500 shadow">
             <div class="py-4">
-                {{ __('Lebensraum') }}: <strong>{{ __('Corrensstraße') }}</strong>
+                Correns<strong>Lab</strong>
             </div>
             <div class="flex justify-end items-center">
                 <x-nav-link route="index" :label="__('Home')" />

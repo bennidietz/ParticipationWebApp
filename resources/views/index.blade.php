@@ -7,7 +7,7 @@
         <div class="w-full h-full absolute top-0 left-0 bg-gray-800 bg-opacity-60 flex justify-center items-center">
             <div class="w-full p-8 flex justify-center items-left text-white" data-aos="zoom-in">
                 <div class="w-full md:w-3/5 text-lg">
-                    <h1 class="mb-4 text-2xl">{{ __('Lebensraum Corrensstraße') }}</h1>
+                    <h1 class="mb-4 text-2xl">Correns<strong>Lab</strong></h1>
                     <p class="mb-2 text-sm">{{ __('Die Corrensstraße führt von der Von-Esmach-Straße zum Horstmarer Landweg. Sie ist ein Verbindungsglied der Urbanen Wissenschaftsstadt. Die Zukunft Münsters ist eng verknüpft mit der Entwicklung der Wissenschaft in der Stadt. Gleichzeitig sind die urbanen Qualitäten Münsters ein wesentlicher Standortfaktor für die Entwicklung der Wissenschafts- und Forschungsinstitutionen. Wie kann es gelingen ein Quartier zu entwickeln in dem Arbeiten, Forschen, Freizeit und Wohnen Hand in Hand gehen?') }}</p>
                     <p class="mb-2 text-sm">{{ __('Um diese Fragen zu klären wurde in Zusammenarbeit zwischen der Stadt Münster, Fachhochschule Münster und Uni Münster das Projekt CorrensLab ins Leben gerufen. Verschiedenste Akteur*innen machen sich bei diesem Projekt Gedanken, wie sich die Corrensstraße verändern könnte. In welche Richtung ist offen. ') }}</p>
                     <p class="mb-2 text-sm">{{ __('Diese Webseite wurde konzipiert um auch Sie nach Ihrer Meinung zu fragen und Ideen der Einzelnen Teilnehmenden zu visualisieren. ') }}</p>
