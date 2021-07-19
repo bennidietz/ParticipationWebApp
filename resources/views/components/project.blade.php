@@ -1,4 +1,4 @@
-<div class="w-full sm:rounded sm:overflow-hidden shadow">
+<div class="w-full sm:rounded sm:overflow-hidden shadow" data-aos="zoom-in">
     <div class="h-40 w-full bg-center" style="background: url('{{ $image }}'); background-size: cover;"></div>
     <div class="w-full p-6 bg-white">
         <h3 class="w-full uppercase tracking-wider font-bold text-green-800 mb-2">{{ $title }}</h3>

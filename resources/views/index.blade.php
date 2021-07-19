@@ -1,229 +1,36 @@
 <x-guest-layout>
 
-    <section class="pt-24"></section>
-    <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<style>
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-</style>
-</head>
-<body>
-
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="img/about/Corrensstrasse_2.png" style="width:100%">
-  <div class="text">Bild 1</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="img/about/Corrensstrasse_2.png" style="width:100%">
-  <div class="text">Bild 2</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="img/about/Corrensstrasse_2.png" style="width:100%">
-  <div class="text">Bild 3 </div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-
-
-
-</script>
-
-<div class="container">
-  <h2></h2>
-  <p></p>
-  <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/about/Corrensstrasse_2.png" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title">Projekt P</h4>
-      <p class="card-text">Beispieltext Projekt</p>
-      <a href="#" class="btn btn-primary">Zeig das Projekt</a>
+    <section class="min-h-screen w-full relative overflow-hidden shadow">
+        <div class="h-full w-full absolute top-0 left-0">
+            <video autoplay muted loop>
+                <source src="{{ asset('img/video.mp4') }}" type="video/mp4">
+            </video>
+        </div>
+        <div class="w-full h-full absolute top-0 left-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
+            <div class="w-full p-8 flex justify-center items-left text-white" data-aos="zoom-in">
+                <div class="w-full md:w-3/5 text-lg">
+                    <h1 class="mb-4 text-2xl">{{ __('Lebensraum Corrensstraße') }}</h1>
+                    <p class="mb-4">{{ __('Die Corrensstraße führt von der Von-Esmach-Straße zum Horstmarer Landweg. Sie ist ein Verbindungsglied der Urbanen Wissenschaftsstadt. Die Zukunft Münsters ist eng verknüpft mit der Entwicklung der Wissenschaft in der Stadt. Gleichzeitig sind die urbanen Qualitäten Münsters ein wesentlicher Standortfaktor für die Entwicklung der Wissenschafts- und Forschungsinstitutionen. Wie kann es gelingen ein Quartier zu entwickeln in dem Arbeiten, Forschen, Freizeit und Wohnen Hand in Hand gehen?') }}</p>
+                    <p class="mb-4">{{ __('Um diese Fragen zu klären wurde in Zusammenarbeit zwischen der Stadt Münster, Fachhochschule Münster und Uni Münster das Projekt CorrensLab ins Leben gerufen. Verschiedenste Akteur*innen machen sich bei diesem Projekt Gedanken, wie sich die Corrensstraße verändern könnte. In welche Richtung ist offen. ') }}</p>
+                    <p class="mb-4">{{ __('Diese Webseite wurde konzipiert um auch Sie nach Ihrer Meinung zu fragen und Ideen der Einzelnen Teilnehmenden zu visualisieren. ') }}</p>
+                    <p class="mb-4">{{ __('Was sind Ihre Anforderungen an ein Quartier von morgen? ') }}</p>
+                    <p class="mb-4">{{ __('Wie schaffen wir Aufenthaltsqualität an und auf der Corrensstraße? ') }}</p>
+                    <p class="mb-4">{{ __('Wie wollen Sie, dass die Corrensstraße in Zukunft aussieht?') }}</p>
+                    <p class="mb-4">{{ __('Ihre Meinung zählt. Schauen Sie rein und gestalten Sie die Corrensstraße von Morgen!') }}</p>
+                    <button class="py-3 px-2 text-sm uppercase border rounded transition hover:bg-white hover:text-black">{{ __('Los gehts!') }}</button>
+               </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <br>
-  
-  <p></p>
-  <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/about/Corrensstrasse_2.png" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title">Projekt P</h4>
-      <p class="card-text">Beispieltext Projekt</p>
-      <a href="#" class="btn btn-primary">Zeig das Projekt</a>
-    </div>
-  </div>
 
-    <p></p>
-    <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/about/Corrensstrasse_2.png" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title">Projekt P</h4>
-      <p class="card-text">Beispieltext Projekt</p>
-      <a href="#" class="btn btn-primary">Zeig das Projekt</a>
-    </div>
-  </div>
-  <br>
-  
-  <p></p>
-  <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/about/Corrensstrasse_2.png" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title">Projekt P</h4>
-      <p class="card-text">Beispieltext Projekt</p>
-      <a href="#" class="btn btn-primary">Zeig das Projekt</a>
-    </div>
-  </div>
-</div>
-
-</body>
-</html> 
-
+    <section class="py-24 max-w-7xl mx-auto">
+        <h2 class="mb-4 text-2xl font-bold uppercase tracking-wider text-green-600">{{ __('Rund um die Corrensstraße') }}</h2>
+        <x-info-panel title="Wem gehört Was?" text="Wem gehört eigentlich Was? Eine Frage, die bei der Stadtplanung nicht unwichtig ist. Denn wenn Veränderungen angestoßen werden muss sich mit dem*der Eigentümer*in abgesprochen und verhandelt werden. Genaure Angaben über die Besitzverhältnisse im Quartier finden Sie im Abschlussbericht 'Zukunft der Wissenschaftsstadt' auf der Seite 9" />
+        <x-info-panel title="Die Corrensstraße als teil des Science Boulevards"  text="Münsters Westen soll neu vernetzt werden. Das bedeutet, Zusammen­hänge aufzu­zeigen, wo sie bisher nicht sichtbar sind, und für den Alltag neue Orte und Wege zu schaffen, die zum Austausch einladen und eine entspannte, nachhaltige Mobili­tät ermög­lichen.Die Wissen­schafts­stadt Münster will also einen Bogen schlagen von Kunst und Kreativität zu High Tech und Natur­wissen­schaften zu Medizin und Gesundheit. Das projekt wird bereits verfolgt -für die nächsten 10 Jahre sind bereits bau­liche Investitions­absichten von wissens­chaftlichen Einrich­tungen in Höhe von rund 1,6 Mrd EUR in diesem Bereich bekannt – es werden perspek­tivisch eher mehr." />
+        <x-info-panel title="Verknüpfung der Corrensstraße mit: Altstadt – Schlossareal – Naturwissenschaftliche Institute / FH-Zentrum/Universitätsklinikum/Wissenschafts- und Technologiepark"  text="Die räumliche und funktionale Aufwertung der Verbindungen zwischen der Altstadt, dem Schlossareal und darüber hinaus in den Nordwesten der inneren Stadt ist eines der zentralen Maßnahmenpakete für eine verbesserte Einbindung der urbanen Wissensquartiere in den Stadtraum. Ein Beispiel, wie diese verknüpfung aussehen könnte finden Sie hier: Link " />
+        <x-info-panel title="Wie sollen die Quartiere der Zukunft aussehen?" text="Jeder Ort hat unterschiedliche Schwerpunkte in seiner Funktion und Ausgestaltung: Ein ausgewogener Mix von Forschung & Produktion, vielfältigem Wohnen, Gastronomie & Handel, gemeinschaftlichen Räumen und öffentlichen Freiflächen wird auf die jeweiligen Rahmenbedingungen und Bedürfnisse vor Ort abgestimmt. Dennoch gibt es Qualitäten, die jedes Quartier der Zukunft auszeichnen sollen. Welche das sind finden Sie hier: Link" />
+        <x-info-panel title="Wie passt das Projekt in die Planung von Münsters Zukünfte 20 | 30 | 50?" text="Wo steht Münster 2020, 2030 oder 2050? war die Ausgangsfrage. Bürgerinnen und Bürger, Wissenschaftlerinnen und Wissenschaftler, Wirtschaft, Verwaltung und Politik waren und sind weiter aufgerufen, gemeinsam Antworten auf wichtige Zukunftsfragen zu finden. Eine Übersicht über vorläufige Ergebnisse finden Sie hier: Link  auf der Seite 17." />
+        <x-info-panel title="Nach wem ist die Straße eigentlich benannt?" text="Die Straße wurde nach Carl Erich Correns, (1864-1933), einem bedeutenden Botaniker, benannt. Mehr zu seiner Person finden Sie hier: Link :" />
+    </section>
 
 </x-guest-layout>

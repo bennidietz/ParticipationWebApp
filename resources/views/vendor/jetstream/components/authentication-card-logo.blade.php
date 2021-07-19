@@ -1,1 +1,1 @@
-Reallabor: <strong>Corrensstraße</strong>
+Lebensraum: <strong>Corrensstraße</strong>
