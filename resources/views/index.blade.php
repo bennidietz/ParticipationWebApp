@@ -15,7 +15,9 @@
                     <p class="mb-2 text-sm">{{ __('Wie schaffen wir Aufenthaltsqualität an und auf der Corrensstraße? ') }}</p>
                     <p class="mb-2 text-sm">{{ __('Wie wollen Sie, dass die Corrensstraße in Zukunft aussieht?') }}</p>
                     <p class="mb-4 text-sm">{{ __('Ihre Meinung zählt. Schauen Sie rein und gestalten Sie die Corrensstraße von Morgen!') }}</p>
-                    <button class="py-2 px-3 text-sm uppercase border rounded transition hover:bg-white hover:text-black">{{ __('Los gehts!') }}</button>
+                    <a href="{{ route('map') }}"
+                        <button class="py-2 px-3 text-sm uppercase border rounded transition hover:bg-white hover:text-black">{{ __('Los gehts!') }}</button>
+                    </a>
                 </div>
             </div>
         </div>

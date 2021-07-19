@@ -17,9 +17,11 @@
     </head>
     <body>
         <div class="w-full fixed top-0 right-0 px-6 flex z-50 align-center justify-between bg-green-500 shadow">
-            <div class="py-4">
-                Correns<strong>Lab</strong>
-            </div>
+            <a href="{{ route('index') }}">
+                <div class="py-4">
+                    Correns<strong>Lab</strong>
+                </div>
+            </a>
             <div class="flex justify-end items-center">
                 <x-nav-link route="index" :label="__('Home')" />
                 <x-nav-link route="corrensweek" :label="__('Correnswoche')" />
