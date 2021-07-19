@@ -1,24 +1,22 @@
 <x-guest-layout>
 
     <section class="min-h-screen w-full relative overflow-hidden shadow">
-        <div class="h-full w-full absolute top-0 left-0">
-            <video autoplay muted loop>
-                <source src="{{ asset('img/video.mp4') }}" type="video/mp4">
-            </video>
-        </div>
-        <div class="w-full h-full absolute top-0 left-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
+        <video class="absolute" style="position: absolute; top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: 0; overflow: hidden; max-width: none;" autoplay muted loop>
+            <source src="{{ asset('img/video.mp4') }}" type="video/mp4">
+        </video>
+        <div class="w-full h-full absolute top-0 left-0 bg-gray-800 bg-opacity-60 flex justify-center items-center">
             <div class="w-full p-8 flex justify-center items-left text-white" data-aos="zoom-in">
                 <div class="w-full md:w-3/5 text-lg">
                     <h1 class="mb-4 text-2xl">{{ __('Lebensraum Corrensstraße') }}</h1>
-                    <p class="mb-4">{{ __('Die Corrensstraße führt von der Von-Esmach-Straße zum Horstmarer Landweg. Sie ist ein Verbindungsglied der Urbanen Wissenschaftsstadt. Die Zukunft Münsters ist eng verknüpft mit der Entwicklung der Wissenschaft in der Stadt. Gleichzeitig sind die urbanen Qualitäten Münsters ein wesentlicher Standortfaktor für die Entwicklung der Wissenschafts- und Forschungsinstitutionen. Wie kann es gelingen ein Quartier zu entwickeln in dem Arbeiten, Forschen, Freizeit und Wohnen Hand in Hand gehen?') }}</p>
-                    <p class="mb-4">{{ __('Um diese Fragen zu klären wurde in Zusammenarbeit zwischen der Stadt Münster, Fachhochschule Münster und Uni Münster das Projekt CorrensLab ins Leben gerufen. Verschiedenste Akteur*innen machen sich bei diesem Projekt Gedanken, wie sich die Corrensstraße verändern könnte. In welche Richtung ist offen. ') }}</p>
-                    <p class="mb-4">{{ __('Diese Webseite wurde konzipiert um auch Sie nach Ihrer Meinung zu fragen und Ideen der Einzelnen Teilnehmenden zu visualisieren. ') }}</p>
-                    <p class="mb-4">{{ __('Was sind Ihre Anforderungen an ein Quartier von morgen? ') }}</p>
-                    <p class="mb-4">{{ __('Wie schaffen wir Aufenthaltsqualität an und auf der Corrensstraße? ') }}</p>
-                    <p class="mb-4">{{ __('Wie wollen Sie, dass die Corrensstraße in Zukunft aussieht?') }}</p>
-                    <p class="mb-4">{{ __('Ihre Meinung zählt. Schauen Sie rein und gestalten Sie die Corrensstraße von Morgen!') }}</p>
-                    <button class="py-3 px-2 text-sm uppercase border rounded transition hover:bg-white hover:text-black">{{ __('Los gehts!') }}</button>
-               </div>
+                    <p class="mb-2 text-sm">{{ __('Die Corrensstraße führt von der Von-Esmach-Straße zum Horstmarer Landweg. Sie ist ein Verbindungsglied der Urbanen Wissenschaftsstadt. Die Zukunft Münsters ist eng verknüpft mit der Entwicklung der Wissenschaft in der Stadt. Gleichzeitig sind die urbanen Qualitäten Münsters ein wesentlicher Standortfaktor für die Entwicklung der Wissenschafts- und Forschungsinstitutionen. Wie kann es gelingen ein Quartier zu entwickeln in dem Arbeiten, Forschen, Freizeit und Wohnen Hand in Hand gehen?') }}</p>
+                    <p class="mb-2 text-sm">{{ __('Um diese Fragen zu klären wurde in Zusammenarbeit zwischen der Stadt Münster, Fachhochschule Münster und Uni Münster das Projekt CorrensLab ins Leben gerufen. Verschiedenste Akteur*innen machen sich bei diesem Projekt Gedanken, wie sich die Corrensstraße verändern könnte. In welche Richtung ist offen. ') }}</p>
+                    <p class="mb-2 text-sm">{{ __('Diese Webseite wurde konzipiert um auch Sie nach Ihrer Meinung zu fragen und Ideen der Einzelnen Teilnehmenden zu visualisieren. ') }}</p>
+                    <p class="mb-2 text-sm">{{ __('Was sind Ihre Anforderungen an ein Quartier von morgen? ') }}</p>
+                    <p class="mb-2 text-sm">{{ __('Wie schaffen wir Aufenthaltsqualität an und auf der Corrensstraße? ') }}</p>
+                    <p class="mb-2 text-sm">{{ __('Wie wollen Sie, dass die Corrensstraße in Zukunft aussieht?') }}</p>
+                    <p class="mb-4 text-sm">{{ __('Ihre Meinung zählt. Schauen Sie rein und gestalten Sie die Corrensstraße von Morgen!') }}</p>
+                    <button class="py-2 px-3 text-sm uppercase border rounded transition hover:bg-white hover:text-black">{{ __('Los gehts!') }}</button>
+                </div>
             </div>
         </div>
     </div>
