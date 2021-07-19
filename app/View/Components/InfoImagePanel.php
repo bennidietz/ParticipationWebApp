@@ -9,17 +9,21 @@ class InfoImagePanel extends Component
     public $title;
     public $text;
     public $image;
+    public $url;
+    public $btntext;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($title, $text, $image)
+    public function __construct($title, $text, ?string $btntext = null, $image, ?string $url = null)
     {
         $this->title = $title;
         $this->text = $text;
         $this->image = $image;
+        $this->url = $url;
+        $this->btntext = $btntext;
     }
 
     /**

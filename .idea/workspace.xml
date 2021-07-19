@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Enhance info panel for image">
-      <change afterPath="$PROJECT_DIR$/app/View/Components/InfoImagePanel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/info-image-panel.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/impressum.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/privacy.blade.php" afterDir="false" />
+    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Implement Impressum of website">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/View/Components/InfoPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/InfoPanel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/info-panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/info-panel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/View/Components/InfoImagePanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/InfoImagePanel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/info-image-panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/info-image-panel.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/privacy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/privacy.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +185,7 @@
       <option name="presentableId" value="Default" />
       <updated>1626529671363</updated>
       <workItem from="1626529674476" duration="1643000" />
-      <workItem from="1626704364695" duration="2899000" />
+      <workItem from="1626704364695" duration="5927000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon changes">
       <created>1626530090055</created>
@@ -211,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626707366094</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implement Impressum of website">
+      <created>1626709098611</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626709098611</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +236,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Polygon changes" />
     <MESSAGE value="Enhance info panel for image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhance info panel for image" />
+    <MESSAGE value="Implement Impressum of website" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement Impressum of website" />
   </component>
 </project>
