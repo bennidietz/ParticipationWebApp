@@ -22,9 +22,9 @@
             </div>
             <div class="flex justify-end items-center">
                 <x-nav-link route="index" :label="__('Home')" />
-                <x-nav-link route="map" :label="__('Karte')" />
                 <x-nav-link route="corrensweek" :label="__('Correnswoche')" />
-                <x-nav-link route="about" :label="__('Mehr')" />
+                <x-nav-link route="map" :label="__('Karte')" />
+{{--                <x-nav-link route="about" :label="__('Mehr')" />--}}
                 @if (Route::has('login'))
                         @auth
                             <x-nav-link route="dashboard" :label="__('Dashboard')" />
