@@ -1,7 +1,7 @@
 <x-guest-layout>
 
     <section class="pt-24 max-w-7xl mx-auto">
-        <h2 class="mb-4 text-2xl font-bold uppercase tracking-wider text-green-600">{{ __('Zeitplan der Corrensweek') }}</h2>
+        <h2 class="mb-4 text-2xl font-bold uppercase tracking-wider text-green-600">{{ __('Zeitplan der Correnswoche') }}</h2>
         <div class="w-full overflow-x-auto">
             <table class="w-full mt-2" cellpadding="0" cellspacing="0">
                 <thead>
@@ -17,59 +17,93 @@
                 <tbody>
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">10:00 - 11:00 Uhr</td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">Termin II</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-blue-500" data-aos="zoom-in">Termin I</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
                     </tr>
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">11:00 - 12:00 Uhr</td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">Termin II</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-blue-500" data-aos="zoom-in">Termin I</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-green-700" data-aos="zoom-in">Termin VII</div>
+                        </td>
                     </tr>
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">12:00 - 13:00 Uhr</td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-green-500" data-aos="zoom-in">Termin III</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-blue-500" data-aos="zoom-in">Termin I</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-green-700" data-aos="zoom-in">Termin VII</div>
+                        </td>
                     </tr>
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">13:00 - 14:00 Uhr</td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-green-500" data-aos="zoom-in">Termin III</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-green-700" data-aos="zoom-in">Termin VII</div>
+                        </td>
                     </tr>
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">14:00 - 15:00 Uhr</td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-yellow-500" data-aos="zoom-in">Termin IV</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-gray-500" data-aos="zoom-in">Termin VI</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
                     </tr>
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">15:00 - 16:00 Uhr</td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-yellow-500" data-aos="zoom-in">Termin IV</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-red-700" data-aos="zoom-in">Termin V</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-gray-500" data-aos="zoom-in">Termin VI</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
                     </tr>
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">16:00 - 17:00 Uhr</td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
-                        <td class="p-2 border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-yellow-500" data-aos="zoom-in">Termin IV</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-gray-500" data-aos="zoom-in">Termin VI</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
                     </tr>
                 </tbody>
             </table>
