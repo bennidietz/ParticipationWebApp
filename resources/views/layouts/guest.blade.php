@@ -30,9 +30,6 @@
                             <x-nav-link route="dashboard" :label="__('Dashboard')" />
                         @else
                             <x-nav-link route="login" :label="__('Anmelden')" />
-                            @if (Route::has('register'))
-                                <x-nav-link route="register" :label="__('Registrieren')" />
-                            @endif
                         @endauth
                 @endif
             </div>
