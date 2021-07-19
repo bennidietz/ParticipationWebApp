@@ -46,24 +46,6 @@ function initMap() {
         .then(response => response.json())
         .then(data => addPolygon(data));
 
-  var p1 = new Polygon(points, "Gebiet 1", 2);
-
-  var polygon = L.polygon([
-
-  ]).addTo(mymap);
-
-  polygon.bindPopup("<h1>Gebiet eins</h1>An der Umfrage teilnehmen", 1);
-
-  var polygons = [p1];
-
-  polygons.forEach(p => {
-    var polygon = L.polygon(
-      p.points
-    ).addTo(mymap);
-    polygon.on('click', function () {
-      preview("Umfrage für Polygon " + p.name + ":")
-    });
-  });
 
     // Get the modal
     var modal = document.getElementById("myModal");
