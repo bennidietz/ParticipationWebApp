@@ -3808,8 +3808,6 @@ module.exports = {
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
@@ -3826,14 +3824,6 @@ document.addEventListener("DOMContentLoaded", function () {
     initMap();
   }
 });
-
-var Polygon = function Polygon(points, name, id) {
-  _classCallCheck(this, Polygon);
-
-  this.points = points;
-  this.name = name;
-  this.id = id;
-};
 
 function initMap() {
   var POLYGONS = {};
@@ -3855,16 +3845,6 @@ function initMap() {
     return response.json();
   }).then(function (data) {
     return addPolygon(data);
-  });
-  var p1 = new Polygon(points, "Gebiet 1", 2);
-  var polygon = L.polygon([]).addTo(mymap);
-  polygon.bindPopup("<h1>Gebiet eins</h1>An der Umfrage teilnehmen", 1);
-  var polygons = [p1];
-  polygons.forEach(function (p) {
-    var polygon = L.polygon(p.points).addTo(mymap);
-    polygon.on('click', function () {
-      preview("Umfrage für Polygon " + p.name + ":");
-    });
   }); // Get the modal
 
   var modal = document.getElementById("myModal"); // Get the button that opens the modal
