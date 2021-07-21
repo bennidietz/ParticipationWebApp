@@ -33,6 +33,7 @@ class AssetStore extends FormRequest
             'file_path' => 'required_without:object|string',
             'object' => 'required_without:file_path|string',
             'type' => Rule::in(Asset::enum),
+            'position' => 'string',
             'is_temple' => 'boolean',
         ];
     }

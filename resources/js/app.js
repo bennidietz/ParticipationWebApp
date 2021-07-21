@@ -16,14 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-class Polygon {
-  constructor(points, name, id) {
-    this.points = points;
-    this.name = name;
-    this.id = id;
-  }
-}
-
 function initMap() {
   var POLYGONS = {};
 

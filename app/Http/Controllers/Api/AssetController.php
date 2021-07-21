@@ -68,6 +68,7 @@ class AssetController extends Controller
             'file_path' => 'nullable|string',
             'object' => 'nullable|string',
             'type' => 'string',
+            'position' => 'string',
             'visible' => 'boolean',
         ]);
 
@@ -111,6 +112,7 @@ class AssetController extends Controller
             'file_path' => 'nullable|string',
             'object' => 'nullable|string',
             'type' => 'nullable|string',
+            'position' => 'nullable|string',
             'visible' => 'nullable|boolean',
         ]);
 
