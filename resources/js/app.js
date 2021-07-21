@@ -79,7 +79,7 @@ function initMap() {
             var geojsonShape = L.geoJson(JSON.parse(polygon.geojson)).addTo(mymap);
             geojsonShape.bindPopup("<div class=\"flex items-center p-4 rounded-lg shadow-xs m-2\">\n" +
                 "            <div>\n" +
-                "                <p class=\"text-lg font-semibold text-blue-900\">\n" +
+                "                <p class=\"text-lg font-semibold\">\n" +
                 polygon.name +
                 "                </p>\n" +
                 "                <p class=\"mb-2 font-bold text-lg text-blue-900\">\n" +
@@ -100,10 +100,10 @@ function initMap() {
             var marker = L.marker([suggestion.latitude, suggestion.longitude], {icon: greenIcon}).addTo(mymap);
             marker.bindPopup("<div class=\"flex items-center p-4 rounded-lg shadow-xs m-2\">\n" +
                 "            <div>\n" +
-                "                <p class=\"text-lg font-semibold text-blue-900\">\n" +
+                "                <p class=\"text-lg font-semibold\">\n" +
                 suggestion.title +
                 "                </p>\n" +
-                "                <p class=\"mb-2 text-sm font-medium text-blue-900\">\n" +
+                "                <p class=\"mb-2 text-sm font-medium\">\n" +
                 suggestion.description +
                 "                </p>\n<br>\<img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=http://giv-project10.uni-muenster.de/'/>" +
                 "            </div>\n" +
