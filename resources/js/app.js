@@ -25,7 +25,7 @@ function initMap() {
   //     position: 'botttomright'
   // }).addTo(mymap);
 
-  L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
+  L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key=3fe5a8c3-600e-49fa-9cb5-3f95270fb8ef', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     //id: 'mapbox/streets-v11',
