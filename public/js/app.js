@@ -3827,13 +3827,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function initMap() {
   var POLYGONS = {};
+  var MARKERS = {};
   var mymap = L.map('map', {
     attributionControl: false
   }).setView([51.967149, 7.596715], 17); // L.control.zoom({
   //     position: 'botttomright'
   // }).addTo(mymap);
 
-  L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key=3fe5a8c3-600e-49fa-9cb5-3f95270fb8ef', {
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18 //id: 'mapbox/streets-v11',
     //tileSize: 512,
@@ -3845,6 +3846,11 @@ function initMap() {
     return response.json();
   }).then(function (data) {
     return addPolygon(data);
+  });
+  fetch('api/suggestion').then(function (response) {
+    return response.json();
+  }).then(function (data) {
+    return addMarker(data);
   }); // Get the modal
 
   var modal = document.getElementById("myModal"); // Get the button that opens the modal
@@ -3858,11 +3864,8 @@ function initMap() {
   };
 
   function addPolygon(data) {
-    console.log(data);
-
     for (index in data.data) {
       polygon = data.data[index];
-      console.log(polygon);
       var geojsonShape = L.geoJson(JSON.parse(polygon.geojson)).addTo(mymap);
       geojsonShape.bindPopup("<h1>" + polygon.name + "</h1><a><button type=\'button\' onclick=\'preview(\"Umfrage für Polygon \" + polygon.name + \":\")\'>An der Umfrage teilnehmen</button></a>", 1);
       POLYGONS[polygon.id] = geojsonShape;
@@ -3872,6 +3875,20 @@ function initMap() {
         console.log(id);
         POLYGONS[id].openPopup();
       };
+    }
+  }
+
+  function addMarker(data) {
+    for (index in data.data) {
+      suggestion = data.data[index];
+      console.log(suggestion);
+      var marker = L.marker([suggestion.latitude, suggestion.longitude]).addTo(mymap);
+      marker.bindPopup("<h1>" + suggestion.title + "</h1><br>" + suggestion.description + "<img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=http://giv-project10.uni-muenster.de/'/>", 1);
+      MARKERS[marker.id] = marker; // document.getElementById('card_polygon-' + polygon.id).onclick = function(view) {
+      //     id = this.id.substr(this.id.lastIndexOf("-") + 1);
+      //     console.log(id)
+      //     POLYGONS[id].openPopup();
+      // };
     }
   }
 

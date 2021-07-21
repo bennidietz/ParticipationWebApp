@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function initMap() {
   var POLYGONS = {};
+  var MARKERS = {};
 
   var mymap = L.map('map', {attributionControl: false}).setView([51.967149, 7.596715], 17);
 
@@ -38,6 +39,10 @@ function initMap() {
         .then(response => response.json())
         .then(data => addPolygon(data));
 
+    fetch('api/suggestion')
+        .then(response => response.json())
+        .then(data => addMarker(data));
+
 
     // Get the modal
     var modal = document.getElementById("myModal");
@@ -54,10 +59,8 @@ function initMap() {
     }
 
     function addPolygon(data) {
-        console.log(data)
         for (index in data.data) {
             polygon = data.data[index];
-            console.log(polygon)
             var geojsonShape = L.geoJson(JSON.parse(polygon.geojson)).addTo(mymap);
             geojsonShape.bindPopup("<h1>" + polygon.name + "</h1><a><button type=\'button\' onclick=\'preview(\"Umfrage für Polygon \" + polygon.name + \":\")\'>An der Umfrage teilnehmen</button></a>", 1);
             POLYGONS[polygon.id] = geojsonShape
@@ -66,6 +69,21 @@ function initMap() {
                 console.log(id)
                 POLYGONS[id].openPopup();
             };
+        }
+    }
+
+    function addMarker(data) {
+        for (index in data.data) {
+            suggestion = data.data[index];
+            console.log(suggestion);
+            var marker = L.marker([suggestion.latitude, suggestion.longitude]).addTo(mymap);
+            marker.bindPopup("<h1>" + suggestion.title + "</h1><br>" + suggestion.description + "<img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=http://giv-project10.uni-muenster.de/'/>", 1);
+            MARKERS[marker.id] = marker
+            // document.getElementById('card_polygon-' + polygon.id).onclick = function(view) {
+            //     id = this.id.substr(this.id.lastIndexOf("-") + 1);
+            //     console.log(id)
+            //     POLYGONS[id].openPopup();
+            // };
         }
     }
 
