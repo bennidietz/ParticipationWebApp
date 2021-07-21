@@ -77,7 +77,13 @@ function initMap() {
         for (index in data.data) {
             polygon = data.data[index];
             var geojsonShape = L.geoJson(JSON.parse(polygon.geojson)).addTo(mymap);
-            geojsonShape.bindPopup("<h1>" + polygon.name + "</h1><a><button type=\'button\' onclick=\'preview(\"Umfrage für Polygon \" + polygon.name + \":\")\'>An der Umfrage teilnehmen</button></a>", 1);
+            geojsonShape.bindPopup("<div class=\"flex items-center p-4 rounded-lg shadow-xs m-2\">\n" +
+                "            <div>\n" +
+                "                <p class=\"text-lg font-semibold text-blue-900\">\n" +
+                polygon.name +
+                "                </p>\n" +
+                "                <p class=\"mb-2 font-bold text-lg text-blue-900\">\n" +
+                "<a><button type=\'button\' onclick=\'preview(\"Umfrage für Polygon \" + polygon.name + \":\")\'>An der Umfrage teilnehmen</button></a>" , 1);
             POLYGONS[polygon.id] = geojsonShape
             document.getElementById('card_polygon-' + polygon.id).onclick = function(view) {
                 id = this.id.substr(this.id.lastIndexOf("-") + 1);
@@ -92,7 +98,16 @@ function initMap() {
             suggestion = data.data[index];
             console.log(suggestion);
             var marker = L.marker([suggestion.latitude, suggestion.longitude], {icon: greenIcon}).addTo(mymap);
-            marker.bindPopup("<h1>" + suggestion.title + "</h1><br>" + suggestion.description + "<img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=http://giv-project10.uni-muenster.de/'/>", 1);
+            marker.bindPopup("<div class=\"flex items-center p-4 rounded-lg shadow-xs m-2\">\n" +
+                "            <div>\n" +
+                "                <p class=\"text-lg font-semibold text-blue-900\">\n" +
+                suggestion.title +
+                "                </p>\n" +
+                "                <p class=\"mb-2 text-sm font-medium text-blue-900\">\n" +
+                suggestion.description +
+                "                </p>\n<br>\<img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=http://giv-project10.uni-muenster.de/'/>" +
+                "            </div>\n" +
+                "            </div>", 1);
             MARKERS[marker.id] = marker
             document.getElementById('card_polygon-' + polygon.id).onclick = function(view) {
                 id = this.id.substr(this.id.lastIndexOf("-") + 1);
