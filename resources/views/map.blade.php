@@ -1,5 +1,6 @@
 <x-guest-layout>
 <div id="sidebar">
+    <b>Polygone</b>
     @foreach (\App\Models\Polygon::all() as $polygon)
         <div id="card_polygon-{{ $polygon->id }}" class="flex items-center p-4 bg-blue-400 hover:bg-blue-600 rounded-lg shadow-xs m-2">
             <div>
@@ -17,7 +18,27 @@
 {{--            </div>--}}
         </div>
     @endforeach
-
+    @if (\App\Models\Suggestion::all()->count() > 0)
+    <br><b>Vorschläge</b>
+    <div id="markers" class="flex items-center p-4 bg-green-400 hover:bg-green-600 rounded-lg shadow-xs m-2">
+        <div>
+            <p class="mb-2 text-sm font-medium text-white">
+                Alle Vorschläge
+            </p>
+            <p class="text-lg font-semibold text-white">
+                {{ \App\Models\Suggestion::all()->count() }}
+            </p>
+        </div>
+        {{--            <div class="p-3 text-blue-500 bg-blue-100 rounded-full">--}}
+        {{--                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">--}}
+        {{--                    <path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>--}}
+        {{--                </svg>--}}
+        {{--            </div>--}}
+    </div>
+    @endif
+    <br><b>Vorschläge selber erstellen</b>
+    <small>Um selber Vorschläge auf einer mobilen App zu erstellen, klicken Sie auf <a class="text-blue-800 underline font-bold" href="http://giv-project10.uni-muenster.de">diesen Link</a> oder scannen Sie folgenden QR Code:</small>
+    <img src="https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=http://giv-project10.uni-muenster.de" />
 </div>
 <div id="map"></div>
 <!-- Trigger/Open The Modal -->

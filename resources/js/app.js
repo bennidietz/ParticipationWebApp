@@ -19,8 +19,23 @@ document.addEventListener("DOMContentLoaded", function () {
 function initMap() {
   var POLYGONS = {};
   var MARKERS = {};
+  //var markers = L.layerGroup([]);
 
-  var mymap = L.map('map', {attributionControl: false}).setView([51.967149, 7.596715], 17);
+  var mymap = L.map('map', {
+      attributionControl: false,
+      center: [51.968159, 7.596715],
+      zoom: 17
+      //layers: [markers]
+  });
+
+    var greenIcon = new L.Icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+    });
 
   // L.control.zoom({
   //     position: 'botttomright'
@@ -76,14 +91,14 @@ function initMap() {
         for (index in data.data) {
             suggestion = data.data[index];
             console.log(suggestion);
-            var marker = L.marker([suggestion.latitude, suggestion.longitude]).addTo(mymap);
+            var marker = L.marker([suggestion.latitude, suggestion.longitude], {icon: greenIcon}).addTo(mymap);
             marker.bindPopup("<h1>" + suggestion.title + "</h1><br>" + suggestion.description + "<img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=http://giv-project10.uni-muenster.de/'/>", 1);
             MARKERS[marker.id] = marker
-            // document.getElementById('card_polygon-' + polygon.id).onclick = function(view) {
-            //     id = this.id.substr(this.id.lastIndexOf("-") + 1);
-            //     console.log(id)
-            //     POLYGONS[id].openPopup();
-            // };
+            document.getElementById('card_polygon-' + polygon.id).onclick = function(view) {
+                id = this.id.substr(this.id.lastIndexOf("-") + 1);
+                console.log(id)
+                POLYGONS[id].openPopup();
+            };
         }
     }
 
