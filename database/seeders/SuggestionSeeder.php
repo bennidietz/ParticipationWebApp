@@ -15,7 +15,7 @@ class SuggestionSeeder extends Seeder
     public function run()
     {
         Suggestion::factory()
-            ->count(12)
+            ->count(50)
             ->create();
     }
 }

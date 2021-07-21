@@ -2,7 +2,7 @@
 <div id="sidebar">
     <b>Polygone</b>
     @foreach (\App\Models\Polygon::all() as $polygon)
-        <div id="card_polygon-{{ $polygon->id }}" class="flex items-center p-4 bg-blue-400 hover:bg-blue-600 rounded-lg shadow-xs m-2">
+        <div id="card_polygon-{{ $polygon->id }}" class="flex items-center p-4 bg-blue-500 hover:bg-blue-800 rounded-lg shadow-xs m-2">
             <div>
                 <p class="mb-2 text-sm font-medium text-white">
                     {{ $polygon->name }}
@@ -20,7 +20,7 @@
     @endforeach
     @if (\App\Models\Suggestion::all()->count() > 0)
     <br><b>Vorschläge</b>
-    <div id="markers" class="flex items-center p-4 bg-green-400 hover:bg-green-600 rounded-lg shadow-xs m-2">
+    <div id="markers" class="flex items-center p-4 bg-green-500 hover:bg-green-600 rounded-lg shadow-xs m-2">
         <div>
             <p class="mb-2 text-sm font-medium text-white">
                 Alle Vorschläge
