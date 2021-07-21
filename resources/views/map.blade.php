@@ -4,12 +4,10 @@
     @foreach (\App\Models\Polygon::all() as $polygon)
         <div id="card_polygon-{{ $polygon->id }}" class="flex items-center p-4 bg-blue-500 hover:bg-blue-800 rounded-lg shadow-xs m-2">
             <div>
-                <p class="mb-2 text-sm font-medium text-white">
+                <p class="text-lg font-semibold text-white">
                     {{ $polygon->name }}
                 </p>
-                <p class="text-lg font-semibold text-white">
-                    {{ $polygon->description }}
-                </p>
+
             </div>
 {{--            <div class="p-3 text-blue-500 bg-blue-100 rounded-full">--}}
 {{--                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">--}}

@@ -81,9 +81,10 @@ function initMap() {
                 "            <div>\n" +
                 "                <p class=\"text-lg font-semibold\">\n" +
                 polygon.name +
-                "                </p>\n" +
+                "<p className='mb-2 font-medium text-sm'>" + polygon.description + "</p>" +
                 "                <p class=\"mb-2 font-bold text-lg text-blue-900\">\n" +
-                "<a><button type=\'button\' onclick=\'showPopup(\"https://docs.google.com/forms/d/e/1FAIpQLSdWIGMITjeRXOpFyCgtrDBzbhvtpY90Vblbue_ygFdNZ0BYMg/viewform?embedded=true\")\'>An der Umfrage teilnehmen</button></a>" , 1);
+                "<a><button type=\'button\' onclick=\'" +
+                "showPopup(" + polygon.id + ")\'>An der Umfrage teilnehmen</button></a>" , 1);
             POLYGONS[polygon.id] = geojsonShape
             document.getElementById('card_polygon-' + polygon.id).onclick = function(view) {
                 id = this.id.substr(this.id.lastIndexOf("-") + 1);
@@ -117,7 +118,18 @@ function initMap() {
         }
     }
 
-    window.showPopup = function (frameUrl) {
+    window.showPopup = function (id) {
+        if (id == 1) {
+            frameUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdl1ls7uR0sL48kD7IUZAFDZzpiGH3fZH4nmpaibRwWsxtMTw/viewform?embedded=true";
+        } else if (id == 2) {
+            frameUrl = "https://docs.google.com/forms/d/e/1FAIpQLSea687T4qPTrxm3UKzoK9kgoG3rxWzWtJg7EJ7HFl7or3Z1NA/viewform?embedded=true";
+        } else if (id == 3) {
+            frameUrl = "https://docs.google.com/forms/d/e/1FAIpQLSf7jKzhVfLcDF9mvSuo-XwpmoFBa-RgvNSln0f1RzVdW6QwyA/viewform?embedded=true";
+        } else if (id == 4) {
+            frameUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc0T53UxzTUXEzNimVU0Nm2LvJ_4zkmzj1VC5ac_eJPIyTFYg/viewform?embedded=true";
+        } else if (id == 5) {
+            frameUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdWIGMITjeRXOpFyCgtrDBzbhvtpY90Vblbue_ygFdNZ0BYMg/viewform?embedded=true";
+        }
         document.getElementById('popup-content').innerHTML = '<iframe src="' + frameUrl + '" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>';
         document.getElementById('popup').style.display = 'flex';
     }
