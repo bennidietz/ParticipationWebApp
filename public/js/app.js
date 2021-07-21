@@ -3879,7 +3879,7 @@ function initMap() {
     for (index in data.data) {
       polygon = data.data[index];
       var geojsonShape = L.geoJson(JSON.parse(polygon.geojson)).addTo(mymap);
-      geojsonShape.bindPopup("<div class=\"flex items-center p-4 rounded-lg shadow-xs m-2\">\n" + "            <div>\n" + "                <p class=\"text-lg font-semibold\">\n" + polygon.name + "                </p>\n" + "                <p class=\"mb-2 font-bold text-lg text-blue-900\">\n" + "<a><button type=\'button\' onclick=\'openUrl(\"https://docs.google.com/forms/d/e/1FAIpQLSdWIGMITjeRXOpFyCgtrDBzbhvtpY90Vblbue_ygFdNZ0BYMg/viewform\")\'>An der Umfrage teilnehmen</button></a>", 1);
+      geojsonShape.bindPopup("<div class=\"flex items-center p-4 rounded-lg shadow-xs m-2\">\n" + "            <div>\n" + "                <p class=\"text-lg font-semibold\">\n" + polygon.name + "                </p>\n" + "                <p class=\"mb-2 font-bold text-lg text-blue-900\">\n" + "<a><button type=\'button\' onclick=\'showPopup(\"https://docs.google.com/forms/d/e/1FAIpQLSdWIGMITjeRXOpFyCgtrDBzbhvtpY90Vblbue_ygFdNZ0BYMg/viewform?embedded=true\")\'>An der Umfrage teilnehmen</button></a>", 1);
       POLYGONS[polygon.id] = geojsonShape;
 
       document.getElementById('card_polygon-' + polygon.id).onclick = function (view) {
@@ -3908,8 +3908,9 @@ function initMap() {
     }
   }
 
-  window.openUrl = function (url) {
-    window.open(url, 'targetWindow', "toolbar=no,\n\t                            location=no,\n\t                            status=no,\n\t                            menubar=no,\n\t                            scrollbars=yes,\n\t                            resizable=yes,\n\t                            width=600,\n\t                            height=600");
+  window.showPopup = function (frameUrl) {
+    document.getElementById('popup-content').innerHTML = '<iframe src="' + frameUrl + '" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>';
+    document.getElementById('popup').style.display = 'flex';
   };
   /*function preview(string) {
       modal.style.display = "block";

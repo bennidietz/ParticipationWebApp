@@ -16,6 +16,14 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body>
+        <!-- Popup -->
+        <div id="popup" class="h-full w-full fixed top-0 left-0 bg-gray-600 bg-opacity-50 hidden justify-center items-center" style="z-index: 1000;">
+            <div class="max-h-screen max-w-full p-6 rounded-2xl shadow bg-white relative">
+                <div class="absolute top-1 right-3 cursor-pointer text-gray-800 hover:text-black transition text-xl" onclick="document.getElementById('popup').style.display = 'none';">x</div>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+
         <div class="w-full fixed top-0 right-0 px-6 flex z-50 align-center justify-between bg-green-500 shadow">
             <a href="{{ route('index') }}">
                 <div class="py-4">
