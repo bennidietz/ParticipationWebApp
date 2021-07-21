@@ -83,11 +83,11 @@ function initMap() {
                 polygon.name +
                 "                </p>\n" +
                 "                <p class=\"mb-2 font-bold text-lg text-blue-900\">\n" +
-                "<a><button type=\'button\' onclick=\'preview(\"Umfrage für Polygon \" + polygon.name + \":\")\'>An der Umfrage teilnehmen</button></a>" , 1);
+                "<a><button type=\'button\' onclick=\'openUrl(\"https://docs.google.com/forms/d/e/1FAIpQLSdWIGMITjeRXOpFyCgtrDBzbhvtpY90Vblbue_ygFdNZ0BYMg/viewform\")\'>An der Umfrage teilnehmen</button></a>" , 1);
             POLYGONS[polygon.id] = geojsonShape
             document.getElementById('card_polygon-' + polygon.id).onclick = function(view) {
                 id = this.id.substr(this.id.lastIndexOf("-") + 1);
-                console.log(id)
+                // console.log(id);
                 POLYGONS[id].openPopup();
             };
         }
@@ -96,7 +96,7 @@ function initMap() {
     function addMarker(data) {
         for (index in data.data) {
             suggestion = data.data[index];
-            console.log(suggestion);
+            // console.log(suggestion);
             var marker = L.marker([suggestion.latitude, suggestion.longitude], {icon: greenIcon}).addTo(mymap);
             marker.bindPopup("<div class=\"flex items-center p-4 rounded-lg shadow-xs m-2\">\n" +
                 "            <div>\n" +
@@ -111,30 +111,42 @@ function initMap() {
             MARKERS[marker.id] = marker
             document.getElementById('card_polygon-' + polygon.id).onclick = function(view) {
                 id = this.id.substr(this.id.lastIndexOf("-") + 1);
-                console.log(id)
+                // console.log(id);
                 POLYGONS[id].openPopup();
             };
         }
     }
 
-    function preview(string) {
-        modal.style.display = "block";
-        document.getElementById("paragraph").innerHTML = string
+    window.openUrl = function (url) {
+        window.open(url, 'targetWindow',
+	                           `toolbar=no,
+	                            location=no,
+	                            status=no,
+	                            menubar=no,
+	                            scrollbars=yes,
+	                            resizable=yes,
+	                            width=600,
+	                            height=600`);
     }
+
+    /*function preview(string) {
+        modal.style.display = "block";
+        document.getElementById("paragraph").innerHTML = string;
+    }*/
 
     // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
+    /*span.onclick = function() {
       modal.style.display = "none";
-    }
+    }*/
 
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
+    /*window.onclick = function(event) {
       if (event.target == modal) {
         modal.style.display = "none";
       }
-    }
+    }*/
 
-    var json = {
+    /*var json = {
         title: "Product Feedback Survey Example", showProgressBar: "top", pages: [
           {
             questions: [
@@ -203,5 +215,5 @@ function initMap() {
         document.querySelector('#result').innerHTML = "result: " + JSON.stringify(result.data);
       });
 
-      survey.render("surveyElement");
+      survey.render("surveyElement");*/
 }
