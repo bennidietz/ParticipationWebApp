@@ -46,7 +46,7 @@ class AuthController
             'last_name' => 'required',
             'email' => 'required|email:rfc,dns|unique:users',
             'password' => 'required|min:8|confirmed',
-            'role' => 'nullable|string:guest,user,admin',
+            'role' => 'nullable|in:guest,user,admin',
         ]);
 
         if ($validator->fails()) {
