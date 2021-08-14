@@ -61,6 +61,8 @@ class AuthController
 
         if (isset($request->role)) {
             $user->role = $request->role;
+        } else {
+            $user->role = 'guest';
         }
 
         $user->save();
