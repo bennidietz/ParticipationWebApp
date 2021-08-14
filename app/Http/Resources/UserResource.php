@@ -18,8 +18,8 @@ class UserResource extends JsonResource
             'id' => $this->id,
             'first_name' => $this->first_name,
             'last_name' => $this->last_name,
-            'profile_photo' => $this->profile_photo_path
-            //TODO: role
+            'profile_photo' => $this->profile_photo_path,
+            'role' => $this->role,
         ];
     }
 }

@@ -46,6 +46,7 @@ class AuthController
             'last_name' => 'required',
             'email' => 'required|email:rfc,dns|unique:users',
             'password' => 'required|min:8|confirmed',
+            'role' => 'nullable',
         ]);
 
         if ($validator->fails()) {
@@ -57,6 +58,11 @@ class AuthController
         $user->last_name = $request->last_name;
         $user->email = $request->email;
         $user->password = bcrypt($request->password);
+
+        if (isset($request->role)) {
+            $user->role = $request->role;
+        }
+
         $user->save();
 
         return new UserResource($user);
