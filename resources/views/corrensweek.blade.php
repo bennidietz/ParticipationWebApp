@@ -151,8 +151,26 @@
                         link="https://google.de" />
             <x-project :image="asset('img/projects/pexels-startup-stock-photos-7376.jpg')"
                         title="Quartiersinitiative"
-                        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quo quam, sint omnis iusto numquam laboriosam unde rem suscipit necessitatibus?"
-                        people="Max Muster, Marina Muster"
+                        description="Wir haben uns sicherlich alle schon einmal die Frage gestellt, ob uns alles gefällt, an dem Ort an dem wir wohnen, arbeiten oder unsere Freizeit verbringen. In unserem Alltag treten regelmäßig Probleme auf wie: wo kann ich eine Bohrmaschine ausleihen oder wer gießt meine Blumen, wenn ich mal im Urlaub bin. Oder uns treibt das Bedürfnis um, mit den Menschen aus der Nachbarschaft in Kontakt zu treten und gemeinsam etwas zu unternehmen oder Aktivitäten ins Leben zu rufen. 
+Wenn man sich diese Fragen stellt, stößt man früher oder später auf das Konzept der Quartiersinitiativen. 
+Zunächst einmal sind Quartiere auf der Ebene kleinteiliger sozialräumlicher Strukturen zu finden und sind Orte des Wohnens, des Austauschs und der gesellschaftlichen Teilhabe (vgl. Grates et al. 2018). 
+Die Quartiersinitiativen sind dabei Sozialräume, in denen sich Akteure, wie beispielsweise die Anwohner, treffen können. In diesen Räumen kann sich eine Andersartigkeit und eine Kreativität ausdrücken, die im Mainstream keinen Platz findet. Sie dienen der Identifikation mit dem Stadtraum und verkörpern eine gelebte Nachhaltigkeit als Bottom-Up-Prozess, weshalb sie dabei auch als urbane Reallabore betrachtet werden können (vgl. Brocchi 2018a und Brocchi 2018b). Quartiersinitiativen können dabei als besonders starke Form der Partizipation betrachtet werden. Dabei werden die Initiativen von ganz unterschiedlichen Akteuren erstellt und geleitet, dazu gehören beispielsweise die Quartiersbewohner*Innen oder die lokale Wirtschaft und Dienstleister, bei denen das Quartier ein Kundenraum ist (vgl. Grates et al. 2018). 
+Die häufigsten Anliegen von Quartiersinitiativen sind:
+-	Umweltschutz
+-	Gegen / Für Bauvorhaben
+-	Inklusion
+-	Wohnraumförderung
+-	Nachbarschaftshilfen, insbesondere für Senioren
+-	Innenstadtgestaltung
+-	Stärkung von lokalen Kulturveranstaltungen
+Da eine Quartiersinitiative auf ein langfristiges Bestehen ausgerichtet ist und durch die Personen aus dem jeweiligen Quartier geleitet wird, ist es uns nicht möglich eine solche Initiative im Rahmen des Reallabors an der Corrensstraße selber ins Leben zu rufen. Deswegen haben wir uns als Gruppe überlegt eine grundlegende Aufklärungsarbeit über Quartiersinitiativen zu leisten. Während der Projektage des Reallabors sollen dafür zwei Broschüren ausliegen. Zum einen, soll eine Broschüre allgemeine Informationen über Quartiersinitiativen aufführen, um eine entsprechende Wissensgrundlage zu schaffen. Zum anderen sollen in einer zweiten Broschüre die verschiedenen Quartiersinitiativen bzw. Bürgerinitiativen die bereits in Münster aktiv sind vorgestellt werden. 
+Das Ziel soll sein, die Besucher und Besucherinnen über das Konzept der Quartiersinitiativen und die bereits bestehenden Quartiersinitiativen in Münster zu informieren und diese damit zu animieren, sich für eine nachhaltige Stadtentwicklung, im Rahmen ihres eigenen Quartiers einzusetzen und selbst aktiv zu werden. 
+
+Brocchi, D. (2018a): Bürgerschaftliche Initiativen für eine nachhaltige Quartiersentwicklung. Düsseldorf
+Brocchi, D. (2018b). Große Transformation im Quartier: zur partizipationsorientierten Quartiersentwicklung. Düsseldorf
+Grates, M., Krön, A. u. H. Rüßler (2018): Handbuch 1. Ältere als (Ko-)Produzenten von Quartiersnetzwerken Impulse aus dem Projekt QuartiersNETZ. In: STADTQUARTIERE. Rahmenbedingungen verstehen und Ausgangssituation erfassen. Dortmund
+"
+                        people="Pia Rickmann"
                         link="https://google.de" />
             <x-project :image="asset('img/projects/pexels-startup-stock-photos-7376.jpg')"
                         title="Leben und arbeiten im Quartier"
