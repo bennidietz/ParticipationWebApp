@@ -28,6 +28,7 @@ class AssetFactory extends Factory
                 'name' => $this->faker->text,
                 'file_path' => $this->faker->filePath(),
                 'visible' => rand(0,1) == 1,
+                'location' => $this->faker->text,
                 'type' => $this->faker->randomElement(Asset::enum),
                 'is_template' => rand(0,1) == 1,
             ];
@@ -36,6 +37,7 @@ class AssetFactory extends Factory
                 'name' => $this->faker->text,
                 'object' => Str::random(150),
                 'visible' => rand(0,1) == 1,
+                'location' => $this->faker->text,
                 'type' => $this->faker->randomElement(Asset::enum),
                 'is_template' => rand(0,1) == 1,
             ];

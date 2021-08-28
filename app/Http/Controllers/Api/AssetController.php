@@ -111,6 +111,7 @@ class AssetController extends Controller
             'file' => 'nullable|image|mimes:jpeg,jpg,png,gif|max:2048',
             'file_path' => 'nullable|string',
             'object' => 'nullable|string',
+            'location' => 'nullable|string',
             'type' => 'nullable|string',
             'position' => 'nullable|string',
             'visible' => 'nullable|boolean',

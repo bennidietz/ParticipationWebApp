@@ -80,6 +80,7 @@ class AssetController extends Controller
             'name' => 'string',
             'file_path' => 'string',
             'object' => 'string',
+            'location' => 'string',
             'type' => 'string',
             'visible' => 'boolean',
         ]);

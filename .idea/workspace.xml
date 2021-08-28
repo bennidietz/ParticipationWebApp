@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Styling">
+    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Default value for user">
+      <change afterPath="$PROJECT_DIR$/database/migrations/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PolygonSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PolygonSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/map.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/map.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AssetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AssetController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Asset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/AssetFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AssetFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_06_150452_create_sessions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_06_150452_create_sessions_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +197,10 @@
       <workItem from="1626704364695" duration="5927000" />
       <workItem from="1626898028601" duration="3913000" />
       <workItem from="1628195269744" duration="2001000" />
-      <workItem from="1628925051862" duration="1039000" />
+      <workItem from="1628925051862" duration="1630000" />
+      <workItem from="1629469551083" duration="298000" />
+      <workItem from="1629808376175" duration="596000" />
+      <workItem from="1630140656328" duration="392000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon changes">
       <created>1626530090055</created>
@@ -280,11 +286,28 @@
       <option name="project" value="LOCAL" />
       <updated>1626901804673</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Default value for user">
+      <created>1628926534212</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1628926534212</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -307,6 +330,7 @@
     <MESSAGE value="Enahnce sidebar" />
     <MESSAGE value="Styling adjustments" />
     <MESSAGE value="Popup poll and polygon changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Popup poll and polygon changes" />
+    <MESSAGE value="Default value for user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default value for user" />
   </component>
 </project>
