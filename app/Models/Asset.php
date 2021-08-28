@@ -26,6 +26,7 @@ class Asset extends Model
         'file_path',
         'object',
         'type',
+        'location',
         'position',
     ];
 
