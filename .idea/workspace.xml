@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Add optional location property to asset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AssetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AssetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_06_150452_create_sessions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_06_150452_create_sessions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_11_000000_create_assets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_11_000000_create_assets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/impressum.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/impressum.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

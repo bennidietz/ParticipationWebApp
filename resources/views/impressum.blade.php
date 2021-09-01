@@ -11,8 +11,8 @@
         Fachbereich 14 Geowissenschaften<br>
         Heisenbergstr. 2, 48149 Münster<br>
         Telefon: +49 251 83-30001<br>
-        E-Mail: gfgeo@uni-muenster.de,l_kirs07@uni-muenster.de, b_diet05@uni-muenster.de oder c_terb01@uni-muenster.de" 
-        
+        E-Mail: gfgeo@uni-muenster.de,l_kirs07@uni-muenster.de, b_diet05@uni-muenster.de oder c_terb01@uni-muenster.de<br><br>
+
         Der Fachbereich 09 Philologie ist eine Einrichtung der Westfälischen Wilhelms-Universität Münster, WWU. Die WWU ist eine Körperschaft des öffentlichen Rechts und zugleich eine Einrichtung des Landes Nordrhein-Westfalen. Sie wird vertreten durch Rektor Prof. Dr. Johannes Wessels.<br>
 
         Zuständige Aufsichtsbehörde:<br>
@@ -20,9 +20,9 @@
         Völklinger Straße 49<br>
         40221 Düsseldorf.<br>
 
-        Umsatzsteuer-ID-Nummer: DE 126118759/>
-        
-        
+        Umsatzsteuer-ID-Nummer: DE 126118759"></x-info-panel>
+
+
 
         <x-info-panel  title="Haftungshinweis" text="
         Laut § 7 Abs. 1 TMG ist ein Diensteanbieter für eigene Informationen, die er zur Nutzung bereithält, nach den allgemeinen Gesetzen verantwortlich. Laut Absatz 2 sind Diensteanbieter im Sinne der §§ 8 bis 10 nicht verpflichtet, die von ihnen übermittelten oder gespeicherten Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.<br>
