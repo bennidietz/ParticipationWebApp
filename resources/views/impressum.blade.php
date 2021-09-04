@@ -13,7 +13,7 @@
         Telefon: +49 251 83-30001<br>
         E-Mail: gfgeo@uni-muenster.de,l_kirs07@uni-muenster.de, b_diet05@uni-muenster.de oder c_terb01@uni-muenster.de<br><br>
 
-        Der Fachbereich 09 Philologie ist eine Einrichtung der Westfälischen Wilhelms-Universität Münster, WWU. Die WWU ist eine Körperschaft des öffentlichen Rechts und zugleich eine Einrichtung des Landes Nordrhein-Westfalen. Sie wird vertreten durch Rektor Prof. Dr. Johannes Wessels.<br>
+        Der Fachbereich 14 Geowissenschaften ist eine Einrichtung der Westfälischen Wilhelms-Universität Münster, WWU. Die WWU ist eine Körperschaft des öffentlichen Rechts und zugleich eine Einrichtung des Landes Nordrhein-Westfalen. Sie wird vertreten durch Rektor Prof. Dr. Johannes Wessels.<br>
 
         Zuständige Aufsichtsbehörde:<br>
         Ministerium für Kultur und Wissenschaft des Landes Nordrhein-Westfalen<br>
