@@ -1,8 +1,17 @@
 <x-guest-layout>
 <div id="sidebar">
     <b>Straßenabschnitte</b>
+    @php
+        $colors = [
+            'green',
+            'blue',
+            'red',
+            'yellow',
+            'gray',
+        ];
+    @endphp
     @foreach (\App\Models\Polygon::all() as $polygon)
-        <div id="card_polygon-{{ $polygon->id }}" class="flex items-center p-4 bg-blue-500 hover:bg-blue-800 rounded-lg shadow-xs m-2">
+        <div id="card_polygon-{{ $polygon->id }}" class="flex items-center p-4 bg-{{ $colors[$loop->index] }}-500 hover:bg-{{ $colors[$loop->index] }}-800 rounded-lg shadow-xs m-2">
             <div>
                 <p class="text-lg font-semibold text-white">
                     {{ $polygon->name }}
