@@ -43,18 +43,19 @@
                     {{ __('Log in') }}
                 </x-jet-button>
             </div>
-
-            @if (Route::has('register'))
-                <div class="w-full mt-6 border-t border-gray-300"></div>
-                <div class="mt-6 text-center">
-                    <p>{{ __('Don`t have an account?') }}</p>
-                    <a href="{{ route('register') }}">
-                        <x-jet-button class="mt-2">
-                            {{ __('Create account now') }}
-                        </x-jet-button>
-                    </a>
-                </div>
-            @endif
         </form>
+
+        @if (Route::has('register'))
+            <div class="w-full mt-6 border-t border-gray-300"></div>
+            <div class="mt-6 text-center">
+                <p>{{ __('Don`t have an account?') }}</p>
+                <a href="{{ route('register') }}">
+                    <x-jet-button class="mt-2">
+                        {{ __('Create account now') }}
+                    </x-jet-button>
+                </a>
+            </div>
+        @endif
+
     </x-jet-authentication-card>
 </x-guest-layout>

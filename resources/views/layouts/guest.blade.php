@@ -24,17 +24,15 @@
             </div>
         </div>
 
-        <div class="w-full fixed top-0 right-0 px-6 flex z-50 align-center justify-between bg-green-500 shadow">
+        <div class="w-full fixed top-0 right-0 px-6 flex z-50 items-center justify-between bg-green-500 shadow" style="background: #7EC098;">
             <a href="{{ route('index') }}">
-                <div class="py-4">
-                    Correns<strong>Lab</strong>
-                </div>
+                <x-jet-application-mark />
             </a>
             <div class="flex justify-end items-center">
                 <x-nav-link route="index" :label="__('Home')" />
                 <x-nav-link route="corrensweek" :label="__('Correnswoche')" />
                 <x-nav-link route="map" :label="__('Karte')" />
-{{--                <x-nav-link route="about" :label="__('Mehr')" />--}}
+                {{--<x-nav-link route="about" :label="__('Mehr')" />--}}
                 @if (Route::has('login'))
                         @auth
                             <x-nav-link route="dashboard" :label="__('Dashboard')" />
