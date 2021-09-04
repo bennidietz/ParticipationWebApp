@@ -106,7 +106,7 @@ function initMap() {
                 "                </p>\n" +
                 "                <p class=\"mb-2 text-sm font-medium\">\n" +
                 suggestion.description +
-                "                </p>\n<br>\<img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=http://giv-project10.uni-muenster.de/'/>" +
+                "                </p>\n<br>\<img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=https://correnslab.de/'/>" +
                 "            </div>\n" +
                 "            </div>", 1);
             MARKERS[marker.id] = marker
