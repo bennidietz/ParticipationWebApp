@@ -27,7 +27,7 @@
         <p class="mb-2 text-sm">{{ __('Wie wollen Sie, dass die Corrensstraße in Zukunft aussieht?') }}</p>
         <p class="mb-4 text-sm">{{ __('Ihre Meinung zählt. Schauen Sie rein und gestalten Sie die Corrensstraße von Morgen!') }}</p>
         <a href="{{ route('corrensweek') }}">
-            <button class="py-2 px-3 text-xl mt-2 mb-4 border rounded transition hover:bg-white hover:text-black">{{ __('Mehr zur Correnswoche') }}</button>
+            <button class="py-2 px-3 text-xl mt-2 mb-4 border border-gray-400 rounded transition hover:bg-green-200 hover:text-black">{{ __('Mehr zur Correnswoche') }}</button>
         </a>
         <h2 class="mt-8 mb-4 text-2xl font-bold uppercase tracking-wider text-green-600">{{ __('Rund um die Corrensstraße') }}</h2>
         <x-info-image-panel :image="asset('img/content/wem_gehoert_was.png')" title="Wem gehört Was?" text="Wem gehört eigentlich Was? Eine Frage, die bei der Stadtplanung nicht unwichtig ist. Denn wenn Veränderungen angestoßen werden muss sich mit dem*der Eigentümer*in abgesprochen und verhandelt werden. Genauere Angaben über die Besitzverhältnisse im Quartier finden Sie im Abschlussbericht 'Zukunft der Wissenschaftsstadt' auf der Seite 9." url="https://www.muensterzukunft.de/_Resources/Persistent/e/4/7/f/e47f80f2566ae414e15fc582f5e9fb513ed53612/IIW_2020_Abschlussbericht.pdf"/>
