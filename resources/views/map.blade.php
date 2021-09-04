@@ -1,6 +1,6 @@
 <x-guest-layout>
 <div id="sidebar">
-    <b>Polygone</b>
+    <b>Straßenabschnitte</b>
     @foreach (\App\Models\Polygon::all() as $polygon)
         <div id="card_polygon-{{ $polygon->id }}" class="flex items-center p-4 bg-blue-500 hover:bg-blue-800 rounded-lg shadow-xs m-2">
             <div>

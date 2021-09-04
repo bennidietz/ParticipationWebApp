@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Fix and correns video">
+    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="change default config of user">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/map.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/map.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +201,8 @@
       <workItem from="1629808376175" duration="596000" />
       <workItem from="1630140656328" duration="995000" />
       <workItem from="1630153157390" duration="395000" />
-      <workItem from="1630571769390" duration="226000" />
+      <workItem from="1630571769390" duration="590000" />
+      <workItem from="1630682667574" duration="1058000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon changes">
       <created>1626530090055</created>
@@ -306,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630527292216</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="change default config of user">
+      <created>1630572427252</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1630572427252</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +356,7 @@
     <MESSAGE value="Default value for user" />
     <MESSAGE value="Add optional location property to asset" />
     <MESSAGE value="Fix and correns video" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix and correns video" />
+    <MESSAGE value="change default config of user" />
+    <option name="LAST_COMMIT_MESSAGE" value="change default config of user" />
   </component>
 </project>
