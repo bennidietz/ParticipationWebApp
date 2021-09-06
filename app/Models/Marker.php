@@ -38,4 +38,9 @@ class Marker extends Model
     protected $casts = [
 
     ];
+
+    public function suggestions()
+    {
+        return $this->hasMany(Suggestion::class);
+    }
 }

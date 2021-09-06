@@ -15,7 +15,7 @@ class MarkerSeeder extends Seeder
     public function run()
     {
         Marker::factory()
-            ->count(20)
+            ->count(7)
             ->create();
     }
 }

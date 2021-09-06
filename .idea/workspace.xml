@@ -4,10 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Adjust Zoom Level and String">
+    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Adjust landing page">
+      <change afterPath="$PROJECT_DIR$/resources/views/mobility.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mobility/barrierefreiheit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mobility/laermbelaestigung.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mobility/luftverschmutzung.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mobility/sharing.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mobility/sicherheit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mobility/versiegelung.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/MarkerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/MarkerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/SuggestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/SuggestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/SuggestionStore.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/SuggestionStore.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/SuggestionResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/SuggestionResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Marker.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Marker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Suggestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Suggestion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SuggestionFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_11_143253_create_suggestions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_11_143253_create_suggestions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/MarkerSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/MarkerSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/PolygonSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PolygonSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/map.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/map.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +189,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/mobility" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -176,11 +198,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="$PROJECT_DIR$/resources/views/mobility" />
       <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/resources/views/components" />
       <recent name="$PROJECT_DIR$/app/View/Components" />
-      <recent name="$PROJECT_DIR$/public/img/content" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -201,7 +223,8 @@
       <workItem from="1630140656328" duration="995000" />
       <workItem from="1630153157390" duration="395000" />
       <workItem from="1630571769390" duration="590000" />
-      <workItem from="1630682667574" duration="2294000" />
+      <workItem from="1630682667574" duration="4731000" />
+      <workItem from="1630839567699" duration="5180000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon changes">
       <created>1626530090055</created>
@@ -322,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630735380572</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Adjust landing page">
+      <created>1630736631674</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1630736631674</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,6 +394,7 @@
     <MESSAGE value="Fix and correns video" />
     <MESSAGE value="change default config of user" />
     <MESSAGE value="Adjust Zoom Level and String" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjust Zoom Level and String" />
+    <MESSAGE value="Adjust landing page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjust landing page" />
   </component>
 </project>

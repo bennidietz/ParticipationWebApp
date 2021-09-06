@@ -17,6 +17,7 @@ class CreateSuggestionsTable extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('asset_id')->nullable()->onDelete('cascade');
+            $table->foreignId('marker_id')->nullable()->onDelete('set null');
             $table->text('geojson')->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();

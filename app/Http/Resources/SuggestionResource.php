@@ -15,7 +15,8 @@ class SuggestionResource extends JsonResource
     public function toArray($request)
     {
         return array_merge(parent::toArray($request), [
-            'rating' => $this->rating()
+            'rating' => $this->rating(),
+            'asset' => $this->asset,
         ]);
     }
 }

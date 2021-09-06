@@ -1,6 +1,6 @@
 <x-guest-layout>
 <div id="sidebar">
-    <b>Straßenabschnitte</b>
+    <b class="text-lg">Straßenabschnitte</b>
     @php
         $colors = [
             'green',
@@ -11,9 +11,9 @@
         ];
     @endphp
     @foreach (\App\Models\Polygon::all() as $polygon)
-        <div id="card_polygon-{{ $polygon->id }}" class="flex items-center p-4 bg-{{ $colors[$loop->index] }}-500 hover:bg-{{ $colors[$loop->index] }}-800 rounded-lg shadow-xs m-2">
+        <div id="card_polygon-{{ $polygon->id }}" class="flex items-center p-4 bg-{{ $colors[$loop->index] }}-500 hover:bg-{{ $colors[$loop->index] }}-600 rounded-lg shadow-xs m-2">
             <div>
-                <p class="text-lg font-semibold text-white">
+                <p class="font-semibold text-white">
                     {{ $polygon->name }}
                 </p>
 
@@ -26,14 +26,14 @@
         </div>
     @endforeach
     @if (\App\Models\Suggestion::all()->count() > 0)
-    <br><b>Vorschläge</b>
+    <br><b class="text-lg">Vorschläge</b>
     <div id="markers" class="flex items-center p-4 bg-green-500 hover:bg-green-600 rounded-lg shadow-xs m-2">
         <div>
             <p class="mb-2 text-sm font-medium text-white">
                 Alle Vorschläge
             </p>
             <p class="text-lg font-semibold text-white">
-                {{ \App\Models\Suggestion::all()->count() }}
+                {{ \App\Models\Marker::all()->count() }}
             </p>
         </div>
         {{--            <div class="p-3 text-blue-500 bg-blue-100 rounded-full">--}}
@@ -44,7 +44,7 @@
     </div>
     @endif
     <br><b>Vorschläge selber erstellen</b>
-    <small>Um selber Vorschläge auf einer mobilen App zu erstellen, klicken Sie auf <a class="text-blue-800 underline font-bold" href="http://giv-project10.uni-muenster.de">diesen Link</a> oder scannen Sie folgenden QR Code:</small>
+    <small>Um selber Vorschläge auf einer mobilen App zu erstellen, klicken Sie auf <a class="text-blue-800 underline font-bold" href="https://correnslab.de/">diesen Link</a> oder scannen Sie folgenden QR Code:</small>
     <img src="https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=http://giv-project10.uni-muenster.de" />
 </div>
 <div id="map"></div>

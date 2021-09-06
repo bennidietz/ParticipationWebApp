@@ -43,12 +43,22 @@ function initMap() {
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 24,
+    maxZoom: 22,
     //id: 'mapbox/streets-v11',
     //tileSize: 512,
     //zoomOffset: -1
     //accessToken: 'your.mapbox.access.token'
   }).addTo(mymap);
+
+    const polygonColors = [
+        'rgb(16, 185, 129)',
+        'rgb(59, 130, 246)',
+        'rgb(239, 68, 68)',
+        'rgb(245, 158, 11)',
+        'rgb(107, 114, 128)',
+    ];
+
+    var polygonIndex = 0;
 
     fetch('api/polygon')
         .then(response => response.json())
@@ -76,7 +86,14 @@ function initMap() {
     function addPolygon(data) {
         for (index in data.data) {
             polygon = data.data[index];
-            var geojsonShape = L.geoJson(JSON.parse(polygon.geojson)).addTo(mymap);
+            var polystyle = {
+                fillColor: polygonColors[polygonIndex],
+                weight: 2,
+                opacity: 1,
+                color: polygonColors[polygonIndex++],
+                fillOpacity: 0.7
+            };
+            var geojsonShape = L.geoJson(JSON.parse(polygon.geojson), {style: polystyle}).addTo(mymap);
             geojsonShape.bindPopup("<div class=\"flex items-center p-4 rounded-lg shadow-xs m-2\">\n" +
                 "            <div>\n" +
                 "                <p class=\"text-lg font-semibold\">\n" +

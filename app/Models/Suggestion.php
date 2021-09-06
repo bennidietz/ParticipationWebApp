@@ -17,6 +17,7 @@ class Suggestion extends Model
     protected $fillable = [
         'user_id',
         'asset_id',
+        'marker_id',
         'geojson',
         'latitude',
         'longtiude',
@@ -49,6 +50,11 @@ class Suggestion extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function marker()
+    {
+        return $this->belongsTo(Marker::class);
     }
 
     public function asset()

@@ -28,6 +28,7 @@ class SuggestionStore extends FormRequest
         return [
             'user_id' => 'required|numeric',
             'asset_id' => 'numeric',
+            'marker_id' => 'numeric',
             'geojson' => 'string',
             'latitude' => 'numeric',
             'longitude' => 'numeric',

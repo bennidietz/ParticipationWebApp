@@ -69,6 +69,7 @@ class SuggestionController extends Controller
         $validator = Validator::make($request->all(), [
             'user_id' => 'numeric',
             'asset_id' => 'numeric',
+            'marker_id' => 'numeric',
             'geojson' => 'string',
             'latitude' => 'numeric',
             'longitude' => 'numeric',

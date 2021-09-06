@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\MarkerStore;
 use App\Http\Resources\MarkerCollection;
 use App\Http\Resources\MarkerResource;
+use App\Http\Resources\SuggestionCollection;
 use App\Models\Asset;
 use App\Models\Marker;
 use App\Models\Project;
@@ -103,5 +104,10 @@ class MarkerController extends Controller
     {
         Marker::destroy($marker->id);
         return ['status' => '200'];
+    }
+
+    public function getSuggestionsOfMarker(Marker $marker)
+    {
+        return new SuggestionCollection($marker->suggestions);
     }
 }

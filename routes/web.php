@@ -30,6 +30,29 @@ Route::get('/corrensweek', function() {
     return view('corrensweek');
 })->name('corrensweek');
 
+Route::get('/mobility', function() {
+    return view('mobility');
+})->name('mobility');
+
+Route::get('/mobility/luftverschmutzung', function() {
+    return view('mobility/luftverschmutzung');
+})->name('mobility.luftverschmutzung');
+Route::get('/mobility/sharing', function() {
+    return view('mobility/sharing');
+})->name('mobility.sharing');
+Route::get('/mobility/versiegelung', function() {
+    return view('mobility/versiegelung');
+})->name('mobility.versiegelung');
+Route::get('/mobility/barrierefreiheit', function() {
+    return view('mobility/barrierefreiheit');
+})->name('mobility.barrierefreiheit');
+Route::get('/mobility/sicherheit', function() {
+    return view('mobility/sicherheit');
+})->name('mobility.sicherheit');
+Route::get('/mobility/laermbelaestigung', function() {
+    return view('mobility/laermbelaestigung');
+})->name('mobility.laermbelaestigung');
+
 Route::get('/about', function() {
     return view('about');
 })->name('about');
