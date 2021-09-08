@@ -31,8 +31,11 @@
             <div class="flex justify-end items-center">
                 <x-nav-link route="index" :label="__('Home')" />
                 <x-nav-link route="corrensweek" :label="__('Correnswoche')" />
-                <x-nav-link route="mobility" :label="__('Nachhaltige Mobilität')" />
+                <x-nav-link route="mobility" :label="__('Mobilität')" />
                 <x-nav-link route="map" :label="__('Karte')" />
+                @auth
+                    <x-nav-link route="upload" :label="__('Neuer Vorschlag')" />
+                @endauth
                 {{--<x-nav-link route="about" :label="__('Mehr')" />--}}
                 @if (Route::has('login'))
                         @auth

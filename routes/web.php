@@ -53,6 +53,10 @@ Route::get('/mobility/laermbelaestigung', function() {
     return view('mobility/laermbelaestigung');
 })->name('mobility.laermbelaestigung');
 
+Route::get('/upload', function() {
+    return view('upload');
+})->name('upload');
+
 Route::get('/about', function() {
     return view('about');
 })->name('about');
