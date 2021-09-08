@@ -52,6 +52,15 @@ Route::get('/mobility/sicherheit', function() {
 Route::get('/mobility/laermbelaestigung', function() {
     return view('mobility/laermbelaestigung');
 })->name('mobility.laermbelaestigung');
+Route::get('/mobility/fahrrad', function() {
+    return view('mobility/fahrrad');
+})->name('mobility.fahrrad');
+Route::get('/mobility/abstellanlagen', function() {
+    return view('mobility/abstellanlagen');
+})->name('mobility.abstellanlagen');
+Route::get('/mobility/scienceboulevard', function() {
+    return view('mobility/scienceboulevard');
+})->name('mobility.scienceboulevard');
 
 Route::get('/upload', function() {
     return view('upload');

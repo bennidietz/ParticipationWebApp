@@ -21,6 +21,15 @@
             <a href="{{ route('mobility.laermbelaestigung') }}">
                 <x-text-card-view text="Lärmbelästigung" imageUrl="https://www.handelsblatt.com/images/smart-city/24668560/2-format2020.jpg"></x-text-card-view>
             </a>
+            <a href="{{ route('mobility.fahrrad') }}">
+                <x-text-card-view text="Fahrrad" imageUrl="https://www.handelsblatt.com/images/smart-city/24668560/2-format2020.jpg"></x-text-card-view>
+            </a>
+            <a href="{{ route('mobility.abstellanlagen') }}">
+                <x-text-card-view text="Abstellanlagen und Ladestationen" imageUrl="https://www.handelsblatt.com/images/smart-city/24668560/2-format2020.jpg"></x-text-card-view>
+            </a>
+            <a href="{{ route('mobility.scienceboulevard') }}">
+                <x-text-card-view text="Science Boulevard" imageUrl="https://www.handelsblatt.com/images/smart-city/24668560/2-format2020.jpg"></x-text-card-view>
+            </a>
         </div>
     </section>
 
