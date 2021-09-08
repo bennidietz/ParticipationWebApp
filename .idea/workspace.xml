@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Include TextCardView">
-      <change afterPath="$PROJECT_DIR$/resources/views/upload.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mobility.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Introduce upload page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,7 +200,7 @@
       <workItem from="1630571769390" duration="590000" />
       <workItem from="1630682667574" duration="4731000" />
       <workItem from="1630839567699" duration="7387000" />
-      <workItem from="1631019854098" duration="2089000" />
+      <workItem from="1631019854098" duration="2440000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon changes">
       <created>1626530090055</created>
@@ -349,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631006376259</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Introduce upload page">
+      <created>1631090514886</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1631090514886</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,6 +394,7 @@
     <MESSAGE value="Adjust landing page" />
     <MESSAGE value="Include section with mobility" />
     <MESSAGE value="Include TextCardView" />
-    <option name="LAST_COMMIT_MESSAGE" value="Include TextCardView" />
+    <MESSAGE value="Introduce upload page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Introduce upload page" />
   </component>
 </project>
