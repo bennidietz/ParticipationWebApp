@@ -64,7 +64,7 @@ function initMap() {
         .then(response => response.json())
         .then(data => addPolygon(data));
 
-    fetch('api/suggestion')
+    fetch('api/marker')
         .then(response => response.json())
         .then(data => addMarker(data));
 
@@ -119,10 +119,7 @@ function initMap() {
             marker.bindPopup("<div class=\"flex items-center p-4 rounded-lg shadow-xs m-2\">\n" +
                 "            <div>\n" +
                 "                <p class=\"text-lg font-semibold\">\n" +
-                suggestion.title +
-                "                </p>\n" +
-                "                <p class=\"mb-2 text-sm font-medium\">\n" +
-                suggestion.description +
+                suggestion.name +
                 "                </p>\n<br>\<img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=https://correnslab.de/'/>" +
                 "            </div>\n" +
                 "            </div>", 1);

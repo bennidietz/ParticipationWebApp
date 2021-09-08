@@ -3861,7 +3861,7 @@ function initMap() {
   }).then(function (data) {
     return addPolygon(data);
   });
-  fetch('api/suggestion').then(function (response) {
+  fetch('api/marker').then(function (response) {
     return response.json();
   }).then(function (data) {
     return addMarker(data);
@@ -3908,7 +3908,7 @@ function initMap() {
       var marker = L.marker([suggestion.latitude, suggestion.longitude], {
         icon: greenIcon
       }).addTo(mymap);
-      marker.bindPopup("<div class=\"flex items-center p-4 rounded-lg shadow-xs m-2\">\n" + "            <div>\n" + "                <p class=\"text-lg font-semibold\">\n" + suggestion.title + "                </p>\n" + "                <p class=\"mb-2 text-sm font-medium\">\n" + suggestion.description + "                </p>\n<br>\<img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=http://giv-project10.uni-muenster.de/'/>" + "            </div>\n" + "            </div>", 1);
+      marker.bindPopup("<div class=\"flex items-center p-4 rounded-lg shadow-xs m-2\">\n" + "            <div>\n" + "                <p class=\"text-lg font-semibold\">\n" + suggestion.name + "                </p>\n<br>\<img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=https://correnslab.de/'/>" + "            </div>\n" + "            </div>", 1);
       MARKERS[marker.id] = marker;
 
       document.getElementById('card_polygon-' + polygon.id).onclick = function (view) {

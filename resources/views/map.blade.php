@@ -26,11 +26,11 @@
         </div>
     @endforeach
     @if (\App\Models\Suggestion::all()->count() > 0)
-    <br><b class="text-lg">Vorschläge</b>
+    <br><b class="text-lg">Marker</b>
     <div id="markers" class="flex items-center p-4 bg-green-500 hover:bg-green-600 rounded-lg shadow-xs m-2">
         <div>
             <p class="mb-2 text-sm font-medium text-white">
-                Alle Vorschläge
+                Alle Marker
             </p>
             <p class="text-lg font-semibold text-white">
                 {{ \App\Models\Marker::all()->count() }}
@@ -43,9 +43,8 @@
         {{--            </div>--}}
     </div>
     @endif
-    <br><b>Vorschläge selber erstellen</b>
-    <small>Um selber Vorschläge auf einer mobilen App zu erstellen, klicken Sie auf <a class="text-blue-800 underline font-bold" href="https://correnslab.de/">diesen Link</a> oder scannen Sie folgenden QR Code:</small>
-    <img src="https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=http://giv-project10.uni-muenster.de" />
+    <br><b>Vorschläge selber erstellen</b><br>
+    <small class="text-base">Unter <a class="text-blue-600 font-bold hover:underline" href="{{ route('upload') }}">Neuer Vorschlag</a> können Sie selber neue Vorschläge erstellen.</small>
 </div>
 <div id="map"></div>
 <!-- Trigger/Open The Modal -->

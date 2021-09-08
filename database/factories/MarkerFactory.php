@@ -24,8 +24,8 @@ class MarkerFactory extends Factory
         return [
             'name' => $this->faker->text(10),
             'visible' => rand(0,1) == 1,
-            'latitude' => $this->faker->randomFloat(5, 51, 52),
-            'longitude' => $this->faker->randomFloat(5, 7, 8),
+            'latitude' => $this->faker->randomFloat(5, 51.96503984652766, 51.969645460144044),
+            'longitude' => $this->faker->randomFloat(5, 7.595329284667969, 7.599277496337891),
         ];
     }
 }
