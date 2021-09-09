@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Adjust map to makers">
-      <change afterPath="$PROJECT_DIR$/resources/views/mobility/abstellanlagen.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/mobility/fahrrad.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/mobility/scienceboulevard.blade.php" afterDir="false" />
+    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Force htps">
+      <change afterPath="$PROJECT_DIR$/public/uploadfunctionality/einbindenVonLeaflet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploadfunctionality/index_EntwurfHochladen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploadfunctionality/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mobility.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -187,6 +187,9 @@
       <recent name="$PROJECT_DIR$/resources/views/components" />
       <recent name="$PROJECT_DIR$/app/View/Components" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/uploadfunctionality" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -209,6 +212,7 @@
       <workItem from="1630682667574" duration="4731000" />
       <workItem from="1630839567699" duration="7387000" />
       <workItem from="1631019854098" duration="4571000" />
+      <workItem from="1631189394575" duration="1432000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon changes">
       <created>1626530090055</created>
