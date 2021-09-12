@@ -1,12 +1,19 @@
-const lat = 51.96;
-const lon = 7.59;
+//****various jshint configs****
+// jshint esversion: 8
+// jshint browser: true
+// jshint node: true
+// jshint -W117
+// jshint -W083
+"use strict";
+
+const lat = 51.96897313542579;
+const lon = 7.596425373765546;
 
 const start_latlng = [lat, lon];
 
 var map = L.map("mapdiv", {
     center: start_latlng,
-    zoom: 13,
-    //layers: [osm, mapbox]
+    zoom: 16,
 });
 
 var osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
