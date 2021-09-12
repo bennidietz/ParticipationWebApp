@@ -50,23 +50,22 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6">
-        <p id="listeMarkerAuf"></p>
-        <h2>1. Auswählen von dem Standort</h2>
-        <p id="gibKoordinatenVomMarker"></p>
-
+        <h2>1. Einen Entwurf auswählen.</h2>
+        <input type="file" id="Draft" name="Draft" accept="image/png, image/tiff, image/jpeg, image/gif, .gltf, .glb" required>
+        <br>
+        <label for="name">Name des Bildes</label>
+        <input type="name" id="name" value="" placeholder="Name" required class="form-control">
+        <br>
+        <h2>Mögliche Standorte</h2>
         <div id="map" style="width: 600px; height: 400px;"></div>
+        <br>
       </div>
 
       <br>
 
       <div class="col-sm-6">
         <div class="btn-group" role="group" aria-label="Basic example">
-          <h2>2. Einen Entwurf auswählen.</h2>
-          <input type="file" id="Draft" name="Draft" accept="image/png, image/tiff, image/jpeg, image/gif, .gltf, .glb" required>
-          <br>
-          <label for="name">Name des Bildes</label>
-          <input type="name" id="name" value="" placeholder="Name" required class="form-control">
-          <br>
+          <h2>2. Auswahl eines Standortes</h2>
           <label for="name">Standort des Markers</label> <br>
           <!--<input type="name" id="marker" value="" placeholder="Marker" required class="form-control">
           <br> -->
@@ -76,7 +75,7 @@
             <option>Marker 3</option>
             <option>Marker 4</option>
           </select>
-          <h2>3. Einen Entwurf hochladen</h2>
+          <h2>3. Den Entwurf hochladen</h2>
           <input type="checkbox" id="rechtlich" name="rechtlich" value="rechtlich" required>
           <label for="rechtlich"> Ich bestätige hiermit, dass es rechtlich in Ordnung ist diesen Entwurf hochzuladen.</label><br>
           <button type="submit" onclick="sendAsset()" class="btn btn-default">Entwurf hochladen</button>

@@ -33,15 +33,6 @@ var showCoordinates2 = marker2.getLatLng();
 var showCoordinates3 = marker3.getLatLng();
 var showCoordinates4 = marker4.getLatLng();
 
-// Grundidee: Bei einem Klick auf einen Marker werden die Koordinaten "ausgelesen" und als Informtation mit an den Server gesendet (POST Asset)
-
-// Koordinaten des ausgewaehlten Markers ermitteln
-map.on("click", function(e){
-  var showCoordinates = marker1.getLatLng();
-  console.log(showCoordinates);
-  document.getElementById("gibKoordinatenVomMarker").innerHTML = showCoordinates;
-});
-
 var osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors",
