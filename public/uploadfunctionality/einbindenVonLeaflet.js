@@ -11,7 +11,7 @@ const lon = 7.596425373765546;
 
 const start_latlng = [lat, lon];
 
-var map = L.map("mapdiv", {
+var map = L.map("map", {
     center: start_latlng,
     zoom: 17,
 });
