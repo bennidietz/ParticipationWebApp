@@ -10,8 +10,8 @@
 // console.log("Abfrage der Marker starten");
 // let request = new XMLHttpRequest();
 // request.onload = function() {
-  //const myObj2 = JSON.parse(this.responseText);
-  //document.getElementById("demo").innerHTML = myObj2.name;
+//const myObj2 = JSON.parse(this.responseText);
+//document.getElementById("demo").innerHTML = myObj2.name;
 // };
 // request.open("Get", "http://giv-project10.uni-muenster.de/api/marker", false);
 // request.send();
@@ -32,9 +32,9 @@
 // Senden eines Assets an den Server
 function sendAsset(){
   const goAsset = new XMLHttpRequest();
-    goAsset.onload = function() {
-      document.getElementById("name").innerHTML = this.responseText;
-    };
-    goAsset.open("POST", "http://giv-project10.uni-muenster.de/api/asset");
-    goAsset.send();
-  }
+  goAsset.onload = function() {
+    document.getElementById("name").innerHTML = this.responseText;
+  };
+  goAsset.open("POST", "http://giv-project10.uni-muenster.de/api/asset");
+  goAsset.send();
+}
