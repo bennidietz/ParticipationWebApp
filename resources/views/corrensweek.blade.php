@@ -19,22 +19,31 @@
                         <td class="p-2 border-b border-gray-300 border-dashed">12:00 - 13:00 Uhr</td>
                         <td class="border-b border-gray-300 border-dashed"></td>
                         <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">Vortrag von Prof. Dr. Guido Ritter: "Food.Land.Stadt" @Correnslaube</div>
+                            <div class="p-2 text-center text-white bg-yellow-500" data-aos="zoom-in">Vortrag von Prof. Dr. Guido Ritter: "Food.Land.Stadt" @Correnslaube</div>
                         </td>
                         <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-blue-500" data-aos="zoom-in">B</div>
+                            <div class="p-2 text-center text-white bg-green-500" data-aos="zoom-in">12:00-15:00 Uhr Die kommende Stadt das Spiel (Anmeldung erforderlich) @Forum</div>
                         </td>
-                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed"><div class="p-2 text-center text-white bg-yellow-500" data-aos="zoom-in">Akrobatik Duo  @Correnslaube</div>
+                        <div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">Poetry Slam mit dem Schreib- und Lesezentrum @Bühne</div>
+                        <div class="p-2 text-center text-white bg-green-500" data-aos="zoom-in">12:00 - 15:00 Uhr Die kommende Stadt - das Spiel (Anmeldung erforderlich) @Forum</div></td>
                         <td class="border-b border-gray-300 border-dashed"></td>
                     </tr>
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">13:00 - 14:00 Uhr</td>
+                 </td> 
                         <td class="border-b border-gray-300 border-dashed"></td>
                         <td class="border-b border-gray-300 border-dashed">
-                           
+                            <div class="p-2 text-center text-white bg-green-500" data-aos="zoom-in">"Mundraub"-Sammelaktion! @Kreislaufkiosk</div>
                         </td>
+                        <td class="border-b border-gray-300 border-dashed"> <div class="p-2 text-center text-white bg-green-500" data-aos="zoom-in">"Mundraub"-Sammelaktion! @Kreislaufkiosk</div> </td> 
+                           
                         <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-blue-500" data-aos="zoom-in">D</div>
+                            <div class="p-2 text-center text-white bg-yellow-500" data-aos="zoom-in">13:00 - 13:45 Uhr GemüseAckerdemie - Acker schafft Wissen @Correnslaube</div>
+                        </td> 
+                         
+                        <td class="border-b border-gray-300 border-dashed">
+                           
                         </td>
                         <td class="border-b border-gray-300 border-dashed"></td>
                         <td class="border-b border-gray-300 border-dashed">
@@ -48,9 +57,9 @@
                         </td>
                         <td class="border-b border-gray-300 border-dashed"><div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">Vorstellung der Webplattform für Partizipation @Bühne</div></td>
                         <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-blue-500" data-aos="zoom-in">G</div>
+                      
                         </td>
-                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed"><div class="p-2 text-center text-white bg-red-300" data-aos="zoom-in">Improtheater. frei und improvisiert @Bühne</div></td>
                         <td class="border-b border-gray-300 border-dashed">
                           
                         </td>
@@ -58,13 +67,19 @@
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">15:00 - 16:00 Uhr</td>
                         <td class="border-b border-gray-300 border-dashed">
-                            
+                        <td class="border-b border-gray-300 border-dashed"><div class="p-2 text-center text-white bg-red-300" data-aos="zoom-in">Live Musik von Dalia @ Bühne</div></td>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"><div class="p-2 text-center text-white bg-blue-500" data-aos="zoom-in">Bowle von EGEA Münster @Trinkhalle</div></td>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"><div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">Live Musik von Selina aus Münster @Bühne</div>
+                        <div class="p-2 text-center text-white bg-blue-500" data-aos="zoom-in">Bowle von EGEA Münster @Trinkhalle </div></td>
                         </td>
                         <td class="border-b border-gray-300 border-dashed"></td><div class="p-2 text-center text-white bg-green-700" data-aos="zoom-in">Sperrung des Straßenabschnitts Dienstag (28.09.) 10 Uhr bis Sonntag (03.10.) 16 Uhr </div>
                         <td class="border-b border-gray-300 border-dashed"></td>
                         <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
                         <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-green-700" data-aos="zoom-in">H</div>
+                          
                         </td>
                     </tr>
                     <tr>
@@ -73,54 +88,72 @@
                             
                         </td>
                         <td class="border-b border-gray-300 border-dashed"></td>
-                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed"><div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">16:00 - 20:00 Uhr Schnippeldisko - Schnibbeln und Schnabbulieren auf der Straße @Forum</div>
+                        <div class="p-2 text-center text-white bg-red-300" data-aos="zoom-in">Partizipation und Augmented Reality @Bühne</div</td>
+                        
                         <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-gray-500" data-aos="zoom-in">J</div>
+                            <div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">16:00 - 18:00 Uhr Abschlussdiskussion mit Stadtbaurat Robin Denstorff @Bühne</div>
                         </td>
                         <td class="border-b border-gray-300 border-dashed"></td>
                     </tr>
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">17:00 - 18:00 Uhr</td>
                         <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-yellow-500" data-aos="zoom-in">17:30 Eröffnung des CorrensLab @Bühne</div>
-                            <div class="p-2 text-center text-white bg-yellow-500" data-aos="zoom-in">Ab 18 Uhr Live-Cooking mit Achileeze die Leezenküche @Forum </div>
-                        </td>
-                        <td class="border-b border-gray-300 border-dashed"></td>
-                        <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-red-700" data-aos="zoom-in">K</div>
+                            <div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">17:30 Eröffnung des CorrensLab @Bühne</div>
+
+                            
                         </td>
                         <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-gray-500" data-aos="zoom-in">L</div>
+                            <div class="p-2 text-center text-white bg-blue-700" data-aos="zoom-in">17:30 -18:30 Besuch des Oberbürgermeisters</div>
+                            <div class="p-2 text-center text-white bg-green-300" data-aos="zoom-in">17:00 -20:00 Die kommende Stadt- das Spiel (Anmeldung erforderlich) @ Forum</div>
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"><div class="p-2 text-center text-white bg-yellow-500" data-aos="zoom-in">17:00 - 17.30 Uhr Impulsvortrag von Dr. Jan Wessel: "Radverhalten in Münster" @Correnslaube</div></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                        
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed">
+                   
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed">
+                     
                         </td>
                         <td class="border-b border-gray-300 border-dashed"></td>
                     </tr>
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">18:00 - 19:00 Uhr</td>
                         <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-yellow-400" data-aos="zoom-in">18 Uhr Live-Musik von Rocket Brass @Bühne</div>
+                             <div class="p-2 text-center text-white bg-green-300" data-aos="zoom-in">18 Uhr Live-Cooking mit Achileeze die Leezenküche  @Forum</div>
+                            <div class="p-2 text-center text-white bg-red-400" data-aos="zoom-in">18 Uhr Live-Musik von Rocket Brass @Bühne</div>
                         </td>
-                        <td class="border-b border-gray-300 border-dashed"></td>
-                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed"><div class="p-2 text-center text-white bg-yellow-400" data-aos="zoom-in">Austausch mit dem Hansaforum @Correnslaube</div></td>
+                        <td class="border-b border-gray-300 border-dashed"><div class="p-2 text-center text-white bg-red-400" data-aos="zoom-in">Live Musik von Luftxliebe @Bühne</div></td>
                         <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-gray-500" data-aos="zoom-in">N</div>
+                        
                         </td>
                         <td class="border-b border-gray-300 border-dashed"></td>
                     </tr>
                     <td class="p-2 border-b border-gray-300 border-dashed">19:00 - 20:00 Uhr</td>
                         <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-yellow-500" data-aos="zoom-in">19 Uhr Improtheater, Gruppe "Tante Ute" @Bühne</div>
+                            <div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">19 Uhr Improtheater, Gruppe "Tante Ute" @Bühne</div>
                         </td>
                         <td class="border-b border-gray-300 border-dashed"></td>
                         <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-red-700" data-aos="zoom-in">P</div>
+
                         </td>
                         <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-gray-500" data-aos="zoom-in">Q</div>
+                     
                         </td>
                         <td class="border-b border-gray-300 border-dashed"></td>
                     </tr>
-                    <tr>
-                </tbody>
+                    <td class="p-2 border-b border-gray-300 border-dashed"></td>
+                    <td class="border-b border-gray-300 border-dashed">
+                       
+                        </td>
+                        <td class="border-b border-gray-300 border-dashed"></td>
+                        <td class="border-b border-gray-300 border-dashed">
+                            <div class="p-2 text-center text-white bg-purple-700" data-aos="zoom-in">ganztägig ADFC Selbsthilfewerkstatt Mobilität</div>
+                        </td>
+                    </tbody>
             </table>
         </div>
 
