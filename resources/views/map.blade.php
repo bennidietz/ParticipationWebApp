@@ -44,7 +44,7 @@
     </div>
     @endif
     <br><b>Vorschläge selber erstellen</b><br>
-    <small class="text-base">Unter <a class="text-blue-600 font-bold hover:underline" href="{{ route('upload') }}">Neuer Vorschlag</a> können Sie selber neue Vorschläge erstellen.</small>
+    <small class="text-base">Unter <a class="text-blue-600 font-bold hover:underline" href="/uploadfunctionality/index_EntwurfHochladen.html">Neuer Vorschlag</a> können Sie selber neue Vorschläge erstellen.</small>
 </div>
 <div id="map"></div>
 <!-- Trigger/Open The Modal -->

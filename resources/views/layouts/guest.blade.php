@@ -33,9 +33,6 @@
                 <x-nav-link route="corrensweek" :label="__('CorrensLab')" />
                 <x-nav-link route="mobility" :label="__('Mobilität')" />
                 <x-nav-link route="map" :label="__('Karte')" />
-                @auth
-                    <x-nav-link route="upload" :label="__('Neuer Vorschlag')" />
-                @endauth
                 {{--<x-nav-link route="about" :label="__('Mehr')" />--}}
                 @if (Route::has('login'))
                         @auth
