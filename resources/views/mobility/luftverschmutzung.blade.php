@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-    <section class="pt-24 pb-8 max-w-7xl mx-auto">
+    <section class="pl-5 pt-24 pb-8 max-w-7xl mx-auto">
         <h2 class="mb-4 text-3xl font-bold uppercase tracking-wider text-green-600">Luftverschmutzung</h2>
         <div class="text-xl w-2/3 leading-relaxed tracking-wide">
             <br><h3 class='font-bold'>Auf der Straße der Zukunft kannst du saubere Luft atmen ohne, dass es deiner Gesundheit schadet. </h3>
