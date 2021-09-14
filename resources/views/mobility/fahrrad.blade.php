@@ -36,5 +36,4 @@
             </div>
         </div>
     </section>
-    <a class="text-blue-800 hover:underline" href=""></a>
 </x-guest-layout>
