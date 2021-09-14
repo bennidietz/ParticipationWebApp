@@ -11,7 +11,7 @@
                         <th class="p-2 border-b border-gray-500">{{ __('Donnerstag, 30. September') }}</th>
                         <th class="p-2 border-b border-gray-500">{{ __('Freitag, 01. Oktober') }}</th>
                         <th class="p-2 border-b border-gray-500">{{ __('Samstag, 02. Oktober') }}</th>
-                        
+
                     </tr>
                 </thead>
                 <tbody>
@@ -31,20 +31,20 @@
                         <td class="p-2 border-b border-gray-300 border-dashed">13:00 - 14:00 Uhr</td>
                         <td class="border-b border-gray-300 border-dashed"></td>
                         <td class="border-b border-gray-300 border-dashed">
-                           
+
                         </td>
                         <td class="border-b border-gray-300 border-dashed">
                             <div class="p-2 text-center text-white bg-blue-500" data-aos="zoom-in">D</div>
                         </td>
                         <td class="border-b border-gray-300 border-dashed"></td>
                         <td class="border-b border-gray-300 border-dashed">
-                          
+
                         </td>
                     </tr>
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">14:00 - 15:00 Uhr</td>
                         <td class="border-b border-gray-300 border-dashed">
-                          
+
                         </td>
                         <td class="border-b border-gray-300 border-dashed"><div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">Vorstellung der Webplattform für Partizipation @Bühne</div></td>
                         <td class="border-b border-gray-300 border-dashed">
@@ -52,13 +52,13 @@
                         </td>
                         <td class="border-b border-gray-300 border-dashed"></td>
                         <td class="border-b border-gray-300 border-dashed">
-                          
+
                         </td>
                     </tr>
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">15:00 - 16:00 Uhr</td>
                         <td class="border-b border-gray-300 border-dashed">
-                            
+
                         </td>
                         <td class="border-b border-gray-300 border-dashed"></td><div class="p-2 text-center text-white bg-green-700" data-aos="zoom-in">Sperrung des Straßenabschnitts Dienstag (28.09.) 10 Uhr bis Sonntag (03.10.) 16 Uhr </div>
                         <td class="border-b border-gray-300 border-dashed"></td>
@@ -70,7 +70,7 @@
                     <tr>
                         <td class="p-2 border-b border-gray-300 border-dashed">16:00 - 17:00 Uhr</td>
                         <td class="border-b border-gray-300 border-dashed">
-                            
+
                         </td>
                         <td class="border-b border-gray-300 border-dashed"></td>
                         <td class="border-b border-gray-300 border-dashed"></td>

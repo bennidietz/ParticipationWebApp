@@ -35,7 +35,7 @@
         <p class="mb-2 text-sm">{{ __('Wie schaffen wir Aufenthaltsqualität an und auf der Corrensstraße? ') }}</p>
         <p class="mb-2 text-sm">{{ __('Wie wollen Sie, dass die Corrensstraße in Zukunft aussieht?') }}</p>
         <p class="mb-4 text-sm">{{ __('Ihre Meinung zählt. Schauen Sie rein und gestalten Sie die Corrensstraße von Morgen!') }}</p>
-        <x-info-image-panel :image="asset('img/plakat.png')" title="" text="" />
+        <x-info-image-panel :image="asset('img/plakat_min.png')" title="" text="" />
         <a href="{{ route('corrensweek') }}">
             <button class="py-2 px-3 text-xl mt-2 mb-4 border border-gray-400 rounded transition hover:bg-green-200 hover:text-black">{{ __('Mehr zur Correnswoche') }}</button>
 
