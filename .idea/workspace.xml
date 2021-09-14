@@ -5,28 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Include interact functionality">
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/abstellmoeglichkeiten_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/abstellmoeglichkeiten_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/abstellmoeglichkeiten_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/abstellmoeglichkeiten_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/abstellmoeglichkeiten_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/fahrrad_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/laermbelaestigung_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/laermbelaestigung_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/luftverschmutzung_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/science_boulevard_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/science_boulevard_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/science_boulevard_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/sharing_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/versiegelung_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/versiegelung_2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/header-text-section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/header-text-section.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mobility/barrierefreiheit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/barrierefreiheit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mobility/laermbelaestigung.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/laermbelaestigung.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mobility/luftverschmutzung.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/luftverschmutzung.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mobility/sharing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/sharing.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mobility/versiegelung.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/versiegelung.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/text-card-view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/text-card-view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mobility.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
