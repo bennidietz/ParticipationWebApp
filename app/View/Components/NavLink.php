@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class nav-link extends Component
+class NavLink extends Component
 {
     public $route;
     public $label;
@@ -14,7 +14,7 @@ class nav-link extends Component
      *
      * @return void
      */
-    public function __construct($route, $label)
+    public function __construct(?string $route = null, $label)
     {
         $this->route = $route;
         $this->label = $label;

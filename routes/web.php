@@ -37,27 +37,35 @@ Route::get('/mobility', function() {
 Route::get('/mobility/luftverschmutzung', function() {
     return view('mobility/luftverschmutzung');
 })->name('mobility.luftverschmutzung');
+
 Route::get('/mobility/sharing', function() {
     return view('mobility/sharing');
 })->name('mobility.sharing');
+
 Route::get('/mobility/versiegelung', function() {
     return view('mobility/versiegelung');
 })->name('mobility.versiegelung');
+
 Route::get('/mobility/barrierefreiheit', function() {
     return view('mobility/barrierefreiheit');
 })->name('mobility.barrierefreiheit');
+
 Route::get('/mobility/sicherheit', function() {
     return view('mobility/sicherheit');
 })->name('mobility.sicherheit');
+
 Route::get('/mobility/laermbelaestigung', function() {
     return view('mobility/laermbelaestigung');
 })->name('mobility.laermbelaestigung');
+
 Route::get('/mobility/fahrrad', function() {
     return view('mobility/fahrrad');
 })->name('mobility.fahrrad');
+
 Route::get('/mobility/abstellanlagen', function() {
     return view('mobility/abstellanlagen');
 })->name('mobility.abstellanlagen');
+
 Route::get('/mobility/scienceboulevard', function() {
     return view('mobility/scienceboulevard');
 })->name('mobility.scienceboulevard');
@@ -78,7 +86,7 @@ Route::get('/privacy', function() {
     return view('privacy');
 })->name('privacy');
 
-Route::group(['prefix' => 'dashboard'], function() use ($router) {
+Route::group(['prefix' => 'dashboard', 'middleware' => ['role:admin,city-planner,masteradmin']], function() use ($router) {
     Route::get('', function () {
         return view('dashboard');
     })->name('dashboard');
