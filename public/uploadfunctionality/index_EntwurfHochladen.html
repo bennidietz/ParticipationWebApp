@@ -1,103 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Studienprojekt Stadtlabor</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <title>Vorschläge einbringen</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <!-- Bootstrap CSS -->
-  <!-- This script is mandatory (Hamburger-Menu), do not delete-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="src/public/style.css">
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
-  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-  crossorigin=""/>
-
-  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-  integrity="sha512-QVftwZFqvtuRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-  crossorigin=""></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
 </head>
+
 <body>
-  <!-- navbar -->
   <nav class="navbar navbar-expand-md navbar-dark navbar-inverse">
-    <a class="navbar-brand" class="nav-link" href="/index">Home</a>
+    <a class="navbar-brand" class="nav-link" href="http://correnslab.de/public/uploadfunctionality/index_EntwurfHochladen.html">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="nav navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="/index_user_EntwurfHochladen">Entwurf hochladen</a>
+          <a class="nav-link" href="http://correnslab.de/public/uploadfunctionality/index_EntwurfHochladen.html">Entwurf hochladen</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/index_user_EntwurfHochladen">AR View</a>
+          <a class="nav-link" href="http://correnslab.de/public/uploadfunctionality/index_AR_View.html">AR-View</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/index" onclick="delete_logged_User()">Logout</a> <!-- provisorischer Logout, aktuell Link zur Startseite -->
+          <a class="nav-link" href="http://correnslab.de/">CorrensLab</a>
         </li>
       </ul>
     </div>
   </nav>
-  <!-- /navbar -->
 
   <div class="Introduction">
     <div class="jumbotron">
-      <h2><b>App-Project CorrensLab</b></h2>
+      <h2><b>App-Project Corrensstraße</b></h2>
       course: Studienprojekt Stadtlabor 2021 <br>
     <br>
   </div>
 </div>
 
-<!-- main container -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <label> Einen Entwurf hochladen: </label>
-        <input type="file" id="Draft" name="Draft" accept="image/png, image/tiff, image/jpeg, image/gif, .gltf, .glb">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>1. Einen Entwurf auswählen.</h2>
+        <input type="file" id="Draft" name="Draft" accept="image/png, image/tiff, image/jpeg, image/gif, .gltf, .glb" required>
         <br>
-        <input type="checkbox" id="rechtlich" name="rechtlich" value="rechtlich" required>
-        <label for="rechtlich"> Ich bestätige hiermit, dass es rechtlich in Ordnung ist diesen Entwurf hochzuladen.</label><br>
-        <button type="submit" onclick="uploadDraft()" class="btn btn-default">Entwurf hochladen</button>
+        <label for="name">Name des Bildes</label>
+        <input type="name" id="name" value="" placeholder="Name" required class="form-control">
+        <br>
+        <h2>Mögliche Standorte</h2>
+        <div id="map" style="width: 600px; height: 400px;"></div>
+        <br>
       </div>
-    </div>
 
-    <br>
+      <br>
 
-    <div class="col-sm-6">
-  <div id="mapdiv" style="width: 600px; height: 400px;"></div>
-</div>
-</div>
-</div>
-<!-- /container -->
-
-<br><br>
-
-    <!-- footer -->
-    <footer class="container-fluid text-center">
-      <p> <b> Impressum </b> </p>
-      <p> (...)
-        <span class="footer-separator">|</span> 2021
+      <div class="col-sm-6">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <h2>2. Auswahl eines Standortes</h2>
+          <label for="name">Standort des Markers</label> <br>
+          <!--<input type="name" id="marker" value="" placeholder="Marker" required class="form-control">
+          <br> -->
+          <form action="http://giv-project10.uni-muenster.de/api/asset" method="post">
+            <select name="Wähle einen Standort aus." size="1">
+              <option value="Marker 1">Marker 1</option>
+              <option value="Marker 2">Marker 2</option>
+              <option value="Marker 3">Marker 3</option>
+              <option value="Marker 4">Marker 4</option>
+            </select>
+            <h2>3. Den Entwurf hochladen</h2>
+            <input type="checkbox" id="rechtlich" name="rechtlich" value="rechtlich" required>
+            <label for="rechtlich"> Ich bestätige hiermit, dass es rechtlich in Ordnung ist diesen Entwurf hochzuladen.</label><br>
+            <button type="submit" onclick="sendAsset()" class="btn btn-default">Entwurf hochladen</button>
+          </form>
+          <br>
           <br><br>
-    </footer>
-    <!-- /footer -->
+        </div>
+      </div>
 
-<!-- The following script is mandatory (Hamburger-Menu), do not delete-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-crossorigin="anonymous"></script>
-<!-- The following script is mandatory (Hamburger-Menu), do not delete-->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-crossorigin="anonymous"></script>
+    </div>
+  </div>
+  <br><br>
 
-<script src="einbindenVonLeaflet.js"></script>
+  <footer class="container-fluid text-center">
+    <p> Impressum <span class="footer-separator">|</span> Datenschutz </p>
+    <br><br>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+  <script src="einbindenVonLeaflet.js"></script>
 </body>
 </html>
