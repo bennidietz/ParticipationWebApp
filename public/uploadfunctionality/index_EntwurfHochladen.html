@@ -21,7 +21,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
+    
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="nav navbar-nav">
         <li class="nav-item">
@@ -69,16 +69,18 @@
           <label for="name">Standort des Markers</label> <br>
           <!--<input type="name" id="marker" value="" placeholder="Marker" required class="form-control">
           <br> -->
-          <select name="Wähle einen Standort aus." size="1">
-            <option>Marker 1</option>
-            <option>Marker 2</option>
-            <option>Marker 3</option>
-            <option>Marker 4</option>
-          </select>
-          <h2>3. Den Entwurf hochladen</h2>
-          <input type="checkbox" id="rechtlich" name="rechtlich" value="rechtlich" required>
-          <label for="rechtlich"> Ich bestätige hiermit, dass es rechtlich in Ordnung ist diesen Entwurf hochzuladen.</label><br>
-          <button type="submit" onclick="sendAsset()" class="btn btn-default">Entwurf hochladen</button>
+          <form action="http://giv-project10.uni-muenster.de/api/asset" method="post">
+            <select name="Wähle einen Standort aus." size="1">
+              <option value="Marker 1">Marker 1</option>
+              <option value="Marker 2">Marker 2</option>
+              <option value="Marker 3">Marker 3</option>
+              <option value="Marker 4">Marker 4</option>
+            </select>
+            <h2>3. Den Entwurf hochladen</h2>
+            <input type="checkbox" id="rechtlich" name="rechtlich" value="rechtlich" required>
+            <label for="rechtlich"> Ich bestätige hiermit, dass es rechtlich in Ordnung ist diesen Entwurf hochzuladen.</label><br>
+            <button type="submit" onclick="sendAsset()" class="btn btn-default">Entwurf hochladen</button>
+          </form>
           <br>
           <br><br>
         </div>
