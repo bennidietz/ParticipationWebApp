@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Include interact functionality">
+    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Image fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/text-card-view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/text-card-view.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mobility.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mobility/fahrrad.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/fahrrad.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -396,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631266261749</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Image fixes">
+      <created>1631614554943</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1631614554943</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,6 +452,7 @@
     <MESSAGE value="Include unload functionality" />
     <MESSAGE value="Include upload functionality" />
     <MESSAGE value="Include interact functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Include interact functionality" />
+    <MESSAGE value="Image fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image fixes" />
   </component>
 </project>
