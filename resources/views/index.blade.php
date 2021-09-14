@@ -7,7 +7,6 @@
         <div class="w-full h-full absolute top-0 left-0 bg-gray-800 bg-opacity-60 flex justify-center items-center">
             <div class="w-full p-8 flex justify-center items-left text-white" data-aos="zoom-in">
                 <div class="w-full md:w-3/5 text-lg">
-                    <!--<img src="{{ asset('img/logo.png') }}" />-->
                     <h1 class="mb-4 text-5xl">Correns<strong style="color: #7ec098">Lab</strong></h1>
                     <p class="mb-2 text-lg">{{ __('Münsters Wissensquartiere sind in Bewegung und neue Orte für Wissen, Wohnen, Leben und Arbeiten entstehen. Diese Veränderung muss heutigen Anforderungen an eine klimafreundliche und gemeinwohlorientierte aber auch soziale Stadt Münster gerecht werden.') }}</p>
                     <p class="mb-2 text-lg">{{ __('Der öffentliche Raum ist dabei ein wichtiger Grundpfeiler für eine lebenswerte und klimagerechte Stadt Münster. Bisher sind Straßen vor allem Zufarts-, Verbindungswege und Orte der Moilität. Sie können aber viel mehr sein.') }}</p>
@@ -27,6 +26,7 @@
     </section>
 
     <section class="py-24 max-w-7xl mx-auto">
+        <img class="mb-6 mx-auto block" src="{{ asset('img/logo.png') }}" />
         <h2 class="mb-4 text-2xl font-bold uppercase tracking-wider text-green-600">{{ __('Über das CorrensLab') }}</h2>
         <p class="mb-2 text-sm">{{ __('Die Corrensstraße führt von der Von-Esmach-Straße zum Horstmarer Landweg. Sie ist ein Verbindungsglied der Urbanen Wissenschaftsstadt. Die Zukunft Münsters ist eng verknüpft mit der Entwicklung der Wissenschaft in der Stadt. Gleichzeitig sind die urbanen Qualitäten Münsters ein wesentlicher Standortfaktor für die Entwicklung der Wissenschafts- und Forschungsinstitutionen. Wie kann es gelingen ein Quartier zu entwickeln in dem Arbeiten, Forschen, Freizeit und Wohnen Hand in Hand gehen?') }}</p>
         <p class="mb-2 text-sm">{{ __('Um diese Fragen zu klären wurde in Zusammenarbeit zwischen der Stadt Münster, Fachhochschule Münster und Uni Münster das Projekt CorrensLab ins Leben gerufen. Verschiedenste Akteur*innen machen sich bei diesem Projekt Gedanken, wie sich die Corrensstraße verändern könnte. In welche Richtung ist offen. ') }}</p>
