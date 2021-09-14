@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Adjust map to makers">
-      <change afterPath="$PROJECT_DIR$/resources/views/mobility/abstellanlagen.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/mobility/fahrrad.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/mobility/scienceboulevard.blade.php" afterDir="false" />
+    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Include interact functionality">
+      <change afterPath="$PROJECT_DIR$/public/ar/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mobility.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +24,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -171,7 +168,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/mobility" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/ar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -181,11 +178,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/ar" />
+      <recent name="$PROJECT_DIR$/public/interact" />
       <recent name="$PROJECT_DIR$/resources/views/mobility" />
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/resources/views" />
-      <recent name="$PROJECT_DIR$/resources/views/components" />
-      <recent name="$PROJECT_DIR$/app/View/Components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/uploadfunctionality" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -209,6 +209,8 @@
       <workItem from="1630682667574" duration="4731000" />
       <workItem from="1630839567699" duration="7387000" />
       <workItem from="1631019854098" duration="4571000" />
+      <workItem from="1631189394575" duration="2213000" />
+      <workItem from="1631266243512" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon changes">
       <created>1626530090055</created>
@@ -371,7 +373,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631092687539</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Include upload functionality">
+      <created>1631200465046</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1631200465046</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Include interact functionality">
+      <created>1631201158910</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1631201158910</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,6 +435,9 @@
     <MESSAGE value="Introduce upload page" />
     <MESSAGE value="Make background video slower" />
     <MESSAGE value="Adjust map to makers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjust map to makers" />
+    <MESSAGE value="Include unload functionality" />
+    <MESSAGE value="Include upload functionality" />
+    <MESSAGE value="Include interact functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Include interact functionality" />
   </component>
 </project>
