@@ -4,8 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Incorporate content of bix group">
-      <change beforePath="$PROJECT_DIR$/resources/views/mobility/scienceboulevard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/scienceboulevard.blade.php" afterDir="false" />
+    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Include interact functionality">
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/abstellmoeglichkeiten_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/abstellmoeglichkeiten_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/abstellmoeglichkeiten_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/abstellmoeglichkeiten_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/abstellmoeglichkeiten_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/fahrrad_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/laermbelaestigung_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/laermbelaestigung_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/luftverschmutzung_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/science_boulevard_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/science_boulevard_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/science_boulevard_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/sharing_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/versiegelung_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/versiegelung_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/header-text-section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/header-text-section.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mobility/barrierefreiheit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/barrierefreiheit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mobility/laermbelaestigung.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/laermbelaestigung.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mobility/luftverschmutzung.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/luftverschmutzung.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mobility/sharing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/sharing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mobility/versiegelung.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/versiegelung.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +231,7 @@
       <workItem from="1631019854098" duration="4571000" />
       <workItem from="1631189394575" duration="2213000" />
       <workItem from="1631266243512" duration="219000" />
-      <workItem from="1631604974861" duration="8025000" />
+      <workItem from="1631604974861" duration="3965000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon changes">
       <created>1626530090055</created>
@@ -394,35 +415,7 @@
       <option name="project" value="LOCAL" />
       <updated>1631266261749</updated>
     </task>
-    <task id="LOCAL-00027" summary="Include mobility sites">
-      <created>1631609230754</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1631609230754</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Changes">
-      <created>1631610623170</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1631610623170</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Fix spelling">
-      <created>1631612164674</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1631612164674</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Incorporate content of bix group">
-      <created>1631613373979</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1631613373979</updated>
-    </task>
-    <option name="localTasksCounter" value="31" />
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,10 +465,6 @@
     <MESSAGE value="Include unload functionality" />
     <MESSAGE value="Include upload functionality" />
     <MESSAGE value="Include interact functionality" />
-    <MESSAGE value="Include mobility sites" />
-    <MESSAGE value="Changes" />
-    <MESSAGE value="Fix spelling" />
-    <MESSAGE value="Incorporate content of bix group" />
-    <option name="LAST_COMMIT_MESSAGE" value="Incorporate content of bix group" />
+    <option name="LAST_COMMIT_MESSAGE" value="Include interact functionality" />
   </component>
 </project>
