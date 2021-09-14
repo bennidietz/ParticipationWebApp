@@ -148,22 +148,22 @@
                     <td class="p-2 border-b border-gray-300 border-dashed"></td>
                     <td class="border-b border-gray-300 border-dashed">
                        
-                        </td>
-                        <td class="border-b border-gray-300 border-dashed"></td>
-                        <td class="border-b border-gray-300 border-dashed">
-                            <div class="p-2 text-center text-white bg-purple-700" data-aos="zoom-in">ganztägig ADFC Selbsthilfewerkstatt Mobilität</div>
-                        </td>
+                    </td>
+                    <td class="border-b border-gray-300 border-dashed"></td>
+                    <td class="border-b border-gray-300 border-dashed">
+                    <div class="p-2 text-center text-white bg-purple-700" data-aos="zoom-in">ganztägig ADFC Selbsthilfewerkstatt Mobilität</div>
+                    </td>
+                    <td class="border-b border-gray-300 border-dashed"></td>
                     </tbody>
             </table>
         </div>
 
         <div class="w-2/3 my-24 mx-auto border-t border-gray-300"></div>
-
         <h2 class="mb-4 text-2xl font-bold uppercase tracking-wider text-green-600">{{ __('Projekte') }}</h2>
         <div class="pb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-start">
             <x-project :image="asset('img/projects/Kreislaufkiosk.jpg')"
                         title="Kreislaufkiosk"
-                        description="Jede Nutzung von Rohstoffen hat Auswirkungen auf die Umwelt: Emissionen
+                        description="Jede Nutzung von Rohstoffen hat Auswirkungen auf die Umwelt Emissionen
                         und Schadstoffe werden freigesetzt, Flächen verbraucht und nicht zuletzt entstehen riesige
                         Abfallmengen. Alles zusammen führt dazu, dass unsere planetaren Grenzen überschritten
                         werden.
@@ -196,7 +196,10 @@
                         dem Gemeinwohl auf der Corrensstraße beitragen könntet, zum Beispiel in Form einer
                         musikalischen Darbietung."
                         people="Eva Schlösser"
-                        link= "https://www.correnslab.de/"/>
+                        link="https://www.correnslab.de/"/>
+                        
+
+               
             <x-project :image="asset('img/projects/pexels-startup-stock-photos-7376.jpg')"
                         title="Quartiersinitiative"
                         description="Wir haben uns sicherlich alle schon einmal die Frage gestellt, ob uns alles gefällt, an dem Ort an dem wir wohnen, arbeiten oder unsere Freizeit verbringen. In unserem Alltag treten regelmäßig Probleme auf wie: wo kann ich eine Bohrmaschine ausleihen oder wer gießt meine Blumen, wenn ich mal im Urlaub bin. Oder uns treibt das Bedürfnis um, mit den Menschen aus der Nachbarschaft in Kontakt zu treten und gemeinsam etwas zu unternehmen oder Aktivitäten ins Leben zu rufen.
@@ -259,7 +262,7 @@
 
 "
                         people="Alina Austmann, Katharina Wiegand, Clémence Thirion"
-                        link= "https://www.correnslab.de/"/>
+                        link="https://www.correnslab.de/"/>
                         
             <x-project :image="asset('img/projects/Laube.jpg')"
                         title="CorrensLaube"
@@ -351,8 +354,9 @@
 
 "
                         link="http://stadtlab.dzudzek.net/kommendestadt/ " />
+                        
         </div>
-
+        
         <div class="w-2/3 my-24 mx-auto border-t border-gray-300"></div>
 
         <h2 class="mb-4 text-2xl font-bold uppercase tracking-wider text-green-600">{{ __('Plakat') }}</h2>
