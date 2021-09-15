@@ -46,7 +46,7 @@
                         <td class="border-b border-gray-300 border-dashed">
 
                         </td>
-                        <td class="border-b border-gray-300 border-dashed"><div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">Vorstellung der Aufgmented Reality App @Bühne</div></td>
+                        <td class="border-b border-gray-300 border-dashed"><div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">Vorstellung der Augmented Reality App @Bühne</div></td>
                         <td class="border-b border-gray-300 border-dashed">
                             <div class="p-2 text-center text-white bg-blue-500" data-aos="zoom-in">G</div>
                         </td>
