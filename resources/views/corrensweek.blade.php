@@ -375,7 +375,7 @@
                             Neben dem Modell, das wir eigens hierfür anfertigen werden, wollen wir hier auch Modelle aus einem vergangenen Uni-Seminar ausstellen, die bereits Ideen für eine Umgestaltung und den Rückbau der Corrensstraße zeigen. 
 
                             "
-                        people="Leah Bart"
+                        people="Leah Bart
 
 "
                         link=" " />           
