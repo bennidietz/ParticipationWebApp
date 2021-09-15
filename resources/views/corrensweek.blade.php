@@ -40,6 +40,7 @@
                            
                         <td class="border-b border-gray-300 border-dashed">
                             <div class="p-2 text-center text-white bg-yellow-500" data-aos="zoom-in">13:00 - 13:45 Uhr GemüseAckerdemie - Acker schafft Wissen @Correnslaube</div>
+                            <div class="p-2 text-center text-white bg-blue-500" data-aos="zoom-in">Basti & Band  @Bühne</div>
                         </td> 
                          
                         <td class="border-b border-gray-300 border-dashed">
@@ -230,7 +231,7 @@
                                                                                                     "
                         people="Laura Walter, Lea Rathke, Hannah Stoll"
                         link="https://google.de" />
-            <x-project :image="asset('img/projects/Fahrradinfrastruktur.jpg')"
+            <x-project :image="asset('img/projects/Fahrradinfrastruktur.JPG')"
                         title="Fahrradinfrastruktur"
                         description="Fahrradinfrastruktur – Klimaschutz im Alltag
 
@@ -248,7 +249,7 @@
                         
             
                         
-            <x-project :image="asset('img/projects/klima.jpg')"
+            <x-project :image="asset('img/projects/klima.JPG')"
                         title="Klimaresilienz in der Corrensstraße"
                         description="Das Thema Klimaresilienz muss langfristig gedacht werden. Damit klimaresiliente Städte entstehen, können Maßnahmen für eine nachhaltige Entwicklung durchgeführt werden. In der Corrensstraße könnte das zum Beispiel durch Reduzierung der Straßenflächen zugunsten von Grünstrukturen geschehen.  Auch Grün- und Solardächer sind Ansatzpunkte für eine klimaresiliente und zukunftsfähige Stadt. Insgesamt ist es wichtig bei diesem Thema gesamtheitlich und nicht in Einzelmaßnahmen zu denken.
 "
@@ -256,7 +257,7 @@
 "
                         link="https://www.correnslab.de/" />
                         
-            <x-project :image="asset('img/projects/Garten.jpg')"
+            <x-project :image="asset('img/projects/Garten.jpeg')"
                         title=" Correns-Garten"
                         description="Im Corrensgarten wollen wir mithilfe von Hochbeeten zeigen, dass Gärtnern auch auf kleiner Fläce und mitten in der Stadt möglich ist
 
@@ -264,7 +265,7 @@
                         people="Alina Austmann, Katharina Wiegand, Clémence Thirion"
                         link="https://www.correnslab.de/"/>
                         
-            <x-project :image="asset('img/projects/Laube.jpg')"
+            <x-project :image="asset('img/projects/Laube.jpeg')"
                         title="CorrensLaube"
                         description="Wenn Sie einmal an die Corrensstraße denken und überlegen, 
                                 was Ihnen an Ihrem Arbeits-, Wohn- oder Studienort wichtig ist, haben 
@@ -354,7 +355,30 @@
 
 "
                         link="http://stadtlab.dzudzek.net/kommendestadt/ " />
-                        
+            <x-project :image="asset('img/projects/Die kommende Stadt - Das Spiel.jpg')"
+                        title="Partizipation"
+                        description="Was ist eigentlich Partizipation?
+                            Partizipatorische Ansätze spielen in der nachhaltigen Stadtentwicklung eine wichtige Rolle. Deswegen hat sich unsere Projektgruppe mit dem Thema Partizipation im Correns-Lab auseinandergesetzt und dabei verschiedene Beteiligungsmöglichkeiten erarbeitet.
+                            Partizipation meint Bürger:innenbeteiligung und verfolgt das Ziel, „eine möglichst inklusive Teilhabe zu organisieren“ (Schnur et al. 2019: 1). Informelle Partizipationsinstrumente reichen von Bürgerversammlungen, Ideenworkshops und Befragungen bis hin zur Einbindung von technischen Möglichkeiten wie Social Media und Augmented Reality. (vgl. ebd.) Mit den verschiedenen Verfahren sollen Bürgerinnen und Bürger über räumliche Vorhaben informiert werden, sich aber auch aktiv in diese einbringen und selbst mitbestimmen können. 
+                            Die Stufen der Partizipation nach Lüttringhausen (Abb. 1) zeigen, auf welchen Ebenen Partizipation stattfinden kann. Durch die Webseite, Flyer und Presse informieren wir über das Projekt und die Ideen. Gleichzeitig bringen wir das Correns-Lab im September auf die Straße, um Bürgerinnen und Bürger mitwirken und mitentscheiden zu lassen. Bürgerinnen und Bürger können sich aber auch eigeninitiativ zusammenschließen und als Bürger:innenverein ihre Belange geltend machen. Dies und vieles mehr sind Facetten von Partizipation und damit ein wichtiger Teil von gelebter Demokratie. 
+                            Abb. 1: Die Stufen der Partizipation (Quelle: L.I.S.T. Stadtentwicklungsgesellschaft mbH 2012: S. 28) 
+
+                            Partizipation im Correns-Lab
+                            Zwei Verfahren der Bürgerbeteiligung, die sich in unseren Augen im Correns-Lab besonders eignen, möchten wir im September anwenden. Damit wollen wir den Bürgerinnen und Bürgern die Möglichkeit geben, aktiv bei der Gestaltung ihres Quartiers mitwirken.
+                            Darüber hinaus möchten wir Bürgerinnen und Bürger für Partizipationsmöglichkeiten sensibilisieren, sodass diese sich auch anschließend aktiv an der Planung ihrer Stadt beteiligen.
+                            Das OpenHouseEvent: Bei dieser Partizipationsmethode werden zunächst alle Teilprojekte des Reallabors vorgestellt. Anhand von Steckbriefen können sich die Bürgerinnen und Bürger einen Überblick über unsere Ideen verschaffen und Stellung beziehen, indem sie sich schriftlich oder durch grüne und rote Klebepunkte dazu äußern. 
+                            Daneben sollen auch eigene Vorstellungen und Ideen der Bevölkerung Platz finden. Diese werden dann ebenfalls ausgestellt und können von anderen Besucher:innen kommentiert und erweitert werden. 
+                            Auf diese Weise kann ein guter Überblick darüber gewonnen werden, wie die einzelnen Projekte bei den Besucher:innen ankommen. Durch die Evaluation der Projekte und das Einbringen von Ideen wird erkennbar, was sich die Bevölkerung für die Corrensstraße wünscht. 
+                            Die Kommentierung und Entwicklung von Ideen kann anonym oder namentlich geschehen. Wenn sich Bürger:innen im weiteren Verlauf gerne in das Projekt einbringen möchte, können sie sich organisieren zu einem Bürger:innenverein für die Corrensstraße. 
+                            Planning for Real: Hierbei wird ein Modell vom Stadtraum erstellt, den es zu verändern und zu gestalten gilt. Die Besucher:innen können an diesem Modell Vorschläge einbringen und visualisieren, somit wird das Ganze noch einmal auf eine andere Weise greifbar und erfahrbar. Das gemeinsame Arbeiten an dem Modell fördert zudem den Austausch zwischen den Bürger:innen und weiteren Akteur:innen aus der Stadtgesellschaft. 
+                            Durch die verschiedenen Methoden wollen wir möglichst viele Menschen erreichen und dazu motivieren, sich an der Gestaltung des Stadtraums an der Corrensstraße zu beteiligen. 
+                            Neben dem Modell, das wir eigens hierfür anfertigen werden, wollen wir hier auch Modelle aus einem vergangenen Uni-Seminar ausstellen, die bereits Ideen für eine Umgestaltung und den Rückbau der Corrensstraße zeigen. 
+
+                            "
+                        people="Leah Bart"
+
+"
+                        link=" " />           
         </div>
         
         <div class="w-2/3 my-24 mx-auto border-t border-gray-300"></div>
