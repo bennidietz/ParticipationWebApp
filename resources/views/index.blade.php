@@ -11,7 +11,7 @@
                     
                     <p class="mb-2 text-lg">{{ __('Der öffentliche Raum ist ein wichtiger Grundpfeiler für eine lebenswerte und klimagerechte Stadt Münster. Bisher sind Straßen vor allem Zufarts-, Verbindungswege und Orte der Moilität. Sie können aber viel mehr sein.') }}</p>
                    
-                    <p class="mb-2 text-lg">{{ __('In der Woche vom 29. September bis 3. Oktober präsentieren Studierende Ansätze Straßenraum neu zu denken auf einem Teilstück der Corrensstraße. Laufen Sie schon jetzt virtuell über die Corrensstraße und entdecke Sie die unterschiedlichen Elemente eines nachhaltigen Straßenraums von morgen.') }}</p>
+                    <p class="mb-2 text-lg">{{ __('In der Woche vom 29. September bis 2. Oktober präsentieren Studierende Ansätze Straßenraum neu zu denken auf einem Teilstück der Corrensstraße. Laufen Sie schon jetzt virtuell über die Corrensstraße und entdecke Sie die unterschiedlichen Elemente eines nachhaltigen Straßenraums von morgen.') }}</p>
                     <div class="flex">
                         <a href="{{ route('corrensweek') }}">
                             <button class="py-2 px-3 text-lg mt-4 border rounded transition hover:bg-white hover:text-black">{{ __('Zum Programm') }}</button>
