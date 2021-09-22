@@ -20,6 +20,12 @@
 
             <br><br><h3 class='font-bold'>Fuß- und Radfreundliche Stadt</h3>
             Ein Verzicht auf die Nutzung des Automobils und das damit einhergehende Wegfallen der Notwendigkeit einer Straße gibt insbesondere in Wohnsiedlungen mehr Raum für andere Nutzungsmöglichkeiten der Mobilität. Benötigte Flächen für Fuß- und Radwege sind weniger flächenintensiv und geben mehr Spielraum für innovative, nachhaltige Gestaltungsmaßnahmen.
+
+            <br><br><div class="italic">
+                <span class="font-bold">Quellen:</span><br><br>
+                Amt für Mobilität und Tiefbau Stadt Muenster (o.J.): Mulden-Rigolen: Umweltschutz, der sich bezahlt macht. URL: <a class="text-blue-800 hover:underline" href="https://www.stadt-muenster.de/tiefbauamt/abwasser/versickerung">https://www.stadt-muenster.de/tiefbauamt/abwasser/versickerung</a> (abgerufen 08.09.2021)<br><br>
+                Umwelt Bundesamt (2020): Bodenversiegelung. URL: <a class="text-blue-800 hover:underline" href="https://www.umweltbundesamt.de/daten/flaeche-boden-land-oekosysteme/boden/bodenversiegelung#was-ist-bodenversiegelung">https://www.umweltbundesamt.de/daten/flaeche-boden-land-oekosysteme/boden/bodenversiegelung#was-ist-bodenversiegelung</a> (abgerufen 07.09.2021)
+            </div>
         </div>
     </section>
 
