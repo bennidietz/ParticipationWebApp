@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Navigation upload fix">
-      <change afterPath="$PROJECT_DIR$/public/img/content/flyer.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/barrierefreiheit_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/content/mobility/sicherheit_1.jpg" afterDir="false" />
+    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Update content">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/corrensweek.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/corrensweek.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mobility.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mobility/versiegelung.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/versiegelung.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/map.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/map.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -415,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631625854425</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Update content">
+      <created>1632298671320</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1632298671320</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,6 +469,7 @@
     <MESSAGE value="Include interact functionality" />
     <MESSAGE value="Image fixes" />
     <MESSAGE value="Navigation upload fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navigation upload fix" />
+    <MESSAGE value="Update content" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update content" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-    <section class="pt-24 pb-12 max-w-7xl mx-auto">
+    <section class="pl-6 pt-24 pb-12 max-w-7xl mx-auto">
         <h2 class="mb-4 text-2xl font-bold uppercase tracking-wider text-green-600">{{ __('Zeitplan der Correnswoche') }}</h2>
         <div class="text-lg">Das CorrensLab findet unter Beachtung der aktuellen Corona-Schutz-Verordnung statt.<br>Wir schützen uns mit den AHA-Regeln sowie einem 3-G-Nachweis: Bitte kommt <b>getestet, genesen oder geimpft</b>.</div><br><br>
         <div class="w-full overflow-x-auto">
