@@ -101,7 +101,7 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['role:admin,city-planner
         return view('users');
     })->name('users');
 });
-
+/*
 Route::get('/truncate', function() {
     \Illuminate\Support\Facades\Schema::disableForeignKeyConstraints();
 
@@ -112,4 +112,4 @@ Route::get('/truncate', function() {
     \App\Models\Marker::truncate();
 
     \Illuminate\Support\Facades\Schema::enableForeignKeyConstraints();
-});
+});*/
