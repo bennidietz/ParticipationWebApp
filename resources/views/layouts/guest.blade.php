@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ __('Lebensraum: Corrensstraße') }}</title>
+        <title>{{ __('CorrensLab') }}</title>
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -30,16 +30,22 @@
             </a>
             <div class="flex justify-end items-center">
                 <x-nav-link route="index" :label="__('Home')" />
-                <x-nav-link route="corrensweek" :label="__('Correnswoche')" />
+                <x-nav-link route="corrensweek" :label="__('CorrensLab')" />
                 <x-nav-link route="mobility" :label="__('Mobilität')" />
                 <x-nav-link route="map" :label="__('Karte')" />
-                @auth
-                    <x-nav-link route="upload" :label="__('Neuer Vorschlag')" />
-                @endauth
                 {{--<x-nav-link route="about" :label="__('Mehr')" />--}}
                 @if (Route::has('login'))
                         @auth
-                            <x-nav-link route="dashboard" :label="__('Dashboard')" />
+                            @if (in_array(Auth::user()->role, ['admin', 'city-planner', 'masteradmin']))
+                                <x-nav-link route="dashboard" :label="__('Dashboard')" />
+                            @else
+                                <a href="#" onclick="document.getElementById('logout-form').submit();">
+                                    <x-nav-link :label="__('Abmelden')" />
+                                </a>
+                                <form id="logout-form" method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                </form>
+                            @endif
                         @else
                             <x-nav-link route="login" :label="__('Anmelden')" />
                         @endauth
