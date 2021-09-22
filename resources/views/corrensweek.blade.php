@@ -44,7 +44,7 @@
                         </td> 
                          
                         <td class="border-b border-gray-300 border-dashed">
-                           
+
                         </td>
                         <td class="border-b border-gray-300 border-dashed"></td>
                         <td class="border-b border-gray-300 border-dashed">
@@ -103,6 +103,7 @@
                             <div class="p-2 text-center text-white bg-red-500" data-aos="zoom-in">17:30 Eröffnung des CorrensLab @Bühne</div>
 
                             
+
                         </td>
                         <td class="border-b border-gray-300 border-dashed">
                             <div class="p-2 text-center text-white bg-blue-700" data-aos="zoom-in">17:30 -18:30 Besuch des Oberbürgermeisters</div>
