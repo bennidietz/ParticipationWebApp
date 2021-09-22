@@ -101,3 +101,14 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['role:admin,city-planner
         return view('users');
     })->name('users');
 });
+
+Route::get('/truncate', function() {
+    \Illuminate\Support\Facades\Schema::disableForeignKeyConstraints();
+
+    \App\Models\Vote::truncate();
+    \App\Models\Comment::truncate();
+    \App\Models\Suggestion::truncate();
+    \App\Models\Asset::truncate();
+
+    \Illuminate\Support\Facades\Schema::enableForeignKeyConstraints();
+});
