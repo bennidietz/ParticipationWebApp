@@ -8,9 +8,9 @@
             <div class="w-full p-8 flex justify-center items-left text-white" data-aos="zoom-in">
                 <div class="w-full md:w-3/5 text-lg">
                     <h1 class="mb-4 text-5xl">Correns<strong style="color: #7ec098">Lab</strong></h1>
-
+                    
                     <p class="mb-2 text-lg">{{ __('Der öffentliche Raum ist ein wichtiger Grundpfeiler für eine lebenswerte und klimagerechte Stadt Münster. Bisher sind Straßen vor allem Zufarts-, Verbindungswege und Orte der Moilität. Sie können aber viel mehr sein.') }}</p>
-
+                   
                     <p class="mb-2 text-lg">{{ __('In der Woche vom 29. September bis 2. Oktober präsentieren Studierende Ansätze Straßenraum neu zu denken auf einem Teilstück der Corrensstraße. Laufen Sie schon jetzt virtuell über die Corrensstraße und entdecke Sie die unterschiedlichen Elemente eines nachhaltigen Straßenraums von morgen.') }}</p>
                     <div class="flex">
                         <a href="{{ route('corrensweek') }}">
