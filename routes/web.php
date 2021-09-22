@@ -109,6 +109,7 @@ Route::get('/truncate', function() {
     \App\Models\Comment::truncate();
     \App\Models\Suggestion::truncate();
     \App\Models\Asset::truncate();
+    \App\Models\Marker::truncate();
 
     \Illuminate\Support\Facades\Schema::enableForeignKeyConstraints();
 });
