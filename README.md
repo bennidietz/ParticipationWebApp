@@ -16,4 +16,4 @@ In order to make the project run on your machine, some steps need to be taken:
 
 ````git pull````
 
-````php artisan migrate --seed````
+````php artisan migrate````
