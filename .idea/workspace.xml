@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Include interact functionality">
-      <change afterPath="$PROJECT_DIR$/public/ar/index.html" afterDir="false" />
+    <list default="true" id="1815cb83-c52f-49d4-b413-d75160ba371a" name="Default Changelist" comment="Navigation upload fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/corrensweek.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/corrensweek.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mobility/abstellanlagen.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/abstellanlagen.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mobility/fahrrad.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobility/fahrrad.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +169,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/ar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img/content/mobility" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -179,11 +179,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img/content/mobility" />
       <recent name="$PROJECT_DIR$/public/ar" />
       <recent name="$PROJECT_DIR$/public/interact" />
       <recent name="$PROJECT_DIR$/resources/views/mobility" />
       <recent name="$PROJECT_DIR$/public/img" />
-      <recent name="$PROJECT_DIR$/resources/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/uploadfunctionality" />
@@ -211,7 +211,8 @@
       <workItem from="1630839567699" duration="7387000" />
       <workItem from="1631019854098" duration="4571000" />
       <workItem from="1631189394575" duration="2213000" />
-      <workItem from="1631266243512" duration="13000" />
+      <workItem from="1631266243512" duration="219000" />
+      <workItem from="1631604974861" duration="3965000" />
     </task>
     <task id="LOCAL-00001" summary="Polygon changes">
       <created>1626530090055</created>
@@ -388,7 +389,28 @@
       <option name="project" value="LOCAL" />
       <updated>1631201158910</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Include interact functionality">
+      <created>1631266261749</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1631266261749</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Image fixes">
+      <created>1631614554943</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1631614554943</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Navigation upload fix">
+      <created>1631625854425</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1631625854425</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +442,6 @@
     <MESSAGE value="Polygon changes" />
     <MESSAGE value="Enhance info panel for image" />
     <MESSAGE value="Implement Impressum of website" />
-    <MESSAGE value="Changes" />
     <MESSAGE value="Add suggestions to map and change faker" />
     <MESSAGE value="Enahnce sidebar" />
     <MESSAGE value="Styling adjustments" />
@@ -439,6 +460,8 @@
     <MESSAGE value="Include unload functionality" />
     <MESSAGE value="Include upload functionality" />
     <MESSAGE value="Include interact functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Include interact functionality" />
+    <MESSAGE value="Image fixes" />
+    <MESSAGE value="Navigation upload fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navigation upload fix" />
   </component>
 </project>
