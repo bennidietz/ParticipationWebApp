@@ -38,6 +38,13 @@ body {
     z-index: 40;
     overflow-x: hidden;
     overflow-y: auto;
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    #sidebar {
+        display: block;
+    }
 }
 
 .leaflet-control-zoom {
