@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/public/upload-test-fred/public/css/upload.css">
+    <link rel="stylesheet" href="/public/upload-test-fred/public/leaflet/leaflet.css" />
+    <script src="/public/upload-test-fred/public/leaflet/leaflet.js"></script>
+    <script src="/public/upload-test-fred/node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="/public/upload-test-fred/node_modules/bulma/css/bulma.css">
+    <script src="/public/upload-test-fred/node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <link rel="stylesheet" href="/public/upload-test-fred/node_modules/animate.css/animate.css">
+    <script src="/public/upload-test-fred/node_modules/bulma-toast/dist/bulma-toast.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Asset</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="columns">
+            <div id="firstColumn" class="column">
+                <form>
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                            <input id="name" class="input" type="text" placeholder="z.B. Gartenhaus" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Beschreibung</label>
+                        <div class="control">
+                            <input id="desc" class="input" type="text"
+                                placeholder="hier eine kurze Beschreibung einfügen" required>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="field column">
+                            <label class="label">Bild auswählen</label>
+                            <div class="file is-medium is-boxed">
+                                <label class="file-label">
+                                    <input id="file" class="file-input" type="file" required accept="image/*">
+                                    <span class="file-cta">
+                                        <span class="file-icon">
+                                            <i class="fas fa-upload"></i>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field column">
+                            <label class="label">Standort auswählen</label>
+                            <div class="control has-icons-left">
+                                <div class="select is-medium is-rounded">
+                                    <select id="markerDropdown">
+                                        <option selected id="marker1" value="1">Standort 1</option>
+                                        <option id="marker2" value="2">Standort 2</option>
+                                        <option id="marker3" value="3">Standort 3</option>
+                                        <option id="marker4" value="4">Standort 4</option>
+                                    </select>
+                                </div>
+                                <span class="icon is-medium is-left">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="button is-primary" type="button" value="Submit" onclick="submitForm()">
+                </form>
+            </div>
+            <div class="column">
+                <div id="mapid"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/public/upload-test-fred/public/js/upload.js"></script>
+
+</html>

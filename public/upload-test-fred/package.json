@@ -1,0 +1,19 @@
+{
+  "name": "upload-test-fred",
+  "version": "1.0.0",
+  "description": "",
+  "main": "upload.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "animate.css": "^4.1.1",
+    "bulma": "^0.9.3",
+    "bulma-toast": "^2.4.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0"
+  }
+}
