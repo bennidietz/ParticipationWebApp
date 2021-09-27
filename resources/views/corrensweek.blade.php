@@ -226,7 +226,7 @@
                             "
                         people="Pia Rickmann"
                         link="https://www.correnslab.de/" />
-            <x-project :image="asset('img/projects/pexels-startup-stock-photos-7376.jpg')"
+            <x-project :image="asset('img/projects/LebenundA.jpg')"
                         title="Leben und arbeiten im Quartier"
                         description="Um ein Viertel zielgruppengerecht lebenswert und nachhaltig zu gestalten ist Austausch und Partizipation mit den vor Ort lebenden und arbeitenden Menschen wichtig. Deshalb wurden im Rahmen dieses Projektes Studierenden bei einem Spaziergang durch das Viertel zu ihren Wünschen für das Viertel befragt.
                             „Stellen Sie sich vor das Viertel rund um die Corrensstraße würde sich verändern. Was sollte sich verändern und was so bleiben wie es ist?“
@@ -356,9 +356,9 @@
                         people="Elisabeth Assmann, Tim Bernsen, Leonard Beving, Laureen Nievel, Fabian Neukirchen und Lisa Reiners
 
 "
-                        link="http://stadtlab.dzudzek.net/kommendestadt/ " />
-            <x-project :image="asset('img/projects/Die kommende Stadt - Das Spiel.jpg')"
-                        title="Partizipation"
+                        link="http://stadtlab.dzudzek.net/kommendestadt/Parti.jpg" />
+            <x-project :image="asset('img/projects/.jpg')"
+                        title="PPartizipative Stadtplanung"
                         description="Was ist eigentlich Partizipation?
                             Partizipatorische Ansätze spielen in der nachhaltigen Stadtentwicklung eine wichtige Rolle. Deswegen hat sich unsere Projektgruppe mit dem Thema Partizipation im Correns-Lab auseinandergesetzt und dabei verschiedene Beteiligungsmöglichkeiten erarbeitet.
                             Partizipation meint Bürger:innenbeteiligung und verfolgt das Ziel, „eine möglichst inklusive Teilhabe zu organisieren“ (Schnur et al. 2019: 1). Informelle Partizipationsinstrumente reichen von Bürgerversammlungen, Ideenworkshops und Befragungen bis hin zur Einbindung von technischen Möglichkeiten wie Social Media und Augmented Reality. (vgl. ebd.) Mit den verschiedenen Verfahren sollen Bürgerinnen und Bürger über räumliche Vorhaben informiert werden, sich aber auch aktiv in diese einbringen und selbst mitbestimmen können.
