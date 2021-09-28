@@ -1,5 +1,7 @@
 <div class="w-full sm:rounded sm:overflow-hidden shadow" x-data="{ expand: false }">
+    @if($image)
     <div class="h-40 w-full bg-center" style="background: url('{{ $image }}'); background-size: cover;"></div>
+    @endif
     <div class="w-full p-6 bg-white">
         <h3 class="w-full uppercase tracking-wider font-bold text-green-800 mb-2">{{ $title }}</h3>
         <div class="max-h-64 overflow-ellipsis overflow-hidden text-justify text-gray-800 relative" x-show="!expand">

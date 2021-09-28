@@ -6,7 +6,7 @@ use Illuminate\View\Component;
 
 class Project extends Component
 {
-    public $image;
+    public $image = null;
     public $title;
     public $description;
     public $people;
@@ -17,7 +17,7 @@ class Project extends Component
      *
      * @return void
      */
-    public function __construct($image, $title, $description, $people, $link)
+    public function __construct($title, $description, $people, $image = '', $link = '')
     {
         $this->image = $image;
         $this->title = $title;

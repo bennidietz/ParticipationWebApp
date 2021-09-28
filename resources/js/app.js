@@ -120,7 +120,7 @@ function initMap() {
                 "            <div>\n" +
                 "                <p class=\"text-lg font-semibold\">\n" +
                 suggestion.name +
-                "                </p>\n<br>\<img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=https://correnslab.de/'/>" +
+                "                </p>\n<br>\<a class='font-black' href='https://correnslab.de/ar'><img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=https://correnslab.de/ar'/><br>oder: <span class='text-lg hover:underline hover:font-bold hover:text-blue'>Hier klicken</span></a>" +
                 "            </div>\n" +
                 "            </div>", 1);
             MARKERS[marker.id] = marker

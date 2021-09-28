@@ -198,8 +198,7 @@
                         sodass du einen Gutschein auf unserer Pinnwand findest, oder aber überleg dir etwas was zu
                         dem Gemeinwohl auf der Corrensstraße beitragen könntet, zum Beispiel in Form einer
                         musikalischen Darbietung."
-                        people="Eva Schlösser"
-                        link="https://www.correnslab.de/"/>
+                        people="Eva Schlösser" />
 
 
 
@@ -224,10 +223,8 @@
                             Brocchi, D. (2018b). Große Transformation im Quartier: zur partizipationsorientierten Quartiersentwicklung. Düsseldorf
                             Grates, M., Krön, A. u. H. Rüßler (2018): Handbuch 1. Ältere als (Ko-)Produzenten von Quartiersnetzwerken Impulse aus dem Projekt QuartiersNETZ. In: STADTQUARTIERE. Rahmenbedingungen verstehen und Ausgangssituation erfassen. Dortmund
                             "
-                        people="Pia Rickmann"
-                        link="https://www.correnslab.de/" />
-            <x-project :image="asset('img/projects/LebenundA.jpg')"
-                        title="Leben und arbeiten im Quartier"
+                        people="Pia Rickmann"/>
+            <x-project title="Leben und arbeiten im Quartier"
                         description="Um ein Viertel zielgruppengerecht lebenswert und nachhaltig zu gestalten ist Austausch und Partizipation mit den vor Ort lebenden und arbeitenden Menschen wichtig. Deshalb wurden im Rahmen dieses Projektes Studierenden bei einem Spaziergang durch das Viertel zu ihren Wünschen für das Viertel befragt.
                             „Stellen Sie sich vor das Viertel rund um die Corrensstraße würde sich verändern. Was sollte sich verändern und was so bleiben wie es ist?“
                                                                                                     "
@@ -251,19 +248,15 @@
 
             <x-project :image="asset('img/projects/klima.JPG')"
                         title="Klimaresilienz in der Corrensstraße"
-                        description="Das Thema Klimaresilienz muss langfristig gedacht werden. Damit klimaresiliente Städte entstehen, können Maßnahmen für eine nachhaltige Entwicklung durchgeführt werden. In der Corrensstraße könnte das zum Beispiel durch Reduzierung der Straßenflächen zugunsten von Grünstrukturen geschehen.  Auch Grün- und Solardächer sind Ansatzpunkte für eine klimaresiliente und zukunftsfähige Stadt. Insgesamt ist es wichtig bei diesem Thema gesamtheitlich und nicht in Einzelmaßnahmen zu denken.
-"
-                        people="Pia Frömberg, Ludmilla Kühnapfel, Dunja Zaulick, Theresa Wilkes
-"
-                        link="https://www.correnslab.de/" />
+                        description="Das Thema Klimaresilienz muss langfristig gedacht werden. Damit klimaresiliente Städte entstehen, können Maßnahmen für eine nachhaltige Entwicklung durchgeführt werden. In der Corrensstraße könnte das zum Beispiel durch Reduzierung der Straßenflächen zugunsten von Grünstrukturen geschehen.  Auch Grün- und Solardächer sind Ansatzpunkte für eine klimaresiliente und zukunftsfähige Stadt. Insgesamt ist es wichtig bei diesem Thema gesamtheitlich und nicht in Einzelmaßnahmen zu denken."
+                        people="Pia Frömberg, Ludmilla Kühnapfel, Dunja Zaulick, Theresa Wilkes"/>
 
             <x-project :image="asset('img/projects/Garten.jpeg')"
                         title=" Correns-Garten"
                         description="Im Corrensgarten wollen wir mithilfe von Hochbeeten zeigen, dass Gärtnern auch auf kleiner Fläce und mitten in der Stadt möglich ist
 
 "
-                        people="Alina Austmann, Katharina Wiegand, Clémence Thirion"
-                        link="https://www.correnslab.de/"/>
+                        people="Alina Austmann, Katharina Wiegand, Clémence Thirion" />
 
             <x-project :image="asset('img/projects/Laube.jpeg')"
                         title="CorrensLaube"
@@ -341,18 +334,13 @@
                                 Wir hoffen also, euch bald alle in unserer Correnslaube begrüßen zu
                                 dürfen und freuen uns auf das gemeinsame Event im September!
                                 "
-                        people="Pia Rickmann, Leonie Loy, Luis Eberhardt, Lena Herrmann und Tom Sentker
-"
-                        link="https://www.correnslab.de/" />
+                        people="Pia Rickmann, Leonie Loy, Luis Eberhardt, Lena Herrmann und Tom Sentker" />
 
-            <x-project :image="asset('img/projects/.jpeg')"
-                       title="Bewegte Pause/Bewegter Feierabend"
+            <x-project title="Bewegte Pause/Bewegter Feierabend"
                        description="Die bewegte Pause soll als eine Art Spielplatz für Erwachsene fungieren, der aus Bewegungs- aber auch Verweilmöglichkeiten zusammengesetzt ist. Derzeit laden die überdimensionierte Corrensstraße und die (eher graue) Umgebung nicht zum Verweilen ein. Ziel ist es, einen öffentlichen Bewegungs- und Verweilort zu schaffen, sodass gerade auch Studierende, Lehrende und sonstige Beschäftigte aus der Umgebung Bewegung, Ausgleich und Pause finden. Der Spielplatz soll eine Begegnungsstätte sein, bei dem ein Austausch der Fachbereiche in ungezwungener Atmosphäre stattfinden kann. Der Nutzen generationenübergreifender Bewegungsangebote soll verdeutlicht werden und ein Beitrag zur Gesundheit am Arbeitsplatz geleistet werden."
-                       people=""
-                       link="https://www.correnslab.de/" />
+                       people="Lisa Wölte" />
 
-            <x-project :image="asset('img/projects/Die kommende Stadt - Das Spiel.jpg')"
-                        title="Die kommende Stadt - Das Spiel"
+            <x-project title="Die kommende Stadt - Das Spiel"
                         description="Beschreibung des Projekts: Ist die Stadt von morgen die Stadt von heute? Oder ganz anders? Jetzt könnt ihr darüber entscheiden: Wir laden Euch zu einem einzigartigen Spiel ein, in dem Ihr Eure Stadt neu denken könnt: ökologisch grün, ökonomisch stark, sozial gerecht oder kulturell divers? Dabei wird es auch darum gehen, Ressourcen clever zu nutzen, damit am Ende des Spiels eine Stadt entsteht, die allen zukünftigen Herausforderungen standhält.
                             Eine Spielrunde für 5 Personen dauert etwa 150 Minuten. Wir leiten Euch dabei an. Kommt, um gemeinsam die kommende Stadt entstehen zu lassen!
                             Bitte meldet euch unter stadtlab@uni-muenster.de für einen der Termine an.
@@ -361,8 +349,7 @@
 
 "
                         link="http://stadtlab.dzudzek.net/kommendestadt/Parti.jpg" />
-            <x-project :image="asset('img/projects/.jpg')"
-                        title="PPartizipative Stadtplanung"
+            <x-project title="Partizipative Stadtplanung"
                         description="Was ist eigentlich Partizipation?
                             Partizipatorische Ansätze spielen in der nachhaltigen Stadtentwicklung eine wichtige Rolle. Deswegen hat sich unsere Projektgruppe mit dem Thema Partizipation im Correns-Lab auseinandergesetzt und dabei verschiedene Beteiligungsmöglichkeiten erarbeitet.
                             Partizipation meint Bürger:innenbeteiligung und verfolgt das Ziel, „eine möglichst inklusive Teilhabe zu organisieren“ (Schnur et al. 2019: 1). Informelle Partizipationsinstrumente reichen von Bürgerversammlungen, Ideenworkshops und Befragungen bis hin zur Einbindung von technischen Möglichkeiten wie Social Media und Augmented Reality. (vgl. ebd.) Mit den verschiedenen Verfahren sollen Bürgerinnen und Bürger über räumliche Vorhaben informiert werden, sich aber auch aktiv in diese einbringen und selbst mitbestimmen können.
@@ -378,13 +365,8 @@
                             Die Kommentierung und Entwicklung von Ideen kann anonym oder namentlich geschehen. Wenn sich Bürger:innen im weiteren Verlauf gerne in das Projekt einbringen möchte, können sie sich organisieren zu einem Bürger:innenverein für die Corrensstraße.
                             Planning for Real: Hierbei wird ein Modell vom Stadtraum erstellt, den es zu verändern und zu gestalten gilt. Die Besucher:innen können an diesem Modell Vorschläge einbringen und visualisieren, somit wird das Ganze noch einmal auf eine andere Weise greifbar und erfahrbar. Das gemeinsame Arbeiten an dem Modell fördert zudem den Austausch zwischen den Bürger:innen und weiteren Akteur:innen aus der Stadtgesellschaft.
                             Durch die verschiedenen Methoden wollen wir möglichst viele Menschen erreichen und dazu motivieren, sich an der Gestaltung des Stadtraums an der Corrensstraße zu beteiligen.
-                            Neben dem Modell, das wir eigens hierfür anfertigen werden, wollen wir hier auch Modelle aus einem vergangenen Uni-Seminar ausstellen, die bereits Ideen für eine Umgestaltung und den Rückbau der Corrensstraße zeigen.
-
-                            "
-                        people="Leah Bartz
-
-"
-                        link=" " />
+                            Neben dem Modell, das wir eigens hierfür anfertigen werden, wollen wir hier auch Modelle aus einem vergangenen Uni-Seminar ausstellen, die bereits Ideen für eine Umgestaltung und den Rückbau der Corrensstraße zeigen. "
+                        people="Leah Bartz" />
         </div>
 
         <div class="w-2/3 my-24 mx-auto border-t border-gray-300"></div>
