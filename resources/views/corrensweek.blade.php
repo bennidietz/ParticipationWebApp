@@ -234,10 +234,8 @@
                         people="Laura Walter, Lea Rathke, Hannah Stoll"
                         link="https://google.de" />
             <x-project :image="asset('img/projects/Fahrradinfrastruktur.JPG')"
-                        title="Fahrradinfrastruktur"
-                        description="Fahrradinfrastruktur – Klimaschutz im Alltag
-
-                            Fahrräder gibt es in Münster genug, aber was ist mit der Fahrradinfrastruktur? Wie sie aktuell aussieht und wie sie in Zukunft aussehen könnte, zeigen wir Euch im Rahmen des CorrensLab.
+                        title="Fahrradinfrastruktur 2.0"
+                        description="Fahrräder gibt es in Münster genug, aber was ist mit der Fahrradinfrastruktur? Wie sie aktuell aussieht und wie sie in Zukunft aussehen könnte, zeigen wir Euch im Rahmen des CorrensLab.
                             Einen Teil nachhaltiger, zukunftsfähiger Mobilität stellen Lastenräder dar. Sie können den Transportverkehr aufs Rad verlagern, sparen Fahrten mit dem Auto und sorgen so für ein besseres Lebensgefühl in der Stadt. Wer in Münster häufig mit dem Rad fährt, war bestimmt schon auf einer Fahrradstraße unterwegs. Die Fahrradstraßen 2.0 gibt es seit 2019 in Münster und ermöglichen den Radfahrenden hohen Komfort, größere Sicherheit und bessere Sichtbarkeit. Um die Vorteile gegenüber einem normalen Radweg aufzuzeigen, wird eine vier Meter breite Fahrgasse entstehen, die genug Platz zum Ausprobieren bietet. Denn an unserem Stand könnt Ihr verschiedene Lastenräder erproben und erste Erfahrungen mit den umweltfreundlichen Transportleezen sammeln. Außerdem werden als Zukunftsmodell Sharing-Konzepte mit dem lokalen Anbieter tretty vorgestellt. tretty-Bikes und tretty-Tretroller können dann ebenfalls auf der temporär angelegten Fahrradstraße ausprobiert werden.
                             Ebenfalls vor Ort ist die Leezenküche des ADFC Münster. Dort kann mit Unterstützung von Experten das Rad selbst repariert und ein Rundum-Check durchgeführt werden. Auf der Bühne gibt es am Freitagvormittag zudem einen Vortag des ADFC zu den Themen Verkehrswende und nachhaltige Mobilität.
                             Weitere Informationen rund ums Thema Mobilität findet Ihr hinter den QR-Codes auf dem gesamten Gelände des CorrensLab, an unserem Stand oder bei unseren Kooperationspartnern.
@@ -346,6 +344,12 @@
                         people="Pia Rickmann, Leonie Loy, Luis Eberhardt, Lena Herrmann und Tom Sentker
 "
                         link="https://www.correnslab.de/" />
+
+            <x-project :image="asset('img/projects/.jpeg')"
+                       title="Bewegte Pause/Bewegter Feierabend"
+                       description="Die bewegte Pause soll als eine Art Spielplatz für Erwachsene fungieren, der aus Bewegungs- aber auch Verweilmöglichkeiten zusammengesetzt ist. Derzeit laden die überdimensionierte Corrensstraße und die (eher graue) Umgebung nicht zum Verweilen ein. Ziel ist es, einen öffentlichen Bewegungs- und Verweilort zu schaffen, sodass gerade auch Studierende, Lehrende und sonstige Beschäftigte aus der Umgebung Bewegung, Ausgleich und Pause finden. Der Spielplatz soll eine Begegnungsstätte sein, bei dem ein Austausch der Fachbereiche in ungezwungener Atmosphäre stattfinden kann. Der Nutzen generationenübergreifender Bewegungsangebote soll verdeutlicht werden und ein Beitrag zur Gesundheit am Arbeitsplatz geleistet werden."
+                       people=""
+                       link="https://www.correnslab.de/" />
 
             <x-project :image="asset('img/projects/Die kommende Stadt - Das Spiel.jpg')"
                         title="Die kommende Stadt - Das Spiel"
