@@ -3901,11 +3901,25 @@ function initMap() {
     }
   }
 
+  function getCoordinates(marker) {
+    if (marker.name == 'Marker 1') {
+      return [51.96784585567931, 7.596464252259507];
+    } else if (marker.name == 'Marker 2') {
+      return [51.967875824358856, 7.596282949194921];
+    } else if (marker.name == 'Marker 3') {
+      return [51.968185447063746, 7.596422955590237];
+    } else if (marker.name == 'Marker 4') {
+      return [51.9686147392282, 7.596396925911135];
+    } else {
+      return [51.96, 7.59];
+    }
+  }
+
   function addMarker(data) {
     for (index in data.data) {
       suggestion = data.data[index]; // console.log(suggestion);
 
-      var marker = L.marker([suggestion.latitude, suggestion.longitude], {
+      var marker = L.marker(getCoordinates(suggestion), {
         icon: greenIcon
       }).addTo(mymap);
       marker.bindPopup("<div class=\"flex items-center p-4 rounded-lg shadow-xs m-2\">\n" + "            <div>\n" + "                <p class=\"text-lg font-semibold\">\n" + suggestion.name + "                </p>\n<br>\<a class='font-black' href='https://correnslab.de/ar'><img src='https://chart.apis.google.com/chart?chs=500x500&cht=qr&chld=L&chl=https://correnslab.de/ar'/><br>oder: <span class='text-lg hover:underline hover:font-bold hover:text-blue'>Hier klicken</span></a>" + "            </div>\n" + "            </div>", 1);
